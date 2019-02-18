@@ -13,7 +13,7 @@ var aussie4Button;
 var currentImage = 0;
 
 function preload(){
-aussie1 = loadImage("ticket.jpeg");
+Ticket = loadImage("ticket.jpeg");
 aussie2 = loadImage("assets/aussie2.jpg");
 aussie3 = loadImage("assets/aussie3.jpg");
 aussie4 = loadImage("assets/aussie4.jpg");
@@ -22,9 +22,9 @@ function setup() {
   // put setup code here
 createCanvas(500,500);
 
-aussie1Button = createButton("Ticket");
-aussie1Button.position(10,40);
-aussie1Button.mousePressed(function(){
+TicketButton = createButton("Ticket");
+TicketButton.position(10,40);
+TicketButton.mousePressed(function(){
 currentImage = 0;
 });
 
@@ -57,7 +57,7 @@ currentImage = 3;
 function draw() {
   // put drawing code here
 if(currentImage == 0){
-  image(aussie1, 0,20, Ticket.width/2, Ticket.height/2);
+  image(ticket, 0,20, Ticket.width/2, Ticket.height/2);
 }else if(currentImage == 1){
   image(aussie2, 0, 20, aussie2.width/2, aussie2.height/2);
 }else if(currentImage == 2){
