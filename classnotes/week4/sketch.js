@@ -30,7 +30,7 @@ currentImage = 0;
 
 PlaneButton = createButton("Plane")
 PlaneButton.position(100,40);
-PlaneButton.mousePressed(aussieChange);
+PlaneButton.mousePressed(Change);
 
 
 aussie3Button = createButton("Temple");
@@ -71,6 +71,6 @@ else if(currentImage == 3){
 }
 
 
-function aussieChange(){
+function Change(){
   currentImage = 1;
 }
