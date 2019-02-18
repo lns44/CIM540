@@ -3,20 +3,20 @@
 var Ticket;
 var Plane;
 var aussie3;
-var aussie4;
+var Food;
 
 var TicketButton;
 var PlaneButton;
-var aussie3Button;
-var aussie4Button;
+var TempleButton;
+var FoodButton;
 
 var currentImage = 0;
 
 function preload(){
 Ticket = loadImage("ticket.jpeg");
-aussie2 = loadImage("Plane.jpeg");
-aussie3 = loadImage("assets/aussie3.jpg");
-aussie4 = loadImage("assets/aussie4.jpg");
+Plane = loadImage("Plane.jpeg");
+Temple = loadImage("assets/aussie3.jpg");
+Food = loadImage("Food.jpg");
 }
 function setup() {
   // put setup code here
@@ -41,9 +41,9 @@ currentImage = 2;
 
 });
 
-aussie4Button = createButton("aussie 4");
-aussie4Button.position(280,40);
-aussie4Button.mousePressed(function(){
+FoodButton = createButton("aussie 4");
+FoodButton.position(280,40);
+FoodButton.mousePressed(function(){
 
 currentImage = 3;
 
@@ -64,7 +64,7 @@ if(currentImage == 0){
   image(aussie3, 0, 20,  aussie3.width/2, aussie3.height/2);
 }
 else if(currentImage == 3){
-  image(aussie4, 0, 20,  aussie4.width/2, aussie4.height/2);
+  image(Food, 0, 20,  Food.width/2, Food.height/2);
 }
 
 
