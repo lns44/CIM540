@@ -9,8 +9,8 @@ var adultButton;
 var currentImage = 1;
 
 function preload(){
-  slothBaby = loadImage("assets/slothbaby.jpg");
-  slothAdult = loadImage("assets/slothadult.jpg");
+  slothBaby = loadImage("slothbaby.jpg");
+  slothAdult = loadImage("slothadult.jpg");
 }
 
 function setup() {
