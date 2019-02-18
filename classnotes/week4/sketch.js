@@ -54,9 +54,6 @@ currentImage = 3;
 
 
 
-}
-
-
 function Change(){
   currentImage = 1;
 }
