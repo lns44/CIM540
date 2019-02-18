@@ -20,7 +20,7 @@ Food = loadImage("Food.jpg");
 }
 function setup() {
   // put setup code here
-createCanvas(auto);
+createCanvas(250,200);
 
 TicketButton = createButton("Ticket");
 TicketButton.position(10,40);
