@@ -1,76 +1,54 @@
 /* "Up-Close Sloth" by marissa_strniste, "Baby sloth, being cute" by Dave Gingrich is licensed under CC BY-SA 2.0. To view a copy of this license, visit: https://creativecommons.org/licenses/by-sa/2.0*/
 
-var aussie1;
-var aussie2;
-var aussie3;
-var aussie4;
+var slothBaby;
+var slothAdult;
 
-var aussie1Button;
-var aussie2Button;
-var aussie3Button;
-var aussie4Button;
+var babyButton;
+var adultButton;
 
-var currentImage = 0;
+var currentImage = 1;
 
 function preload(){
-aussie1 = loadImage("assets/aussie1.jpg");
-aussie2 = loadImage("assets/aussie2.jpg");
-aussie3 = loadImage("assets/aussie3.jpg");
-aussie4 = loadImage("assets/aussie4.jpg");
+  slothBaby = loadImage("assets/slothbaby.jpg");
+  slothAdult = loadImage("assets/slothadult.jpg");
 }
+
 function setup() {
-  // put setup code here
-createCanvas(500,500);
+  // put setup code here
+  createCanvas(500,500);
+  babyButton = createButton("Baby sloth");
+  babyButton.position(10,40);
+  babyButton.mousePressed(function(){
+    currentImage = 0;
+  });
 
-aussie1Button = createButton("aussie 1");
-aussie1Button.position(10,40);
-aussie1Button.mousePressed(function(){
-currentImage = 0;
-});
-
-aussie2Button = createButton("aussie 2")
-aussie2Button.position(100,40);
-aussie2Button.mousePressed(aussieChange);
-
-
-aussie3Button = createButton("aussie 3");
-aussie3Button.position(190,40);
-aussie3Button.mousePressed(function(){
-
-currentImage = 2;
-
-});
-
-aussie4Button = createButton("aussie 4");
-aussie4Button.position(280,40);
-aussie4Button.mousePressed(function(){
-
-currentImage = 3;
-
-});
+  adultButton = createButton("Adult Sloth");
+  adultButton.position(100,40);
+  adultButton.mousePressed(adultChange);
 
 }
-
-
-
 
 function draw() {
-  // put drawing code here
-if(currentImage == 0){
-  image(aussie1, 0,20, aussie1.width/2, aussie1.height/2);
-}else if(currentImage == 1){
-  image(aussie2, 0, 20, aussie2.width/2, aussie2.height/2);
-}else if(currentImage == 2){
-  image(aussie3, 0, 20,  aussie3.width/2, aussie3.height/2);
-}
-else if(currentImage == 3){
-  image(aussie4, 0, 20,  aussie4.width/2, aussie4.height/2);
-}
+  // put drawing code here
+  if(currentImage == 0){
+    image(slothBaby, 0,20,slothBaby.width/2,slothBaby.height/2);
+  }else if(currentImage == 1){
+    image(slothAdult, 0,20,slothAdult.width/2,slothAdult.height/2);
+  }
+
 
 
 }
 
-
-function aussieChange(){
-  currentImage = 1;
+function adultChange(){
+  currentImage = 1;
 }
+
+
+
+
+
+
+
+
+// end of code
