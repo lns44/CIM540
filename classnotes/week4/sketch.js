@@ -9,7 +9,7 @@ var adultButton;
 var currentImage = 1;
 
 function preload(){
-  slothBaby = loadImage("adult.jpg");
+  slothBaby = loadImage("ticket.jpg");
   slothAdult = loadImage("slothadult.jpg");
 }
 
