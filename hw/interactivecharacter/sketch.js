@@ -2,7 +2,7 @@ var backgroundColor = "white";
 
 function setup() {
   // put setup code here
-  createCanvas(500,500);}
+  createCanvas(600,600);}
 
 function draw() {
   // put drawing code here
