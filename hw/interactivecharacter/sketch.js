@@ -31,7 +31,7 @@ ellipse(250,135,25,30);
 fill("pink");
 
   //eyes
-ellipse(350,135,25,30;
+ellipse(350,135,25,30);
   fill("white");
 
   //tail
