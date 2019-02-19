@@ -1,8 +1,4 @@
-function setup() {
-  createCanvas(600, 600);
-  background("pink");
 
-}
 
 
 function keyPressed(){
@@ -17,6 +13,12 @@ function keyPressed(){
     if(keyCode ==65){
         console.log("A is for 65");
     }
+
+}
+
+function setup() {
+  createCanvas(600, 600);
+  background("pink");
 
 }
 
