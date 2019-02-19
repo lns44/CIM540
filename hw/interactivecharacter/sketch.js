@@ -46,6 +46,7 @@ ellipse(350,135,25,30);
   //second pupil
   ellipse(250,135,10,10);
   //mouse
+}
 
   function mousePressed(){
     backgroundColor = "black";
@@ -64,6 +65,5 @@ ellipse(350,135,25,30);
     }else if(key == "b"){
       backgroundColor = "blue";
     }
-
 
 }
