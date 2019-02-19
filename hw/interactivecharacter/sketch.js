@@ -3,23 +3,6 @@ function setup() {
   background("pink");
 
 }
-function mousePressed(){
-  backgroundColor = "black";
-}
-
-function mouseReleased(){
-  backgroundColor = "white";
-}
-
-function keyPressed(){
-  console.log("Current key: " + key + " : " + keyCode);
-  if(key == "r"){
-    backgroundColor = "red";
-  }else if(key == "g"){
-    backgroundColor = "green";
-  }else if(key == "b"){
-    backgroundColor = "blue";
-  }
 
 function draw() {
   // put drawing code here
@@ -64,7 +47,24 @@ ellipse(350,135,25,30);
   ellipse(250,135,10,10);
   //mouse
 }
+}
 
+function mousePressed(){
+  backgroundColor = "black";
+}
 
+function mouseReleased(){
+  backgroundColor = "white";
+}
+
+function keyPressed(){
+  console.log("Current key: " + key + " : " + keyCode);
+  if(key == "r"){
+    backgroundColor = "red";
+  }else if(key == "g"){
+    backgroundColor = "green";
+  }else if(key == "b"){
+    backgroundColor = "blue";
+  }
 
 }
