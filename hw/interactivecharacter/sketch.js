@@ -28,7 +28,7 @@ ellipse(300,160,10,10);
 strokeWeight(1);
   //eyes
 ellipse(250,135,25,30);
-fill("white");
+fill("blue");
 
   //eyes
 ellipse(350,135,25,30);
