@@ -1,12 +1,13 @@
 var backgroundColor = "white";
 
 function setup() {
-  createCanvas(600, 600);
-}
+  // put setup code here
+  createCanvas(500,500);}
 
 function draw() {
   // put drawing code here
-background(246, 206, 141);
+background(backgroundColor);
+fill("black");
   strokeWeight(1);
   fill(200,220,200);
 
