@@ -1,4 +1,4 @@
-var backgroundColor = "pink";
+var backgroundColor = "white";
 
 function setup() {
   createCanvas(600, 600);
