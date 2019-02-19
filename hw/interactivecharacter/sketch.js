@@ -1,11 +1,23 @@
 function setup() {
   createCanvas(600, 600);
   background("pink");
-  button = createButton('click me');
-  button.position(280, 570);
-  button.mousePressed(function(){
-    val = "green";
     });
+}
+
+
+function keyPressed(){
+    console.log(key);
+    console.log(keyCode);
+
+
+    if(key == 'A'){
+        console.log("A is for Apple");
+    }
+
+    if(keyCode ==65){
+        console.log("A is for 65");
+    }
+
 }
 
 function draw() {
