@@ -48,9 +48,10 @@ ellipse(350,135,25,30);
 
   fill(204, 101, 192, 127);
   ellipse(350,135,10,10);
-    fill("white")
+    fill("white");
   //second pupil
   ellipse(250,135,10,10);
+    fill("white");
   //mouse
 
 }
