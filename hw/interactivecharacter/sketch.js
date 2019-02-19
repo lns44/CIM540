@@ -12,13 +12,13 @@ strokeWeight(1);
 
 
 line(mouseX, 0, mouseX, 100);
-  line(0, mouseY, 100, mouseY);
+ line(0, mouseY, 100, mouseY);
 
   // head
   ellipse(300,150,200,200);
   fill("pink")
   ellipse(300,400,300,300);
-    fill("pink")
+  fill("pink")
   //mouth
   rect(260,190,75,20);
   rect(270,210,55,10);
@@ -28,9 +28,11 @@ ellipse(300,160,10,10);
 strokeWeight(1);
   //eyes
 ellipse(250,135,25,30);
+  fill("white")
 
   //eyes
 ellipse(350,135,25,30);
+  fill("white")
 
   //tail
   strokeWeight(13);
