@@ -7,7 +7,7 @@ function setup() {
 function draw() {
   // put drawing code here
 background(backgroundColor);
-fill("lightblue");
+fill("purple");
 strokeWeight(1);
 
 
