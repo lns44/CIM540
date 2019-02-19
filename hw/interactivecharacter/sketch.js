@@ -1,21 +1,3 @@
-
-
-
-function keyPressed(){
-    console.log(key);
-    console.log(keyCode);
-
-
-    if(key == 'A'){
-        console.log("A is for Apple");
-    }
-
-    if(keyCode ==65){
-        console.log("A is for 65");
-    }
-
-}
-
 function setup() {
   createCanvas(600, 600);
   background("pink");
@@ -65,6 +47,23 @@ ellipse(350,135,25,30);
   ellipse(250,135,10,10);
   //mouse
 
+  function mousePressed(){
+    backgroundColor = "black";
+  }
+
+  function mouseReleased(){
+    backgroundColor = "white";
+  }
+
+  function keyPressed(){
+    console.log("Current key: " + key + " : " + keyCode);
+    if(key == "r"){
+      backgroundColor = "red";
+    }else if(key == "g"){
+      backgroundColor = "green";
+    }else if(key == "b"){
+      backgroundColor = "blue";
+    }
 
 
 }
