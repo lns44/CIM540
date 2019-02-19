@@ -8,7 +8,7 @@ function draw() {
   // put drawing code here
 background(backgroundColor);
 fill("black");
- strokeWeight(1);
+strokeWeight(1);
 
 
 line(mouseX, 0, mouseX, 100);
@@ -16,6 +16,7 @@ line(mouseX, 0, mouseX, 100);
 
   // head
   ellipse(300,150,200,200);
+  fill("pink")
   ellipse(300,400,300,300);
   //mouth
   rect(260,190,75,20);
