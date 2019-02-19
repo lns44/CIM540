@@ -16,7 +16,7 @@ line(mouseX, 0, mouseX, 100);
 
   // head
   ellipse(300,150,200,200);
-  fill(0,0,0);
+  fill("pink");
   ellipse(300,400,300,300);
   fill("pink");
   //mouth
@@ -46,9 +46,8 @@ ellipse(350,135,25,30);
   fill(204,101, 192, 127);
   triangle(450,100,300,25,150,100);
 
-  fill("white");
+  fill(0,0,0,0);
   ellipse(350,135,10,10);
-  fill("white")
   //second pupil
 
   ellipse(250,135,10,10);
