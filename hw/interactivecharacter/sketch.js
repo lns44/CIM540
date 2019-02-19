@@ -8,8 +8,8 @@ function draw() {
   // put drawing code here
 background(backgroundColor);
 fill("black");
-  strokeWeight(1);
-  fill(200,220,200);
+ strokeWeight(1);
+
 
 line(mouseX, 0, mouseX, 100);
   line(0, mouseY, 100, mouseY);
