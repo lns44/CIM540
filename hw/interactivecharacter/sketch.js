@@ -46,11 +46,10 @@ ellipse(350,135,25,30);
   fill(204,101, 192, 127);
   triangle(450,100,300,25,150,100);
 
-  fill(204, 101, 192, 127);
+  fill("white");
   ellipse(350,135,10,10);
-    fill("white");
   //second pupil
-      fill("red");
+
   ellipse(250,135,10,10);
 
   //mouse
