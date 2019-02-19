@@ -16,7 +16,7 @@ line(mouseX, 0, mouseX, 100);
 
   // head
   ellipse(300,150,200,200);
-  fill("pink");
+  fill(0,0,0);
   ellipse(300,400,300,300);
   fill("pink");
   //mouth
