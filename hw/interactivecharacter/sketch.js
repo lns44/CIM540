@@ -51,7 +51,7 @@ ellipse(350,135,25,30);
     fill("white");
   //second pupil
   ellipse(250,135,10,10);
-    fill("white");
+    fill("red");
   //mouse
 
 }
