@@ -22,7 +22,7 @@ function preload() {
 function setup() {
   // put setup code here
   createCanvas(400, 400);
-    background(200,220,2000);
+  background(200,220,2000);
   }
   seasons = createSelect();
   seasons.position(10, 10);
