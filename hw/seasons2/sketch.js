@@ -62,7 +62,7 @@ background(255);
 
   if (seasonType == "spring") {
     // flower
-    fill("purple");
+    fill("pink");
     line(width / 2, height / 2, width / 2, 300);
     for (var i = 0; i < 6; i++) {
       push();
@@ -77,7 +77,7 @@ background(255);
 
   } else if (seasonType == "summer") {
     //suns out
-    fill("pink");
+    fill("red");
     ellipse(sunX, sunY, sunSize, sunSize);
     if (sunY > 350) {
       sunY = sunY - 5;
