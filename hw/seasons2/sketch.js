@@ -58,7 +58,7 @@ function draw() {
   // put drawing code here
   //console.log(frameRate());
 background(255);
-image(backImage,0,0, backImage.width/2, backImage.height/2);
+image(backImage,0,0, );
   fill("black");
   stroke(0);
   textSize(20);
