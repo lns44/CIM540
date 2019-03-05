@@ -30,7 +30,7 @@ function setup() {
   seasons.position(10, 10);
   seasons.option("");
   seasons.option("Cherry Blossom");
-  seasons.option("summer");
+  seasons.option("Summer");
   seasons.option("Fall");
   seasons.option("Snow");
   seasons.changed(function() {
@@ -75,7 +75,7 @@ background(255);
     fill("white");
     ellipse(width / 2, height / 2, 20, 20);
 
-  } else if (seasonType == "summer") {
+  } else if (seasonType == "Summer") {
     //suns out
     fill("red");
     ellipse(sunX, sunY, sunSize, sunSize);
