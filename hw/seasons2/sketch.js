@@ -21,8 +21,7 @@ function preload() {
 
 function setup() {
   // put setup code here
-  createCanvas(400, 400);  }
-
+  createCanvas(400, 400);
   seasons = createSelect();
   seasons.position(10, 10);
   seasons.option("");
@@ -52,7 +51,7 @@ function draw() {
   // put drawing code here
   //console.log(frameRate());
   background(255);
-  fill("black");
+  fill("mnt.jpg");
   stroke(0);
   textSize(20);
   text(seasonType, 10, 75);
