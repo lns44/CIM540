@@ -7,7 +7,7 @@ var seasons;
 var seasonType = "";
 
 var sunX = 200;
-var sunY = 200;
+var sunY = 1000;
 var sunSize = 300;
 
 var leafLocationX = [];
