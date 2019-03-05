@@ -83,7 +83,7 @@ image(backImage,0,0, );
     //suns out
     fill("red");
     ellipse(sunX, sunY, sunSize, sunSize);
-    if (sunY > 350) {
+    if (sunY > 50) {
       sunY = sunY - 5;
 
     }
