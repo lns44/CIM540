@@ -63,7 +63,7 @@ background(255);
   if (seasonType == "Cherry Blossoms") {
     // flower
     fill("pink");
-    line(width / 2, height / 2, width / 2, 300);
+
     for (var i = 0; i < 6; i++) {
       push();
       translate(width / 2, height / 2);
