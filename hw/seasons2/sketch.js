@@ -77,10 +77,11 @@ function draw() {
 
   } else if (seasonType == "summer") {
     //suns out
-    fill("orange");
+    fill("pink");
     ellipse(sunX, sunY, sunSize, sunSize);
     if (sunY > 350) {
       sunY = sunY - 5;
+      
     }
   } else if (seasonType == "fall") {
     for (var i = 0; i < leafAmount; i++) {
