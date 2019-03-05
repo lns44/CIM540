@@ -19,8 +19,11 @@ var snowLocationX = [];
 var snowLocationY = [];
 var snowAmount = 100;
 
+var backImage;
+
 function preload() {
   leafImage = loadImage("https://openclipart.org/image/300px/svg_to_png/257622/1470680735.png");
+backImage = loadImage("assets/mnt.jpg");
 }
 
 function setup() {
@@ -55,6 +58,7 @@ function draw() {
   // put drawing code here
   //console.log(frameRate());
 background(255);
+image(backImage,0,0, backImage.width/2, backImage.height/2);
   fill("black");
   stroke(0);
   textSize(20);
@@ -63,6 +67,7 @@ background(255);
   if (seasonType == "Cherry Blossoms") {
     // flower
     fill("pink");
+
     for (var i = 0; i < 6; i++) {
       push();
       translate(width / 2, height / 2);
