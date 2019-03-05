@@ -32,7 +32,7 @@ function setup() {
   seasons.option("Cherry Blossom");
   seasons.option("summer");
   seasons.option("fall");
-  seasons.option("winter");
+  seasons.option("Snow");
   seasons.changed(function() {
     seasonType = seasons.value();
   });
@@ -94,7 +94,7 @@ background(255);
       }
 
     }
-  } else if (seasonType == "winter") {
+  } else if (seasonType == "Snow") {
     noStroke();
     fill(175);
     for (var i = 0; i < snowAmount; i++) {
