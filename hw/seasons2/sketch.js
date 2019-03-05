@@ -54,7 +54,7 @@ function setup() {
 function draw() {
   // put drawing code here
   //console.log(frameRate());
-  background(image, ["mnt.jpg"]);
+background(255);
   fill("black");
   stroke(0);
   textSize(20);
@@ -62,7 +62,7 @@ function draw() {
 
   if (seasonType == "spring") {
     // flower
-    fill("white");
+    fill("purple");
     line(width / 2, height / 2, width / 2, 300);
     for (var i = 0; i < 6; i++) {
       push();
@@ -81,7 +81,7 @@ function draw() {
     ellipse(sunX, sunY, sunSize, sunSize);
     if (sunY > 350) {
       sunY = sunY - 5;
-      
+
     }
   } else if (seasonType == "fall") {
     for (var i = 0; i < leafAmount; i++) {
