@@ -51,7 +51,7 @@ function draw() {
   // put drawing code here
   //console.log(frameRate());
   background(255);
-  fill("mnt.jpg");
+  fill("black");
   stroke(0);
   textSize(20);
   text(seasonType, 10, 75);
