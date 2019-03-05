@@ -31,7 +31,7 @@ function setup() {
   seasons.option("");
   seasons.option("Cherry Blossom");
   seasons.option("summer");
-  seasons.option("fall");
+  seasons.option("Fall");
   seasons.option("Snow");
   seasons.changed(function() {
     seasonType = seasons.value();
@@ -83,7 +83,7 @@ background(255);
       sunY = sunY - 5;
 
     }
-  } else if (seasonType == "fall") {
+  } else if (seasonType == "Fall") {
     for (var i = 0; i < leafAmount; i++) {
       console.log("leaf" + 0 + " x: " + leafLocationX[1] + " , y: " + leafLocationY[1]);
       image(leafImage, leafLocationX[i], leafLocationY[i], 20,20);
