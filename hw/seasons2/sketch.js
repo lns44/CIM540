@@ -72,7 +72,7 @@ background(255);
       ellipse(0, 10, 10, 20);
       pop();
     }
-    fill("lightpink");
+    fill("white");
     ellipse(width / 2, height / 2, 20, 20);
 
   } else if (seasonType == "summer") {
