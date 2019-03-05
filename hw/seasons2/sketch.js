@@ -30,8 +30,8 @@ function setup() {
   seasons.position(10, 10);
   seasons.option("");
   seasons.option("Cherry Blossom");
-  seasons.option("Summer");
-  seasons.option("Fall");
+  seasons.option("Sun");
+  seasons.option("Leaves");
   seasons.option("Snow");
   seasons.changed(function() {
     seasonType = seasons.value();
@@ -75,7 +75,7 @@ background(255);
     fill("white");
     ellipse(width / 2, height / 2, 20, 20);
 
-  } else if (seasonType == "Summer") {
+  } else if (seasonType == "Sun") {
     //suns out
     fill("red");
     ellipse(sunX, sunY, sunSize, sunSize);
@@ -83,7 +83,7 @@ background(255);
       sunY = sunY - 5;
 
     }
-  } else if (seasonType == "Fall") {
+  } else if (seasonType == "Leaves") {
     for (var i = 0; i < leafAmount; i++) {
       console.log("leaf" + 0 + " x: " + leafLocationX[1] + " , y: " + leafLocationY[1]);
       image(leafImage, leafLocationX[i], leafLocationY[i], 20,20);
