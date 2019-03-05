@@ -29,7 +29,7 @@ function setup() {
   seasons = createSelect();
   seasons.position(10, 10);
   seasons.option("");
-  seasons.option("Cherry Blossom");
+  seasons.option("Cherry Blossoms");
   seasons.option("Sun");
   seasons.option("Leaves");
   seasons.option("Snow");
@@ -60,7 +60,7 @@ background(255);
   textSize(20);
   text(seasonType, 10, 75);
 
-  if (seasonType == "Cherry Blossom") {
+  if (seasonType == "Cherry Blossoms") {
     // flower
     fill("pink");
     line(width / 2, height / 2, width / 2, 300);
