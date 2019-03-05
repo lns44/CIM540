@@ -54,7 +54,7 @@ function setup() {
 function draw() {
   // put drawing code here
   //console.log(frameRate());
-  background(image, [mnt.jpg]);
+  background(image, ["mnt.jpg"]);
   fill("black");
   stroke(0);
   textSize(20);
