@@ -81,9 +81,9 @@ image(backImage,0,0, );
 
   } else if (seasonType == "Sun") {
     //suns out
-    fill("red");
+    fill("orange");
     ellipse(sunX, sunY, sunSize, sunSize);
-    if (sunY > 50) {
+    if (sunY > 350) {
       sunY = sunY - 5;
 
     }
