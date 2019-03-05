@@ -1,4 +1,8 @@
 // leaf from open clip art https://openclipart.org/detail/257622/leaf
+
+
+
+
 var seasons;
 var seasonType = "";
 
@@ -50,7 +54,7 @@ function setup() {
 function draw() {
   // put drawing code here
   //console.log(frameRate());
-  background(255);
+  background(image, [mnt.jpg]);
   fill("black");
   stroke(0);
   textSize(20);
