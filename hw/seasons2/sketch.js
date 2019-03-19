@@ -1,9 +1,9 @@
 // leaf from open clip art https://openclipart.org/detail/257622/leaf
 
-var bug1;
-var bug2;
-var bug3;
-var bug4;
+let bug1;
+let bug2;
+let bug3;
+let bug4;
 
 var seasons;
 var seasonType = "";
@@ -38,14 +38,9 @@ function setup() {
   seasons.option("Sun");
   seasons.option("Leaves");
   seasons.option("Snow");
-  bug1 = new Jitter();
-  bug2 = new Jitter();
-  bug3 = new Jitter();
-  bug4 = new Jitter();
   seasons.changed(function() {
   seasonType = seasons.value();
   });
-
 
 
   for (var i = 0; i < leafAmount; i++) {
@@ -69,29 +64,26 @@ image(backImage,0,0, );
   stroke(0);
   textSize(20);
   text(seasonType, 120, 55);
-  bug1.move();
-  bug1.display();
-  bug2.move();
-  bug2.display();
-  bug3.move();
-  bug3.display();
-  bug4.move();
-  bug4.display();
 
   if (seasonType == "Cherry Blossom Season") {
     // flower
-    fill("pink");
 
-    for (var i = 0; i < 12; i++) {
-      push();
-      translate(width / 2, height / 2);
-      rotate(i + 30);
-      scale(1.5);
-      ellipse(0, 10, 10, 20);
-      pop();
-    }
-    fill("white");
-    ellipse(width / 2, height / 2, 20, 20);
+
+        fill("pink");
+
+        for (var i = 0; i < 12; i++) {
+          push();
+          translate(width / 2, height / 2);
+          rotate(i + 30);
+          scale(1.5);
+          ellipse(0, 10, 10, 20);
+          pop();
+        }
+        fill("white");
+        ellipse(width / 2, height / 2, 20, 20);
+
+
+
 
 
   } else if (seasonType == "Sun") {
