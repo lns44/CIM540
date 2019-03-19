@@ -83,10 +83,8 @@ ellipse(mouseX, mouseY, 70,70);
 
       if(leafLocationY[i] < height - 20){
         leafLocationY[i]++;
-        leafLocationX[i] = leafLocationX[i] + sin(radians(frameCount));
-      }
+        leafLocationX[i] = leafLocationX[i] + sin(radians(frameCount));}}
 
-    }
   } else if (seasonType == "Snow") {
     noStroke();
     fill(230);
@@ -98,7 +96,7 @@ ellipse(mouseX, mouseY, 70,70);
         snowLocationY[i] = random(-50,0);
         snowLocationX[i] = random(0,width);}
 
-else if (seasonType == "Night or Day?") {
+}} else if (seasonType == "Night or Day?") {
   fill("yellow");
   ellipse(mouseX, mouseY, 70,70);
 }
