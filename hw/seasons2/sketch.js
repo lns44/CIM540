@@ -3,9 +3,6 @@
 var seasons;
 var seasonType = "";
 
-var bgcolor;
-var button;
-
 var sunX = 360;
 var sunY = 40;
 var sunSize = 60;
@@ -41,7 +38,6 @@ function setup() {
   seasons.option("Snow");
   seasons.option("Night or Day?");
   canvas = createCanvas(400, 400);
-  bgcolor = color(200);
   seasons.changed(function() {
   seasonType = seasons.value();
   });
