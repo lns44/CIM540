@@ -62,7 +62,7 @@ image(backImage,0,0, );
   fill("black");
   stroke(0);
   textSize(20);
-  text(seasonType, 200, 15);
+  text(seasonType, 160, 25);
 
   if (seasonType == "Cherry Blossoms") {
     // flower
