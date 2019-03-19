@@ -37,7 +37,7 @@ function setup() {
   seasons.option("Leaves");
   seasons.option("Snow");
   seasons.changed(function() {
-    seasonType = seasons.value();
+  seasonType = seasons.value();
   });
 
   //seasonType = "winter";
@@ -66,6 +66,12 @@ image(backImage,0,0, );
 
   if (seasonType == "Cherry Blossom Season") {
     // flower
+
+    function draw() {
+      background(126);
+      ellipse(mouseX, mouseY, 33, 33);
+    }
+    
     fill("pink");
 
     for (var i = 0; i < 12; i++) {
@@ -78,22 +84,6 @@ image(backImage,0,0, );
     }
     fill("white");
     ellipse(width / 2, height / 2, 20, 20);
-
-
-    fill("pink");
-    for (var i = 0; i < 12; i++) {
-      push();
-      translate(width / 2, height / 2);
-      rotate(i + 30);
-      scale(1.5);
-      ellipse(0, 10, 20, 20);
-      pop();
-    }
-    fill("white");
-    ellipse(width / 2, height / 2, 20, 20);
-
-
-
 
 
   } else if (seasonType == "Sun") {
