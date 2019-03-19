@@ -64,8 +64,8 @@ image(backImage,0,0, );
   text(seasonType, 120, 55);
 
   if (seasonType == "Cherry Blossom Season") {
-fill("pink");
-background("white");
+fill("white");
+background("pink");
     function mousePressed() {
     rect(mouseX, mouseY, 33, 33);
     }}
