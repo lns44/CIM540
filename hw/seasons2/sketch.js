@@ -50,14 +50,9 @@ function setup() {
 
   for (var i = 0; i < snowAmount; i++) {
     snowLocationX[i] = random(0, width);
-    snowLocationY[i] = random(0, -500);
-  }
-
-}
+    snowLocationY[i] = random(0, -500);}}
 
 function draw() {
-  // put drawing code here
-  //console.log(frameRate());
 background(255);
 image(backImage,0,0, );
   fill("black");
@@ -107,8 +102,8 @@ ellipse(mouseX, mouseY, 70,70);
       }
 
 else if (seasonType == "Night or Day?") {
-  fill("green");
-  ellipse(500,200,50,50);
+  fill("yellow");
+  ellipse(mouseX, mouseY, 70,70);
 }
 
     }
