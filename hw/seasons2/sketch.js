@@ -65,10 +65,16 @@ image(backImage,0,0, );
   text(seasonType, 120, 55);
 
   if (seasonType == "Cherry Blossom Season") {
-image(BlosImage, mouseX, 200, 33, 33);  // Top circle
-image(BlosImage, mouseX+100, 50, 33, 33); // Middle circle
-image(BlosImage, mouseX-100, 84, 33, 33); // Bottom circle
-image(BlosImage, mouseX+50, 20, 33, 33); // Bottom circle
+image(BlosImage, mouseX, 250, 33, 40);  // Top circle
+image(BlosImage, mouseX+10, 50, 33, 40); // Middle circle
+image(BlosImage, mouseX-100, 84, 33, 40); // Bottom circle
+image(BlosImage, mouseX+50, 20, 33, 40); // Bottom circle
+image(BlosImage, mouseX-50, 60, 33, 33);
+image(BlosImage, mouseX-50, 60, 33, 33);
+image(BlosImage, mouseX-50, 60, 33, 33);
+image(BlosImage, mouseX-50, 60, 33, 33);
+image(BlosImage, mouseX-50, 60, 33, 33);
+image(BlosImage, mouseX-50, 60, 33, 33);
 image(BlosImage, mouseX-50, 60, 33, 33); // Bottom circle
   }
 
