@@ -68,7 +68,7 @@ image(backImage,0,0, );
     // flower
     fill("pink");
 
-    for (var i = 0; i < 10; i++) {
+    for (var i = 0; i < 12; i++) {
       push();
       translate(width / 2, height / 2);
       rotate(i + 30);
