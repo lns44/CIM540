@@ -16,13 +16,14 @@ var snowLocationX = [];
 var snowLocationY = [];
 var snowAmount = 150;
 
+var night
+
 var backImage;
 
 function preload() {
 leafImage = loadImage("https://openclipart.org/image/300px/svg_to_png/257622/1470680735.png");
 backImage = loadImage("assets/mnt.jpg");
-BlosImage = loadImage("assets/blos.png");
-}
+BlosImage = loadImage("assets/blos.png");}
 
 function setup() {
   // put setup code here
@@ -35,7 +36,7 @@ function setup() {
   seasons.option("Sun");
   seasons.option("Leaves");
   seasons.option("Snow");
-  seasons.option("Night or Day");
+  seasons.option("Night or Day?");
   seasons.changed(function() {
   seasonType = seasons.value();
   });
@@ -103,6 +104,8 @@ ellipse(mouseX, mouseY, 70,70);
         snowLocationY[i] = random(-50,0);
         snowLocationX[i] = random(0,width);
       }
+else if (seasonType == "night") {
+
     }
   }
 }
