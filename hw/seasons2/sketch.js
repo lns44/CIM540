@@ -65,8 +65,8 @@ image(backImage,0,0, );
 
   if (seasonType == "Cherry Blossom Season") {
     ellipse(mouseX, 200, 33, 33);    // Top circle
-    ellipse(mouseX+20, 50, 33, 33); // Middle circle
-    ellipse(mouseX-20, 84, 33, 33); // Bottom circle
+    ellipse(mouseX+30, 50, 33, 33); // Middle circle
+    ellipse(mouseX-60, 84, 33, 33); // Bottom circle
   }
 
 else if (seasonType == "Sun") {
