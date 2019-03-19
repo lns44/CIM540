@@ -97,15 +97,8 @@ image(backImage,0,0, );
         leafLocationX[i] = leafLocationX[i] + sin(radians(frameCount));
       }
 
-  }});
+}
 
-    function draw() {
-    background(255);
-    image(snowimage,0,0, );
-      fill("black");
-      stroke(0);
-      textSize(20);
-      text(seasonType, 10, 75);
 
 if (seasonType == "Snow") {
 
