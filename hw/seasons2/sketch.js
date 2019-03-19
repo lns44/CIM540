@@ -64,19 +64,11 @@ image(backImage,0,0, );
   text(seasonType, 120, 55);
 
   if (seasonType == "Cherry Blossom Season") {
-
-  fill("pink");
-  for (var i = 0; i < 12; i++) {
-  push();
-  translate(width / 2, height / 2);
-  rotate(i + 30);
-  scale(1.5);
-  ellipse(0, 20, 20, 30,);
-  pop();}
-  fill("white");
-  ellipse(width / 2, height / 2, 20, 20);}
-
-
+  background(126);
+    ellipse(mouseX, 16, 33, 33);    // Top circle
+    ellipse(mouseX+20, 50, 33, 33); // Middle circle
+    ellipse(mouseX-20, 84, 33, 33); // Bottom circle
+  }
 
 
 else if (seasonType == "Sun") {
