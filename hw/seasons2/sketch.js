@@ -27,7 +27,7 @@ function setup() {
   // put setup code here
   createCanvas(500, 500);
   seasons = createSelect();
-  seasons.position(160, 10);
+  seasons.position(200, 10);
   seasons.option("Click here to change the seasons!");
   seasons.option("Cherry Blossom Season");
   seasons.option("Sun");
