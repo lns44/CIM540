@@ -20,7 +20,7 @@ var backImage;
 
 function preload() {
   leafImage = loadImage("https://openclipart.org/image/300px/svg_to_png/257622/1470680735.png");
-backImage = loadImage("assets/mnt.jpg");
+
 }
 
 function setup() {
@@ -103,7 +103,6 @@ image(backImage,0,0, );
       sn = loadImage('assets/snow.jpg');
       createCanvas(400, 400);
     }
-
 
     noStroke();
     fill(173);
