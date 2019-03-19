@@ -118,18 +118,11 @@ ellipse(mouseX, mouseY, 70,70);
 else if (seasonType == "Night or Day?") {
 
 function changeColor() {
-bgcolor = fill("yellow"), fill(orange), fill("white");
-  }
+bgcolor = fill("yellow"), fill(orange), fill("white");}
 
-
-  // Callback function for the nameP's mouseOver event. function overpara() { nameP.html('your moues is over me');}
-
-  // Callback function for the nameP's mouseOut event
-
-    noStroke();
-    fill(255, 50, 150);
-    // Draw an ellipse according to slider's value
-    ellipse(100, 100, 200,200);
+noStroke();
+fill(255, 50, 150);
+ellipse(100, 100, 200,200);
   }
 
 
