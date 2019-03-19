@@ -3,7 +3,7 @@
 var seasons;
 var seasonType = "";
 
-var moon= 50,50,50,50;
+var moon = "black"
 
 var sunX = 360;
 var sunY = 40;
