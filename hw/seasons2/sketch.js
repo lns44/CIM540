@@ -107,7 +107,7 @@ image(backImage,0,0, );
         image(snowimage);
       }else if(currentImage == 1){
         image(snowimage);
-      }
+
     }
 
     function adultChange(){
