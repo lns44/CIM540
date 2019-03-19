@@ -64,7 +64,7 @@ image(backImage,0,0, );
   text(seasonType, 120, 55);
 
   if (seasonType == "Cherry Blossom Season") {
-    fill("white");
+    fill(0,102);
     function mousePressed() {
     rect(mouseX, mouseY, 33, 33);
     }}
