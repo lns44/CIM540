@@ -45,7 +45,7 @@ function setup() {
 
   for (var i = 0; i < snowAmount; i++) {
     snowLocationX[i] = random(0, width);
-    snowLocationY[i] = random(height, -500);
+    snowLocationY[i] = random(0, height);
   }
 
 }
