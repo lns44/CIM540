@@ -114,7 +114,7 @@ ellipse(mouseX, mouseY, 70,70);
 
 else if (seasonType == "Night or Day?") {
 
-            button(100,100);});
+            button(100,100)});
 
 
 
