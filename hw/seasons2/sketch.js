@@ -79,6 +79,24 @@ image(backImage,0,0, );
     fill("white");
     ellipse(width / 2, height / 2, 20, 20);
 
+
+    fill("pink");
+
+    for (var i = 0; i < 12; i++) {
+      push();
+      translate(width / 2, height / 2);
+      rotate(i + 30);
+      scale(1.5);
+      ellipse(0, 90, 20, 20);
+      pop();
+    }
+    fill("white");
+    ellipse(width / 2, height / 2, 20, 20);
+
+
+
+
+
   } else if (seasonType == "Sun") {
     //suns out
     fill("orange");
