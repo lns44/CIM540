@@ -84,7 +84,7 @@ ellipse(mouseX, mouseY, 70,70);
         leafLocationX[i] = leafLocationX[i] + sin(radians(frameCount));}}
 }else if (seasonType == "Night & Day") {
 
-  rect(20, 20, 20, 20);
+  ellipse(40, 40, 40, 40);
   if(mouseX > 20 && mouseX < 40 && mouseY > 20 && mouseY < 40){
     fill("red");
   }else{
