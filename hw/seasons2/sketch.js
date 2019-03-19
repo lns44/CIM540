@@ -1,10 +1,6 @@
 // leaf from open clip art https://openclipart.org/detail/257622/leaf
 
-let bug1;
-let bug2;
-let bug3;
-let bug4;
-
+var blosImage
 var seasons;
 var seasonType = "";
 
@@ -68,22 +64,14 @@ image(backImage,0,0, );
   text(seasonType, 120, 55);
 
   if (seasonType == "Cherry Blossom Season") {
-        fill("pink");
+    function mousePressed() {
+      image(blosImage; mouseX, mouseY, 33, 33);
+    }}
 
-        for (var i = 0; i < 12; i++) {
-          push();
-          translate(width / 2, height / 2);
-          rotate(i + 30);
-          scale(1.5);
-          ellipse(0, 10, 10, 20);
-          pop();
-        }
-        fill("white");
-        ellipse(width / 2, height / 2, 20, 20);}
 
 
 else if (seasonType == "Sun") {
-  fill("yellow");
+fill("yellow");
 ellipse(mouseX, mouseY, 70,70);
 
   } else if (seasonType == "Leaves") {
