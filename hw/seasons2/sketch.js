@@ -102,12 +102,6 @@ image(backImage,0,0, );
 
     function setup() {
       image(snowimage, 0, 0);
-    }
-
-    var snowimage;
-        function preload() {
-        snowimage = loadImage("assets/snow.jpg");
-        }
 
 
     noStroke();
