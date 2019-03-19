@@ -80,8 +80,6 @@ image(backImage,0,0, );
 
   if (seasonType == "Cherry Blossom Season") {
     // flower
-
-    // Jitter class
   class Jitter {
     constructor() {
       this.x = random(width);
@@ -99,24 +97,6 @@ image(backImage,0,0, );
       ellipse(this.x, this.y, this.diameter, this.diameter);
     }
   }
-
-
-        fill("pink");
-
-        for (var i = 0; i < 12; i++) {
-          push();
-          translate(width / 2, height / 2);
-          rotate(i + 30);
-          scale(1.5);
-          ellipse(0, 10, 10, 20);
-          pop();
-        }
-        fill("white");
-        ellipse(width / 2, height / 2, 20, 20);
-
-
-
-
 
   } else if (seasonType == "Sun") {
     //suns out
