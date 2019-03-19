@@ -32,7 +32,7 @@ function setup() {
   seasons = createSelect();
   seasons.position(160, 10);
   seasons.option("");
-  seasons.option("Cherry Blossoms");
+  seasons.option("Cherry Blossom Season");
   seasons.option("Sun");
   seasons.option("Leaves");
   seasons.option("Snow");
