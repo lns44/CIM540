@@ -28,17 +28,15 @@ function setup() {
   createCanvas(500, 500);
   seasons = createSelect();
   seasons.position(160, 10);
-  seasons.option("");
+  seasons.option("Click here to change the seasons!");
   seasons.option("Cherry Blossom Season");
   seasons.option("Sun");
   seasons.option("Leaves");
   seasons.option("Snow");
-  noStroke();
   seasons.changed(function() {
   seasonType = seasons.value();
   });
 
-  //seasonType = "winter";
 
   for (var i = 0; i < leafAmount; i++) {
     leafLocationX[i] = random(0, width);
@@ -65,10 +63,22 @@ image(backImage,0,0, );
   if (seasonType == "Cherry Blossom Season") {
     // flower
 
-    function draw() {
-      background(126);
-      ellipse(mouseX, mouseY, 33, 33);
-    }
+
+        fill("pink");
+
+        for (var i = 0; i < 12; i++) {
+          push();
+          translate(width / 2, height / 2);
+          rotate(i + 30);
+          scale(1.5);
+          ellipse(0, 10, 10, 20);
+          pop();
+        }
+        fill("white");
+        ellipse(width / 2, height / 2, 20, 20);
+
+
+
 
 
   } else if (seasonType == "Sun") {
