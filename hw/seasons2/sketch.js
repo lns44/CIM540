@@ -87,11 +87,11 @@ image(backImage,0,0, );
 
 
   } else if (seasonType == "Sun") {
-    fill("orange");
-    ellipse(sunX, sunY, sunSize, sunSize);
-    if (sunY > 550) {
-      sunY = sunY - 5;}
-
+  
+      function draw() {
+        background(126);
+        ellipse(mouseX, mouseY, 33, 33);
+      }
 
   } else if (seasonType == "Leaves") {
     for (var i = 0; i < leafAmount; i++) {
