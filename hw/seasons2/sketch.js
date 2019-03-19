@@ -110,11 +110,11 @@ image(backImage,0,0, );
       if(snowLocationY[i] > height){
         snowLocationY[i] = random(-50,0);
         snowLocationX[i] = random(0,width);
-        (snowLocationY> height) {
+      If (snowLocationY> height) {
           let index = snow.indexOf(this);
           snow.splice(index, 1); }
         }
-      
+
     }
   }
 }
