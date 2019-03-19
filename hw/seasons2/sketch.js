@@ -30,11 +30,11 @@ function setup() {
   seasons = createSelect();
   seasons.position(100, 10);
   seasons.option("Click here to change up the scene!");
-  seasons.option("Cherry Blossom Season");
+  seasons.option("Cherry Blossoms");
   seasons.option("Sun");
   seasons.option("Leaves");
   seasons.option("Snow");
-  seasons.option("Night or Day?");
+  seasons.option("Night & Day");
   canvas = createCanvas(400, 400);
   seasons.changed(function() {
   seasonType = seasons.value();
