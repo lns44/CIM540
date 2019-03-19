@@ -14,7 +14,7 @@ var leafAmount = 100;
 
 var snowLocationX = [];
 var snowLocationY = [];
-var snowAmount = 100;
+var snowAmount = 150;
 
 var backImage;
 
@@ -102,10 +102,10 @@ image(backImage,0,0, );
     }
   } else if (seasonType == "Snow") {
     noStroke();
-    fill(175);
+    fill(220);
     for (var i = 0; i < snowAmount; i++) {
       snowLocationY[i]++;
-      ellipse(snowLocationX[i], snowLocationY[i], 5,5);
+      ellipse(snowLocationX[i], snowLocationY[i], 4,4);
 
       if(snowLocationY[i] > height){
         snowLocationY[i] = random(-500,0);
