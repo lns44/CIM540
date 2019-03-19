@@ -94,7 +94,7 @@ ellipse(mouseX, mouseY, 70,70);
         leafLocationX[i] = leafLocationX[i] + sin(radians(frameCount));}}
 }
  else if (seasonType == "Night or Day?") {
-   buttonPressed(){
+   button.Pressed(){
    fill("black");
    ellipse(50,50,50,50)}
    ;}
