@@ -81,9 +81,8 @@ image(backImage,0,0, );
         ellipse(width / 2, height / 2, 20, 20);}
 
 
-   else if (seasonType == "Sun") {
-function draw() {
-ellipse(mouseX, mouseY, 44,44);}
+else if (seasonType == "Sun") {
+ellipse(mouseX, mouseY, 44,44);
 
   } else if (seasonType == "Leaves") {
     for (var i = 0; i < leafAmount; i++) {
