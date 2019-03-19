@@ -1,7 +1,5 @@
 // leaf from open clip art https://openclipart.org/detail/257622/leaf
 
-let cnv;
-let d;
 
 var cnv;
 var d;
@@ -27,7 +25,6 @@ var backImage;
 function preload() {
   leafImage = loadImage("https://openclipart.org/image/300px/svg_to_png/257622/1470680735.png");
 backImage = loadImage("assets/mnt.jpg");
-blosImage = loadImage("assets/blos.png");
 }
 
 function setup() {
@@ -43,8 +40,9 @@ function setup() {
   seasons.option("Snow");
   seasons.changed(function() {
   seasonType = seasons.value();
-  cnv.mouseOver(changeD);
-  d = 10;
+  let a = 50;
+   let b = 120;
+   let c = 180;
   });
 
 
@@ -71,9 +69,11 @@ image(backImage,0,0, );
   text(seasonType, 120, 55);
 
   if (seasonType == "Cherry Blossom Season") {
-      ellipse(width / 2, height / 2, d, d);}
-    function changeD() {
-      d=d + 10;}}}
+line(a,b);
+line( a);
+line(c);}
+
+
 
 else if (seasonType == "Sun") {
 fill("yellow");
