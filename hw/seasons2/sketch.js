@@ -67,11 +67,7 @@ image(backImage,0,0, );
 
   if (seasonType == "Cherry Blossom Season") {
     // flower
-
-  for (var i = 0; i < 200; i++) {
-    ellipse(random(0, width), random(0, height), 5);
-  }
-}
+    
     fill("pink");
 
     for (var i = 0; i < 12; i++) {
