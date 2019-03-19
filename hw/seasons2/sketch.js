@@ -96,7 +96,7 @@ image(backImage,0,0, );
       }
 
     }
-  }
+  
   function draw() {
     // put drawing code here
     //console.log(frameRate());
