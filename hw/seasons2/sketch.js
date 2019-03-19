@@ -1,5 +1,5 @@
 // leaf from open clip art https://openclipart.org/detail/257622/leaf
-
+var currentImage = 0;
 var seasons;
 var seasonType = "";
 
@@ -36,10 +36,9 @@ function setup() {
   seasons.option("Leaves");
   seasons.option("Snow");
   seasons.changed(function() {
-    seasonType = seasons.value();
+  seasonType = seasons.value();
+  currentImage = 0;
   });
-
-
 
   //seasonType = "winter";
 
@@ -102,7 +101,18 @@ image(backImage,0,0, );
 
   } else if (seasonType == "Snow") {
 
+    function draw() {
+      background(255);
+      if(currentImage == 0){
+        image(snowimage);
+      }else if(currentImage == 1){
+        image(snowimage);
+      }
+    }
 
+    function adultChange(){
+      currentImage = 1;
+    }
 
     noStroke();
     fill(173);
