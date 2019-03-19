@@ -95,7 +95,7 @@ image(backImage,0,0, );
         leafLocationY[i]++;
         leafLocationX[i] = leafLocationX[i] + sin(radians(frameCount));
       }
-
+}
 
   } else if (seasonType == "Snow") {
 
