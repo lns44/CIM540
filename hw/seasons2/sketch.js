@@ -1,4 +1,8 @@
 // leaf from open clip art https://openclipart.org/detail/257622/leaf
+
+
+
+
 var seasons;
 var seasonType = "";
 
@@ -16,30 +20,24 @@ var snowLocationY = [];
 var snowAmount = 100;
 
 var backImage;
-var snowimage;
 
-let snowimage;
 function preload() {
-leafImage = loadImage("https://openclipart.org/image/300px/svg_to_png/257622/1470680735.png");
+  leafImage = loadImage("https://openclipart.org/image/300px/svg_to_png/257622/1470680735.png");
 backImage = loadImage("assets/mnt.jpg");
-snowimage= loadImage("assets/snow.jpg");
 }
-
 
 function setup() {
   // put setup code here
-  createCanvas(400, 400);
+  createCanvas(500, 500);
   seasons = createSelect();
-  seasons.position(130, 10);
-  seasons.option("Click Here!");
+  seasons.position(10, 10);
+  seasons.option("");
   seasons.option("Cherry Blossoms");
   seasons.option("Sun");
   seasons.option("Leaves");
   seasons.option("Snow");
-  image(snowimage, 0, 0);
   seasons.changed(function() {
-  seasonType = seasons.value();
-  currentImage = 0;
+    seasonType = seasons.value();
   });
 
   //seasonType = "winter";
@@ -70,7 +68,7 @@ image(backImage,0,0, );
     // flower
     fill("pink");
 
-    for (var i = 0; i < 12; i++) {
+    for (var i = 0; i < 14; i++) {
       push();
       translate(width / 2, height / 2);
       rotate(i + 30);
@@ -100,17 +98,15 @@ image(backImage,0,0, );
       }
 
     }
-
   } else if (seasonType == "Snow") {
-
     noStroke();
-    fill(173);
+    fill(175);
     for (var i = 0; i < snowAmount; i++) {
       snowLocationY[i]++;
       ellipse(snowLocationX[i], snowLocationY[i], 5,5);
 
       if(snowLocationY[i] > height){
-        snowLocationY[i] = random(-100,0);
+        snowLocationY[i] = random(-500,0);
         snowLocationX[i] = random(0,width);
       }
     }
