@@ -66,30 +66,20 @@ image(backImage,0,0, );
 
   if (seasonType == "Cherry Blossom Season") {
     // flower
+    fill("pink");
 
-void setup() {
-  size(640, 360);
-  background(102);
-  noStroke();
-  fill(0, 102);
-}
-
-void draw() {
-  // Draw only when mouse is pressed
-  if (mousePressed == true) {
-    angle += 5;
-    float val = cos(radians(angle)) * 12.0;
-    for (int a = 0; a < 360; a += 75) {
-      float xoff = cos(radians(a)) * val;
-      float yoff = sin(radians(a)) * val;
-      fill(0);
-      ellipse(mouseX + xoff, mouseY + yoff, val, val);
+    for (var i = 0; i < 12; i++) {
+      push();
+      translate(width / 2, height / 2);
+      rotate(i + 30);
+      scale(1.5);
+      ellipse(0, 10, 10, 20);
+      pop();
     }
-    fill(255);
-    ellipse(mouseX, mouseY, 2, 2);
-  }
+    fill("white");
+    ellipse(width / 2, height / 2, 20, 20);
 
-} else if (seasonType == "Sun") {
+  } else if (seasonType == "Sun") {
     //suns out
     fill("orange");
     ellipse(sunX, sunY, sunSize, sunSize);
