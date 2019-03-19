@@ -100,7 +100,7 @@ image(backImage,0,0, );
 }
 
 
-if (seasonType == "Snow") {
+else if (seasonType == "Snow") {
 
     noStroke();
     fill(173);
