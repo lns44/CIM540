@@ -64,7 +64,7 @@ image(backImage,0,0, );
   textSize(20);
   text(seasonType, 140, 55);
 
-  if (seasonType == "Cherry Blossoms") {
+  if (seasonType == "Cherry Blossom Season") {
     // flower
     fill("pink");
 
