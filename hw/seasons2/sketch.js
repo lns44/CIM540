@@ -29,7 +29,7 @@ function setup() {
   createCanvas(400, 400);
   seasons = createSelect();
   seasons.position(10, 10);
-  seasons.option("");
+  seasons.option("Click Here!");
   seasons.option("Cherry Blossoms");
   seasons.option("Sun");
   seasons.option("Leaves");
@@ -97,10 +97,6 @@ image(backImage,0,0, );
 
     }
   } else if (seasonType == "Snow") {
-var snowimage;
-    function preload() {
-      backImage = loadImage("assets/snow.jpg");
-    }
 
     noStroke();
     fill(173);
