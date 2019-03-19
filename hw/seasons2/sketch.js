@@ -89,8 +89,8 @@ ellipse(mouseX, mouseY, 70,70);
    fill("yellow");
    ellipse(50,50,50,50);
 
-  function mousePressed(){ fill("black");
-  }
+  function mousePressed(){
+    fillellipse("black");}
 }
 
 else if (seasonType == "Snow") {
