@@ -65,7 +65,7 @@ image(backImage,0,0, );
 
   if (seasonType == "Cherry Blossom Season") {
     function mousePressed() {
-      blosImage(mouseX, mouseY, 33, 33);
+      rect(mouseX, mouseY, 33, 33);
     }}
 
 else if (seasonType == "Sun") {
