@@ -96,6 +96,11 @@ image(backImage,0,0, );
 
     }
   } else if (seasonType == "Snow") {
+
+    function preload() {
+  backImage = loadImage("assets/snow.jpg");
+    }
+
     noStroke();
     fill(173);
     for (var i = 0; i < snowAmount; i++) {
