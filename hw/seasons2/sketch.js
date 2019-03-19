@@ -63,12 +63,7 @@ image(backImage,0,0, );
   textSize(20);
   text(seasonType, 120, 55);
 
-  if (seasonType == "Cherry Blossom Season") {
-    function mousePressed() {
-      rect(mouseX, mouseY, 33, 33);
-    }}
-
-else if (seasonType == "Sun") {
+if (seasonType == "Sun") {
 fill("yellow");
 ellipse(mouseX, mouseY, 70,70);
 
@@ -95,5 +90,11 @@ ellipse(mouseX, mouseY, 70,70);
         snowLocationX[i] = random(0,width);
       }
     }
+
+    function draw(){
+      if (seasonType == "Cherry Blossom Season") {
+        function mousePressed() {
+          rect(mouseX, mouseY, 33, 33);
+        }}
   }
 }
