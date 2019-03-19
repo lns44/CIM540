@@ -65,10 +65,10 @@ image(backImage,0,0, );
     // flower
     fill("pink");
 
-    for (var i = 0; i < 16; i++) {
+    for (var i = 0; i < 14; i++) {
       push();
       translate(width / 2, height / 2);
-      rotate(i + 30);
+      rotate(i + 20);
       scale(2.0);
       ellipse(0, 10, 10, 20);
       pop();
