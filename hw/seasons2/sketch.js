@@ -29,7 +29,7 @@ function setup() {
   // put setup code here
   createCanvas(400, 400);
   seasons = createSelect();
-  seasons.position(150, 10);
+  seasons.position(130, 10);
   seasons.option("Click Here!");
   seasons.option("Cherry Blossoms");
   seasons.option("Sun");
@@ -39,7 +39,7 @@ function setup() {
     seasonType = seasons.value();
   });
 
-  
+
 
   //seasonType = "winter";
 
