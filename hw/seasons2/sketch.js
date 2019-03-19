@@ -53,6 +53,7 @@ function setup() {
 function draw() {
 background(255);
 image(backImage,0,0, );
+
   fill("black");
   stroke(0);
   textSize(20);
