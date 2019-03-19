@@ -85,10 +85,10 @@ ellipse(mouseX, mouseY, 70,70);
         leafLocationY[i]++;
         leafLocationX[i] = leafLocationX[i] + sin(radians(frameCount));}}
 }
-
  else if (seasonType == "Night or Day?") {
   fill("yellow");
-  ellipse(mouseX, mouseY, 70,80)};
+  ellipse(mouseX, mouseY, 70,70);
+}
 
 else if (seasonType == "Snow") {
   noStroke();
