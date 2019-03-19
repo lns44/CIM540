@@ -66,8 +66,9 @@ image(backImage,0,0, );
     // flower
 
     function draw() {
-    background("pink");
-    ellipse(mouseX, mouseY, 100, 100);}
+      background(126);
+      ellipse(mouseX, mouseY, 33, 33);
+    }
 
 
   } else if (seasonType == "Sun") {
