@@ -36,6 +36,7 @@ function setup() {
   seasons.option("Sun");
   seasons.option("Leaves");
   seasons.option("Snow");
+  noStroke();
   seasons.changed(function() {
   seasonType = seasons.value();
   });
