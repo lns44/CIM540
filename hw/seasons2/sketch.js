@@ -65,9 +65,10 @@ image(backImage,0,0, );
 
   if (seasonType == "Cherry Blossom Season") {
     fill(0,102);
+    function draw (){ }
     function mousePressed() {
     rect(mouseX, mouseY, 33, 33);
-    }}
+  }}
 
 else if (seasonType == "Sun") {
 fill("yellow");
