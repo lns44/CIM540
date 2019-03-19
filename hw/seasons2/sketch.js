@@ -27,9 +27,9 @@ snowimage= loadImage("assets/snow.jpg");
 
 function setup() {
   // put setup code here
-  createCanvas(500, 500);
+  createCanvas(400, 400);
   seasons = createSelect();
-  seasons.position(10, 10);
+  seasons.position(150, 10);
   seasons.option("Click Here!");
   seasons.option("Cherry Blossoms");
   seasons.option("Sun");
@@ -38,6 +38,8 @@ function setup() {
   seasons.changed(function() {
     seasonType = seasons.value();
   });
+
+  
 
   //seasonType = "winter";
 
