@@ -87,9 +87,8 @@ image(backImage,0,0, );
 
 
   } else if (seasonType == "Sun") {
-  
+
       function draw() {
-        background(126);
         ellipse(mouseX, mouseY, 33, 33);
       }
 
