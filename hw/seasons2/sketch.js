@@ -86,7 +86,7 @@ ellipse(mouseX, mouseY, 70,70);
 
   ellipse(40, 40, 40, 40);
   if(mouseX > 20 && mouseX < 40 && mouseY > 20 && mouseY < 40){
-    fill("red");
+    fill("yellow");
   }else{
     fill("white");
   }
