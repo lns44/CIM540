@@ -37,6 +37,9 @@ function setup() {
   seasons.option("Leaves");
   seasons.option("Snow");
   seasons.option("Night or Day?");
+  r = random(255);
+g = random(255);
+b = random(255);
   seasons.changed(function() {
   seasonType = seasons.value();
   });
@@ -104,7 +107,25 @@ ellipse(mouseX, mouseY, 70,70);
         snowLocationY[i] = random(-50,0);
         snowLocationX[i] = random(0,width);
       }
+else if (seasonType == "Night or Day?") {
+  function draw() {
+    strokeWeight(2);
+    stroke(r, g, b);
+    fill(r, g, b, 127);
+    ellipse(360, 200, 200, 200);
+  }
 
+  // When the user clicks the mouse
+  function mousePressed() {
+    // Check if mouse is inside the circle
+    let d = dist(mouseX, mouseY, 360, 200);
+    if (d < 100) {
+      // Pick new random color values
+      r = random(255);
+      g = random(255);
+      b = random(255);
+    }
+  }
 
     }
   }
