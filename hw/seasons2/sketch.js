@@ -5,9 +5,6 @@ var seasonType = "";
 
 var bgcolor;
 var button;
-var slider;
-var nameInput;
-var nameP;
 
 var sunX = 360;
 var sunY = 40;
@@ -114,17 +111,9 @@ ellipse(mouseX, mouseY, 70,70);
       }
 
 else if (seasonType == "Night or Day?") {
-  button = createButton("change background color");
-  button.mousePressed(changeColor);
-function changeColor() {
-bgcolor = fill("yellow"), fill(orange), fill("white");}
-
-noStroke();
 fill(255, 50, 150);
 ellipse(100, 100, 200,200);
-
-
-  }
+}
 
     }
   }
