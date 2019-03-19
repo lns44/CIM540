@@ -76,7 +76,7 @@ image(backImage,0,0, );
              pop();
            }
            fill("white");
-           ellipse(width / 2, height / 2, 30, 30);}
+           ellipse(width / 2, height / 2, 90, 90);}
 
 
 
