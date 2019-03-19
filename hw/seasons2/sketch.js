@@ -60,15 +60,12 @@ function draw() {
   //console.log(frameRate());
 background(255);
 image(backImage,0,0, );
-  fill("black");
-  stroke(0);
-  textSize(20);
-  text(seasonType, 120, 55);
+fill("black");
+noStoke(0);
+textSize(20);
+text(seasonType, 120, 55);
 
   if (seasonType == "Cherry Blossom Season") {
-    // flower
-
-
         fill("pink");
 
         for (var i = 0; i < 12; i++) {
@@ -81,9 +78,6 @@ image(backImage,0,0, );
         }
         fill("white");
         ellipse(width / 2, height / 2, 20, 20);
-
-
-
 
 
   } else if (seasonType == "Sun") {
