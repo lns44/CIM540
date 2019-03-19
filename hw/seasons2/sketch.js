@@ -1,8 +1,6 @@
 // leaf from open clip art https://openclipart.org/detail/257622/leaf
 
 
-var cnv;
-var d;
 
 var seasons;
 var seasonType = "";
@@ -40,9 +38,6 @@ function setup() {
   seasons.option("Snow");
   seasons.changed(function() {
   seasonType = seasons.value();
-  let a = 50;
-   let b = 120;
-   let c = 180;
   });
 
 
@@ -69,9 +64,7 @@ image(backImage,0,0, );
   text(seasonType, 120, 55);
 
   if (seasonType == "Cherry Blossom Season") {
-line(a,b);
-line( a);
-line(c);}
+
 
 
 
