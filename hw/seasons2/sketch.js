@@ -67,16 +67,17 @@ image(backImage,0,0, );
 
     fill("pink");
 
- for (var i = 20; i < 12; i++) {
-   push();
-   translate(width / 2, height / 2);
-   rotate(i + 30);
-   scale(1.5);
-   ellipse(0, 10, 10, 20);
-   pop();
- }
- fill("white");
-ellipse(350, 300, 30, 30);}
+           for (var i = 0; i < 12; i++) {
+             push();
+             translate(width / 2, height / 2);
+             rotate(i + 30);
+             scale(1.5);
+             ellipse(0, 10, 10, 20);
+             pop();
+           }
+           fill("white");
+           ellipse(width / 2, height / 2, 20, 20);}
+
 
 
 
