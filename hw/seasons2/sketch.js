@@ -89,7 +89,7 @@ ellipse(mouseX, mouseY, 70,70);
   fill("yellow");
   ellipse(50,50,50,50);
 
-  function mouseClicked(){
+  function mousePressed(){
     if value === 0) {
       value =225;
     } else {value = 0; }
