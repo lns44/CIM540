@@ -92,7 +92,7 @@ ellipse(mouseX, mouseY, 70,70);
    ellipse(50,50,50,50);
 
   function mousePressed(){
-    moon(240);}
+    moon("black");}
 }
 
 else if (seasonType == "Snow") {
