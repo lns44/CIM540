@@ -1,28 +1,4 @@
-var page0,page1,page2,page3,page4,page5;
-
-var image0,image1,image2,image3,image4,image5;
-
-var currentImage = -1;
-
-function preload(){
-  image0 = loadImage("assets/mnt.jpg");
-  image1 = loadImage("assets/mnt.jpg");
-  image2 = loadImage("assets/mnt.jpg");
-  image3 = loadImage("assets/snow.jpg");
-  image4 = loadImage("assets/snow.jpg");
-  image5 = loadImage("assets/snow.jpg");
-}
-
-function setup(){
-  createCanvas(500,500);
-  page0 = createButton("Page 0");
-  page0.position(10,400);
-  page0.mousePressed(function(){
-
-    currentImage = 0;
-
-  });
-
+// leaf from open clip art https://openclipart.org/detail/257622/leaf
 
 var seasons;
 var seasonType = "";
@@ -43,11 +19,9 @@ var snowAmount = 100;
 var backImage;
 var snowimage;
 
-let img;
 function preload() {
-leafImage = loadImage("https://openclipart.org/image/300px/svg_to_png/257622/1470680735.png");
+  leafImage = loadImage("https://openclipart.org/image/300px/svg_to_png/257622/1470680735.png");
 backImage = loadImage("assets/mnt.jpg");
-snowimage = loadimage("assets/snow.jpg");
 }
 
 function setup() {
@@ -120,11 +94,11 @@ image(backImage,0,0, );
         leafLocationY[i]++;
         leafLocationX[i] = leafLocationX[i] + sin(radians(frameCount));
       }
-}
+
+    }
 
   } else if (seasonType == "Snow") {
-    function setup() {
-      image(snowimage, 0, 0);
+
 
 
     noStroke();
