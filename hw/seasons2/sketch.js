@@ -117,7 +117,9 @@ else if (seasonType == "Night or Day?") {
     button.position(100, 100);
     button.mousePressed(function(){
       val = "white";
-      });
+
+            button(100,100);});
+
 
 
 
