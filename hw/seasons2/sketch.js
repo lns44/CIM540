@@ -110,9 +110,8 @@ ellipse(mouseX, mouseY, 70,70);
         snowLocationY[i] = random(-50,0);
         snowLocationX[i] = random(0,width);
       }
-else if (seasonType == "Night or Day?") {
 
-  function setup() {
+else if (seasonType == "Night or Day?") {
     button = createButton('click me!');
     button.position(200, 400);
     button.mousePressed(function(){
