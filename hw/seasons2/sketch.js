@@ -70,12 +70,11 @@ image(BlosImage, mouseX+10, 50, 40, 40); // Middle circle
 image(BlosImage, mouseX-100, 84, 40, 40); // Bottom circle
 image(BlosImage, mouseX+50, 20, 40, 40); // Bottom circle
 image(BlosImage, mouseX-50, 60, 40, 40);
-image(BlosImage, mouseX-50, 60, 33, 33);
-image(BlosImage, mouseX-50, 60, 33, 33);
-image(BlosImage, mouseX-50, 60, 33, 33);
-image(BlosImage, mouseX-50, 60, 33, 33);
-image(BlosImage, mouseX-50, 60, 33, 33);
-image(BlosImage, mouseX-50, 60, 33, 33); // Bottom circle
+image(BlosImage, mouseX-50, 60, 40, 40);
+image(BlosImage, mouseX-50, 60, 40, 40);
+image(BlosImage, mouseX-50, 60, 40, 40);
+image(BlosImage, mouseX-50, 60, 40, 40);
+image(BlosImage, mouseX-50, 60, 40, 40);// Bottom circle
   }
 
 else if (seasonType == "Sun") {
