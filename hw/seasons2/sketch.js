@@ -65,7 +65,7 @@ image(backImage,0,0, );
   text(seasonType, 120, 55);
 
   if (seasonType == "Cherry Blossom Season") {
-image(BlosImage, mouseX, 250, 40, 40);  // Top circle
+image(BlosImage, mouseX, 190, 40, 40);  // Top circle
 image(BlosImage, mouseX+10, 15, 40, 40); // Middle circle
 image(BlosImage, mouseX-10, 15, 40, 40); // Bottom circle
 image(BlosImage, mouseX+30, 40, 40, 40); // Bottom circle
