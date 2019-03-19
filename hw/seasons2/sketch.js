@@ -97,7 +97,7 @@ image(backImage,0,0, );
 
     }
   } else if (seasonType == "Snow") {
-
+var snowimage;
     function preload() {
       backImage = loadImage("assets/snow.jpg");
     }
