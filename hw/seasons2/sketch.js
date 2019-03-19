@@ -123,10 +123,7 @@ bgcolor = fill("yellow"), fill(orange), fill("white");}
 noStroke();
 fill(255, 50, 150);
 ellipse(100, 100, 200,200);
-  }
-
-
-
+  
 
   }
 
