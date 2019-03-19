@@ -97,7 +97,7 @@ image(backImage,0,0, );
     }
   } else if (seasonType == "Snow") {
     noStroke();
-    fill(175);
+    fill(173);
     for (var i = 0; i < snowAmount; i++) {
       snowLocationY[i]++;
       ellipse(snowLocationX[i], snowLocationY[i], 5,5);
