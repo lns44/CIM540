@@ -97,10 +97,7 @@ image(backImage,0,0, );
         leafLocationX[i] = leafLocationX[i] + sin(radians(frameCount));
       }
 
-}
-
-
-else if (seasonType == "Snow") {
+} } else if (seasonType == "Snow") {
 
     noStroke();
     fill(173);
