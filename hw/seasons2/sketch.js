@@ -108,8 +108,12 @@ image(backImage,0,0, );
       ellipse(snowLocationX[i], snowLocationY[i], 4,4);
 
       if(snowLocationY[i] > height){
-        snowLocationY[i] = random(-500,0);
+        snowLocationY[i] = random(-50,0);
         snowLocationX[i] = random(0,width);
+        (snowLocationY> height) {
+          let index = snow.indexOf(this);
+          snow.splice(index, 1); }
+        }
       }
     }
   }
