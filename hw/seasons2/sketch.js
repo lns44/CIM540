@@ -84,7 +84,7 @@ image(backImage,0,0, );
     }
     fill("white");
     ellipse(random(0, width), random(0, height), 5);
-  }
+  }}
 
   } else if (seasonType == "Sun") {
     //suns out
