@@ -88,6 +88,12 @@ ellipse(mouseX, mouseY, 70,70);
  else if (seasonType == "Night or Day?") {
   fill("yellow");
   ellipse(50,50,50,50);
+
+  function mouseClicked(){
+    if value === 0) {
+      value =225;
+    } else {value = 0; }
+  }
 }
 
 else if (seasonType == "Snow") {
