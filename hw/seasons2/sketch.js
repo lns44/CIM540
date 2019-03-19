@@ -93,20 +93,6 @@ image(backImage,0,0, );
     fill("white");
     ellipse(width / 2, height / 2, 20, 20);
 
-  class Jitter {
-    constructor() {
-      this.x = random(width);
-      this.y = random(height);
-      this.diameter = random(10, 30);
-      this.speed = 1;
-    }
-
-    move() {
-      this.x += random(-this.speed, this.speed);
-      this.y += random(-this.speed, this.speed);
-    }
-
-
 
   } else if (seasonType == "Sun") {
     //suns out
