@@ -27,7 +27,7 @@ function setup() {
   // put setup code here
   createCanvas(500, 500);
   seasons = createSelect();
-  seasons.position(200, 10);
+  seasons.position(160, 10);
   seasons.option("Click here to change the seasons!");
   seasons.option("Cherry Blossom Season");
   seasons.option("Sun");
@@ -38,17 +38,6 @@ function setup() {
   });
 
 
-  for (var i = 0; i < leafAmount; i++) {
-    leafLocationX[i] = random(0, width);
-    leafLocationY[i] = random(0, -500);
-  }
-
-  for (var i = 0; i < snowAmount; i++) {
-    snowLocationX[i] = random(0, width);
-    snowLocationY[i] = random(0, -500);
-  }
-
-}
 
 function draw() {
   // put drawing code here
@@ -77,6 +66,17 @@ image(backImage,0,0, );
         fill("white");
         ellipse(width / 2, height / 2, 20, 20);
 
+        for (var i = 0; i < leafAmount; i++) {
+          leafLocationX[i] = random(0, width);
+          leafLocationY[i] = random(0, -500);
+        }
+
+        for (var i = 0; i < snowAmount; i++) {
+          snowLocationX[i] = random(0, width);
+          snowLocationY[i] = random(0, -500);
+        }
+
+      }
 
 
 
