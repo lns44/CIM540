@@ -70,8 +70,8 @@ image(backImage,0,0, );
     function draw() {
       background(126);
       ellipse(mouseX, mouseY, 33, 33);
-    }
-    
+
+
     fill("pink");
 
     for (var i = 0; i < 12; i++) {
