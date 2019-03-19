@@ -111,7 +111,6 @@ ellipse(mouseX, mouseY, 70,70);
       }
 else if (seasonType == "Night or Day?") {
     strokeWeight(2);
-    stroke(r, g, b);
     fill(r, g, b, 127);
     ellipse(360, 200, 200, 200);
   }
