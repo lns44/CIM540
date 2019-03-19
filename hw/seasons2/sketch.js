@@ -3,8 +3,11 @@
 var seasons;
 var seasonType = "";
 
+var bgcolor;
 var button;
-var val = "white";
+var slider;
+var nameInput;
+var nameP;
 
 var sunX = 360;
 var sunY = 40;
@@ -40,10 +43,8 @@ function setup() {
   seasons.option("Leaves");
   seasons.option("Snow");
   seasons.option("Night or Day?");
-    button = createButton('click me');
-    button.position(19, 19);
-    button.mousePressed(function(){
-      val = "white";
+  canvas = createCanvas(400, 400);
+  bgcolor = color(200);
   seasons.changed(function() {
   seasonType = seasons.value();
   });
@@ -114,7 +115,26 @@ ellipse(mouseX, mouseY, 70,70);
 
 else if (seasonType == "Night or Day?") {
 
-            button(100,100)});
+    button = createButton("change background color");
+      button.mousePressed(changeColor);
+
+
+  }
+
+  function changeColor() {
+    bgcolor = fill("yellow"), fill(orange), fill("white");
+  }
+
+
+  // Callback function for the nameP's mouseOver event. function overpara() { nameP.html('your moues is over me');}
+
+  // Callback function for the nameP's mouseOut event
+
+    noStroke();
+    fill(255, 50, 150);
+    // Draw an ellipse according to slider's value
+    ellipse(100, 100, 200,200);
+  }
 
 
 
