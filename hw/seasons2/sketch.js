@@ -25,7 +25,7 @@ BlosImage = loadImage("assets/blos.png");}
 
 function setup() {
   // put setup code here
-  createCanvas(1366, 1024);
+  createCanvas(1024, 1366);
   noStroke(0);
   seasons = createSelect();
   seasons.position(100, 10);
@@ -35,7 +35,7 @@ function setup() {
   seasons.option("Leaves");
   seasons.option("Snow");
   seasons.option("Night & Day");
-  canvas = createCanvas(1366, 1024);
+  canvas = createCanvas(1024, 1366);
   seasons.changed(function() {
   seasonType = seasons.value();
   });
