@@ -30,11 +30,12 @@ function setup() {
   noStroke(0);
   seasons = createSelect();
   seasons.position(160, 10);
-  seasons.option("Click here to change the seasons!");
+  seasons.option("Click here to change up the scene!");
   seasons.option("Cherry Blossom Season");
   seasons.option("Sun");
   seasons.option("Leaves");
   seasons.option("Snow");
+  seasons.option("Night or Day");
   seasons.changed(function() {
   seasonType = seasons.value();
   });
@@ -64,9 +65,9 @@ image(backImage,0,0, );
 
   if (seasonType == "Cherry Blossom Season")  {
 image(BlosImage, mouseX, 20, 40, 40);  // Top circle
-image(BlosImage, mouseX+10, 15, 40, 40); // Middle circle
-image(BlosImage, mouseX-10, 15, 40, 40); // Bottom circle
-image(BlosImage, mouseX+30, 40, 40, 40); // Bottom circle
+image(BlosImage, mouseX+10, 15, 40, 40);
+image(BlosImage, mouseX-10, 15, 40, 40);
+image(BlosImage, mouseX+30, 40, 40, 40);
 image(BlosImage, mouseX-30, 40, 40, 40);
 image(BlosImage, mouseX+70, 60, 40, 40);
 image(BlosImage, mouseX-70, 60, 40, 40);
