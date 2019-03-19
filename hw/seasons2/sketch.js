@@ -68,7 +68,7 @@ image(backImage,0,0, );
     for (var i = 0; i < 12; i++) {
       push();
       translate(width / 2, height / 2);
-      rotate(i + 20);
+      rotate(i + 30);
       scale(2.0);
       ellipse(0, 10, 10, 20);
       pop();
