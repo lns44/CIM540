@@ -16,8 +16,6 @@ var snowLocationX = [];
 var snowLocationY = [];
 var snowAmount = 150;
 
-var night or day?
-
 var backImage;
 
 function preload() {
@@ -98,8 +96,7 @@ ellipse(mouseX, mouseY, 70,70);
 
       if(snowLocationY[i] > height){
         snowLocationY[i] = random(-50,0);
-        snowLocationX[i] = random(0,width);
-      }
+        snowLocationX[i] = random(0,width);}
 
 else if (seasonType == "Night or Day?") {
   fill("yellow");
