@@ -1,14 +1,3 @@
-var questions = ["Is iceland covered in ice", "what ocean lies east of the us"];
-var options = ["1) true 2) false", "1) pacific 2) eastern 3) indian 4) atlantic"];
-var answers = [2,4];
-
-var answerCorrect = "";
-
-var currentOption = -1;
-
-var currentQuestion = 0;
-
-var button1, button2, button3, button4;
 
 function setup() {
   // put setup code here
