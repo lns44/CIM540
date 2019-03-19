@@ -3,10 +3,6 @@
 var seasons;
 var seasonType = "";
 
-var button;
-var val = "green";
-
-
 var sunX = 360;
 var sunY = 40;
 var sunSize = 60;
@@ -42,10 +38,6 @@ function setup() {
   canvas = createCanvas(400, 400);
   seasons.changed(function() {
   seasonType = seasons.value();
-  button = createButton('click me');
-  button.position(19, 19);
-  button.mousePressed(function(){
-    val = "green";
   });
 
 
@@ -94,10 +86,8 @@ ellipse(mouseX, mouseY, 70,70);
         leafLocationX[i] = leafLocationX[i] + sin(radians(frameCount));}}
 }
  else if (seasonType == "Night or Day?") {
-
    fill("black");
    ellipse(50,50,50,50);}
-
 
 
 else if (seasonType == "Snow") {
