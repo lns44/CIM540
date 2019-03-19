@@ -96,7 +96,20 @@ image(backImage,0,0, );
       }
 
     }
+  }
+  function draw() {
+    // put drawing code here
+    //console.log(frameRate());
+  background(255);
+  image(snowimage,0,0, );
+
   } else if (seasonType == "Snow") {
+
+    var snowimage;
+        function preload() {
+          backImage = loadImage("assets/snow.jpg");
+        }
+
 
     noStroke();
     fill(173);
