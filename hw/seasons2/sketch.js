@@ -83,7 +83,7 @@ image(backImage,0,0, );
 
 else if (seasonType == "Sun") {
   fill("yellow");
-ellipse(mouseX, mouseY, 50,50);
+ellipse(mouseX, mouseY, 70,70);
 
   } else if (seasonType == "Leaves") {
     for (var i = 0; i < leafAmount; i++) {
