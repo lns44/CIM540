@@ -110,10 +110,6 @@ ellipse(mouseX, mouseY, 70,70);
         snowLocationX[i] = random(0,width);
       }
 else if (seasonType == "Night or Day?") {
-
-  function draw() {
-    background(127);
-    // Draw a circle
     strokeWeight(2);
     stroke(r, g, b);
     fill(r, g, b, 127);
