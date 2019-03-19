@@ -1,9 +1,9 @@
 // leaf from open clip art https://openclipart.org/detail/257622/leaf
 
-let bug1;
-let bug2;
-let bug3;
-let bug4;
+var bug1;
+var bug2;
+var bug3;
+var bug4;
 
 var seasons;
 var seasonType = "";
@@ -99,9 +99,6 @@ image(backImage,0,0, );
       ellipse(this.x, this.y, this.diameter, this.diameter);
     }
   }
-
-
-
 
 
         fill("pink");
