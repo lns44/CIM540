@@ -89,7 +89,7 @@ ellipse(mouseX, mouseY, 70,70);
 }
  else if (seasonType == "Night or Day?") {
    fill("yellow");
-   ellipse(50,50,50,50);
+   moon(50,50,50,50);
 
   function mousePressed(){
   moon(230,20,20,20);}
