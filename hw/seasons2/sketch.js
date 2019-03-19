@@ -87,13 +87,12 @@ image(backImage,0,0, );
 
 
   } else if (seasonType == "Sun") {
-    //suns out
     fill("orange");
     ellipse(sunX, sunY, sunSize, sunSize);
-    if (sunY > 350) {
-      sunY = sunY - 5;
+    if (sunY > 550) {
+      sunY = sunY - 5;}
 
-    }
+
   } else if (seasonType == "Leaves") {
     for (var i = 0; i < leafAmount; i++) {
       console.log("leaf" + 0 + " x: " + leafLocationX[1] + " , y: " + leafLocationY[1]);
