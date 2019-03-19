@@ -78,10 +78,10 @@ image(backImage,0,0, );
           pop();
         }
         fill("white");
-        ellipse(width / 2, height / 2, 20, 20);
+        ellipse(width / 2, height / 2, 20, 20);}
 
 
-  } else if (seasonType == "Sun") {
+   else if (seasonType == "Sun") {
 function draw() {
 ellipse(mouseX, mouseY, 44,44);}
 
