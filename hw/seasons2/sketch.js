@@ -47,7 +47,6 @@ bug4 = new Jitter();
   });
 
   function draw() {
-    background(50, 89, 100);
     bug1.move();
     bug1.display();
     bug2.move();
