@@ -16,7 +16,7 @@ var snowLocationX = [];
 var snowLocationY = [];
 var snowAmount = 150;
 
-var night
+var night or day?
 
 var backImage;
 
@@ -107,8 +107,8 @@ ellipse(mouseX, mouseY, 70,70);
       }
 
 else if (seasonType == "Night or Day?") {
-
-  ellipse(200,200,50,50);
+  fill("green");
+  ellipse(500,200,50,50);
 }
 
     }
