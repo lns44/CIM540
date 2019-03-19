@@ -100,7 +100,7 @@ ellipse(mouseX, mouseY, 70,70);
 
 else if (seasonType == "Night or Day?") {
   fill("yellow");
-  ellipse(70,70);
+  ellipse(mouseX, mouseY, 70,70);
 }
 
     }
