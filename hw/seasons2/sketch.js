@@ -94,7 +94,7 @@ ellipse(mouseX, mouseY, 70,70);
 function mousePressed(){
 fill("black");
 ellipse(50,50,50,50)
-};
+;}
 
 else if (seasonType == "Snow") {
   noStroke();
