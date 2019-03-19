@@ -97,9 +97,13 @@ image(backImage,0,0, );
     }
   } else if (seasonType == "Snow") {
 
-    function preload() {
-  backImage = loadImage("assets/snow.jpg");
+    function setup() {
+      let sn;
+    let y = 0;
+      sn = loadImage('assets/snow.jpg');
+      createCanvas(400, 400);
     }
+
 
     noStroke();
     fill(173);
