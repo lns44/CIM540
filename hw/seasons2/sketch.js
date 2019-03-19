@@ -20,14 +20,14 @@ var backImage;
 var snowimage;
 
 function preload() {
-  leafImage = loadImage("https://openclipart.org/image/300px/svg_to_png/257622/1470680735.png");
+leafImage = loadImage("https://openclipart.org/image/300px/svg_to_png/257622/1470680735.png");
 backImage = loadImage("assets/mnt.jpg");
 snowimage= loadImage("assets/snow.jpg");
 }
 
 function setup() {
   // put setup code here
-  createCanvas(400, 400);
+  createCanvas(500, 500);
   seasons = createSelect();
   seasons.position(10, 10);
   seasons.option("Click Here!");
