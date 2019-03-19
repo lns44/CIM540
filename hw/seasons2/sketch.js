@@ -68,8 +68,8 @@ image(backImage,0,0, );
     // flower
 
     function draw() {
-      background(126);
-      ellipse(mouseX, mouseY, 33, 33);
+      background("pink");
+      ellipse(mouseX, mouseY, 33, 33);}
 
 
     fill("pink");
