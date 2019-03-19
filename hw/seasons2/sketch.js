@@ -69,10 +69,10 @@ image(backImage,0,0, );
 
            for (var i = 0; i < 12; i++) {
              push();
-    
+             translate(width / 2, height / 2);
              rotate(i + 30);
              scale(1.5);
-             ellipse(0, 20, 20, 30);
+             ellipse(0, 40, 40, 60);
              pop();
            }
            fill("white");
