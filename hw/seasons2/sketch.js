@@ -68,6 +68,8 @@ image(backImage,0,0, );
 image(BlosImage, mouseX, 200, 33, 33);  // Top circle
 image(BlosImage, mouseX+100, 50, 33, 33); // Middle circle
 image(BlosImage, mouseX-100, 84, 33, 33); // Bottom circle
+image(BlosImage, mouseX+500, 20, 33, 33); // Bottom circle
+image(BlosImage, mouseX-50, 60, 33, 33); // Bottom circle
   }
 
 else if (seasonType == "Sun") {
