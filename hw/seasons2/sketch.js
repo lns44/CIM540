@@ -25,7 +25,7 @@ BlosImage = loadImage("assets/blos.png");}
 
 function setup() {
   // put setup code here
-  createCanvas(500, 500);
+  createCanvas(1024, 1366);
   noStroke(0);
   seasons = createSelect();
   seasons.position(100, 10);
