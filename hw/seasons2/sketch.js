@@ -67,7 +67,7 @@ image(backImage,0,0, );
 
   if (seasonType == "Cherry Blossom Season") {
     // flower
-    
+
     fill("pink");
 
     for (var i = 0; i < 12; i++) {
@@ -80,7 +80,7 @@ image(backImage,0,0, );
     }
     fill("white");
     ellipse(random(0, width), random(0, height), 5);
-  }}
+  
 
   } else if (seasonType == "Sun") {
     //suns out
