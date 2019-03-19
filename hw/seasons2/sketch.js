@@ -96,7 +96,8 @@ image(backImage,0,0, );
         leafLocationX[i] = leafLocationX[i] + sin(radians(frameCount));
       }
 
-    }
+  });
+
     function draw() {
       // put drawing code here
       //console.log(frameRate());
