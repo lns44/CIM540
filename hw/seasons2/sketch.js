@@ -79,7 +79,7 @@ image(backImage,0,0, );
         }
         fill("white");
         ellipse(width / 2, height / 2, 20, 20);
-}}
+
 
   } else if (seasonType == "Sun") {
 function draw() {
