@@ -19,6 +19,7 @@ var snowAmount = 100;
 var backImage;
 var snowimage;
 
+let img;
 function preload() {
 leafImage = loadImage("https://openclipart.org/image/300px/svg_to_png/257622/1470680735.png");
 backImage = loadImage("assets/mnt.jpg");
@@ -98,6 +99,10 @@ image(backImage,0,0, );
 }
 
   } else if (seasonType == "Snow") {
+
+    function setup() {
+      image(snowimage, 0, 0);
+    }
 
     var snowimage;
         function preload() {
