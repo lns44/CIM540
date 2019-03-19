@@ -95,7 +95,7 @@ ellipse(mouseX, mouseY, 70,70);
 }
  else if (seasonType == "Night or Day?") {
 
-   function mousePressed(){
+   function button.Pressed(){
    fill("black");
    ellipse(50,50,50,50)}
    ;}
