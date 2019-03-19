@@ -73,8 +73,7 @@ image(backImage,0,0, );
   if (seasonType == "Cherry Blossom Season") {
       ellipse(width / 2, height / 2, d, d);}
     function changeD() {
-      d = d + 10;
-    }}}
+      d=d + 10;}}}
 
 else if (seasonType == "Sun") {
 fill("yellow");
