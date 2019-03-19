@@ -3,7 +3,8 @@
 var seasons;
 var seasonType = "";
 
-let r, g, b;
+var button;
+var val = "white";
 
 var sunX = 360;
 var sunY = 40;
@@ -39,7 +40,7 @@ function setup() {
   seasons.option("Leaves");
   seasons.option("Snow");
   seasons.option("Night or Day?");
-  r = random(255);
+r = random(255);
 g = random(255);
 b = random(255);
   seasons.changed(function() {
@@ -110,21 +111,15 @@ ellipse(mouseX, mouseY, 70,70);
         snowLocationX[i] = random(0,width);
       }
 else if (seasonType == "Night or Day?") {
-    strokeWeight(2);
-    fill("yellow");
-    ellipse(360, 200, 200, 200);
+
+  function setup() {
+    button = createButton('click me!');
+    button.position(200, 400);
+    button.mousePressed(function(){
+      val = "white";
+      });
   }
 
-  function mousePressed() {
-    // Check if mouse is inside the circle
-    var d = dist(mouseX, mouseY, 360, 200);
-    if (d < 100) {
-      // Pick new random color values
-      r = random(255);
-      g = random(255);
-      b = random(255);
-
-  }
 
   }
 
