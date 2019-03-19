@@ -64,12 +64,10 @@ image(backImage,0,0, );
   text(seasonType, 120, 55);
 
   if (seasonType == "Cherry Blossom Season") {
-  background(126);
     ellipse(mouseX, 16, 33, 33);    // Top circle
     ellipse(mouseX+20, 50, 33, 33); // Middle circle
     ellipse(mouseX-20, 84, 33, 33); // Bottom circle
   }
-
 
 else if (seasonType == "Sun") {
 fill("yellow");
