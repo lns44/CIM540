@@ -115,7 +115,6 @@ else if (seasonType == "Night or Day?") {
     ellipse(360, 200, 200, 200);
   }
 
-  // When the user clicks the mouse
   function mousePressed() {
     // Check if mouse is inside the circle
     var d = dist(mouseX, mouseY, 360, 200);
@@ -124,7 +123,7 @@ else if (seasonType == "Night or Day?") {
       r = random(255);
       g = random(255);
       b = random(255);
-    }
+    
   }
 
   }
