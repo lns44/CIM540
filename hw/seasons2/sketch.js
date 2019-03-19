@@ -91,7 +91,7 @@ ellipse(mouseX, mouseY, 70,70);
    fill("yellow");
    ellipse(50,50,50,50);
 
-  function mousePressed(){
+if mousePressed(){
 fill("black");
 }
 
