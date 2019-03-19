@@ -67,8 +67,6 @@ image(backImage,0,0, );
   if (seasonType == "Cherry Blossom Season") {
     // flower
 
-int angle = 0;
-
 void setup() {
   size(640, 360);
   background(102);
