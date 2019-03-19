@@ -1,8 +1,5 @@
 // leaf from open clip art https://openclipart.org/detail/257622/leaf
 
-
-
-
 var seasons;
 var seasonType = "";
 
@@ -106,7 +103,7 @@ image(backImage,0,0, );
       ellipse(snowLocationX[i], snowLocationY[i], 5,5);
 
       if(snowLocationY[i] > height){
-        snowLocationY[i] = random(-500,0);
+        snowLocationY[i] = random(-400,0);
         snowLocationX[i] = random(0,width);
       }
     }
