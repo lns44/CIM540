@@ -62,8 +62,8 @@ image(backImage,0,0, );
   textSize(20);
   text(seasonType, 120, 55);
 
-  if (seasonType == "Cherry Blossom Season:
-  Try aligning the Flowers ontop of the mountian!") {
+  if (seasonType == "Cherry Blossom Season"
+  "Try aligning the Flowers ontop of the mountian!") {
 image(BlosImage, mouseX, 20, 40, 40);  // Top circle
 image(BlosImage, mouseX+10, 15, 40, 40); // Middle circle
 image(BlosImage, mouseX-10, 15, 40, 40); // Bottom circle
