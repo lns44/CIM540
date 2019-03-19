@@ -32,7 +32,7 @@ function setup() {
   seasons.option("Cherry Blossom Season");
   seasons.option("Sun");
   seasons.option("Leaves");
-  seasons.option("Snowfall");
+  seasons.option("Snow");
   seasons.changed(function() {
   seasonType = seasons.value();
   });
