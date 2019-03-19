@@ -111,22 +111,12 @@ ellipse(mouseX, mouseY, 70,70);
       }
 else if (seasonType == "Night or Day?") {
 
-    strokeWeight(2);
-    stroke(r, g, b);
-    fill(r, g, b, 127);
-    ellipse(360, 200, 200, 200);
-  }
+( var x = 0; x < width; x = x+50) {
+(var y = 0; y < height; y = y+50) {
+fill(random, random, frameCount%256)
+ellipse( x , y, mouseX, mouseY);
+stroke( ROUND)
 
-  // When the user clicks the mouse
-  function mousePressed() {
-    // Check if mouse is inside the circle
-    let d = dist(mouseX, mouseY, 360, 200);
-    if (d < 100) {
-      // Pick new random color values
-      r = random(255);
-      g = random(255);
-      b = random(255);
-    }
   }
 
     }
