@@ -31,6 +31,7 @@ backImage = loadImage("assets/mnt.jpg");
 function setup() {
   // put setup code here
   createCanvas(500, 500);
+  noStroke(0);
   seasons = createSelect();
   seasons.position(160, 10);
   seasons.option("Click here to change the seasons!");
@@ -60,10 +61,10 @@ function draw() {
   //console.log(frameRate());
 background(255);
 image(backImage,0,0, );
-fill("black");
-noStoke(0);
-textSize(20);
-text(seasonType, 120, 55);
+  fill("black");
+  stroke(0);
+  textSize(20);
+  text(seasonType, 120, 55);
 
   if (seasonType == "Cherry Blossom Season") {
         fill("pink");
