@@ -114,7 +114,7 @@ image(backImage,0,0, );
           let index = snow.indexOf(this);
           snow.splice(index, 1); }
         }
-      }
+      
     }
   }
 }
