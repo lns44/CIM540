@@ -68,9 +68,8 @@ image(backImage,0,0, );
 translate(580, 200);
 noStroke();
 for (let i = 0; i < 10; i ++) {
-ellipse(mouseX, 0, 30, 20, 80);
-rotate(PI/5);   // Top circle
-  ellipse(mouseX+30, 50, 33, 33); // Middle circle
+ellipse(mouseX, 0, 30, 20, 80);// Top circle
+ellipse(mouseX+30, 50, 33, 33); // Middle circle
 ellipse(mouseX-60, 84, 33, 33); // Bottom circle
   }
 
