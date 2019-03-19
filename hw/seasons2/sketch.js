@@ -32,7 +32,7 @@ function setup() {
   seasons.option("Cherry Blossom Season");
   seasons.option("Sun");
   seasons.option("Leaves");
-  seasons.option("Snow");
+  seasons.option("Snowfall");
   seasons.changed(function() {
   seasonType = seasons.value();
   });
@@ -45,7 +45,7 @@ function setup() {
 
   for (var i = 0; i < snowAmount; i++) {
     snowLocationX[i] = random(0, width);
-    snowLocationY[i] = random(0, height);
+    snowLocationY[i] = random(0, -500);
   }
 
 }
