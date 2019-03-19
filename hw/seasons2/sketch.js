@@ -3,6 +3,8 @@
 var seasons;
 var seasonType = "";
 
+let r, g, b;
+
 var sunX = 360;
 var sunY = 40;
 var sunSize = 60;
