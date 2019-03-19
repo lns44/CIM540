@@ -113,7 +113,7 @@ ellipse(mouseX, mouseY, 70,70);
 
 else if (seasonType == "Night or Day?") {
     button = createButton('click me!');
-    button.position(200, 400);
+    button.position(100, 100);
     button.mousePressed(function(){
       val = "white";
       });
