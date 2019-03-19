@@ -38,10 +38,10 @@ function setup() {
   seasons.option("Sun");
   seasons.option("Leaves");
   seasons.option("Snow");
-bug1 = new Jitter();
-bug2 = new Jitter();
-bug3 = new Jitter();
-bug4 = new Jitter();
+  bug1 = new Jitter();
+  bug2 = new Jitter();
+  bug3 = new Jitter();
+  bug4 = new Jitter();
   seasons.changed(function() {
   seasonType = seasons.value();
   });
@@ -63,6 +63,12 @@ bug4 = new Jitter();
 function draw() {
   // put drawing code here
   //console.log(frameRate());
+background(255);
+image(backImage,0,0, );
+  fill("black");
+  stroke(0);
+  textSize(20);
+  text(seasonType, 120, 55);
   bug1.move();
   bug1.display();
   bug2.move();
@@ -71,12 +77,6 @@ function draw() {
   bug3.display();
   bug4.move();
   bug4.display();
-background(255);
-image(backImage,0,0, );
-  fill("black");
-  stroke(0);
-  textSize(20);
-  text(seasonType, 120, 55);
 
   if (seasonType == "Cherry Blossom Season") {
     // flower
