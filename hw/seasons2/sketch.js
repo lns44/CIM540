@@ -1,5 +1,4 @@
 // leaf from open clip art https://openclipart.org/detail/257622/leaf
-var currentImage = 0;
 var seasons;
 var seasonType = "";
 
@@ -19,11 +18,13 @@ var snowAmount = 100;
 var backImage;
 var snowimage;
 
+let snowimage;
 function preload() {
 leafImage = loadImage("https://openclipart.org/image/300px/svg_to_png/257622/1470680735.png");
 backImage = loadImage("assets/mnt.jpg");
 snowimage= loadImage("assets/snow.jpg");
 }
+
 
 function setup() {
   // put setup code here
@@ -35,6 +36,7 @@ function setup() {
   seasons.option("Sun");
   seasons.option("Leaves");
   seasons.option("Snow");
+  image(snowimage, 0, 0);
   seasons.changed(function() {
   seasonType = seasons.value();
   currentImage = 0;
@@ -100,19 +102,6 @@ image(backImage,0,0, );
     }
 
   } else if (seasonType == "Snow") {
-
-    function draw() {
-      background(255);
-      if(currentImage == 0){
-        image(snowimage);
-      }else if(currentImage == 1){
-        image(snowimage);
-}
-    }
-
-    function snowChange(){
-      currentImage = 1;
-    }
 
     noStroke();
     fill(173);
