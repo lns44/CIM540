@@ -85,7 +85,7 @@ image(backImage,0,0, );
       push();
       translate(width / 2, height / 2);
       rotate(i + 30);
-      scale(1);
+      scale(1.5);
       ellipse(0, 10, 20, 20);
       pop();
     }
