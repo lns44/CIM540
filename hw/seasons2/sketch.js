@@ -40,9 +40,10 @@ function setup() {
   seasons.option("Leaves");
   seasons.option("Snow");
   seasons.option("Night or Day?");
-r = random(255);
-g = random(255);
-b = random(255);
+    button = createButton('click me');
+    button.position(19, 19);
+    button.mousePressed(function(){
+      val = "white";
   seasons.changed(function() {
   seasonType = seasons.value();
   });
