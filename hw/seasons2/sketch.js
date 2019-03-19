@@ -1,6 +1,6 @@
 // leaf from open clip art https://openclipart.org/detail/257622/leaf
 
-var blosImage
+var blosImage;
 var seasons;
 var seasonType = "";
 
