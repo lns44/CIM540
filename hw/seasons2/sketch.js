@@ -1,6 +1,6 @@
 // leaf from open clip art https://openclipart.org/detail/257622/leaf
 
-
+var blos = BlosImage;
 
 var seasons;
 var seasonType = "";
@@ -21,8 +21,9 @@ var snowAmount = 150;
 var backImage;
 
 function preload() {
-  leafImage = loadImage("https://openclipart.org/image/300px/svg_to_png/257622/1470680735.png");
+leafImage = loadImage("https://openclipart.org/image/300px/svg_to_png/257622/1470680735.png");
 backImage = loadImage("assets/mnt.jpg");
+BlosImage = loadImage("assets/blos.png");
 }
 
 function setup() {
@@ -64,7 +65,7 @@ image(backImage,0,0, );
   text(seasonType, 120, 55);
 
   if (seasonType == "Cherry Blossom Season") {
-    ellipse(mouseX, 200, 33, 33);    // Top circle
+    blosImage(mouseX, 200, 33, 33);    // Top circle
     ellipse(mouseX+30, 50, 33, 33); // Middle circle
     ellipse(mouseX-60, 84, 33, 33); // Bottom circle
   }
