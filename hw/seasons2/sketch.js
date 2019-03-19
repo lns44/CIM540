@@ -95,6 +95,6 @@ ellipse(mouseX, mouseY, 70,70);
       if (seasonType == "Cherry Blossom Season") {
         function mousePressed() {
           rect(mouseX, mouseY, 33, 33);
-        }}
+        }
   }
 }
