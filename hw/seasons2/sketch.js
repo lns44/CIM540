@@ -110,10 +110,9 @@ ellipse(mouseX, mouseY, 70,70);
         snowLocationX[i] = random(0,width);
       }
 else if (seasonType == "Night or Day?") {
-
-( var x = 0; x < width; x = x+50) {
-(var y = 0; y < height; y = y+50) {
-fill(random, random, frameCount%256)
+( var x = 0; x < width; x = x+50);
+(var y = 0; y < height; y = y+50);
+fill(random, random, frameCount%256);
 ellipse( x , y, mouseX, mouseY);
 stroke( ROUND)
 
