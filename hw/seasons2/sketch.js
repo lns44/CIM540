@@ -45,8 +45,6 @@ function setup() {
   seasons.option("Night or Day?");
   canvas = createCanvas(400, 400);
   bgcolor = color(200);
-  button = createButton("change background color");
-  button.mousePressed(changeColor);
   seasons.changed(function() {
   seasonType = seasons.value();
   });
@@ -116,14 +114,15 @@ ellipse(mouseX, mouseY, 70,70);
       }
 
 else if (seasonType == "Night or Day?") {
-
+  button = createButton("change background color");
+  button.mousePressed(changeColor);
 function changeColor() {
 bgcolor = fill("yellow"), fill(orange), fill("white");}
 
 noStroke();
 fill(255, 50, 150);
 ellipse(100, 100, 200,200);
-  
+
 
   }
 
