@@ -82,6 +82,7 @@ image(backImage,0,0, );
 
 
 else if (seasonType == "Sun") {
+  fill("yellow");
 ellipse(mouseX, mouseY, 44,44);
 
   } else if (seasonType == "Leaves") {
