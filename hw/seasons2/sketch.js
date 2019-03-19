@@ -61,6 +61,7 @@ function draw() {
   //console.log(frameRate());
 background(255);
 image(backImage,0,0, );
+ellipse(mouseX, mouseY, 44,44);
   fill("black");
   stroke(0);
   textSize(20);
