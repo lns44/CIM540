@@ -61,7 +61,6 @@ function draw() {
   //console.log(frameRate());
 background(255);
 image(backImage,0,0, );
-ellipse(mouseX, mouseY, 44,44);
   fill("black");
   stroke(0);
   textSize(20);
@@ -80,13 +79,11 @@ ellipse(mouseX, mouseY, 44,44);
         }
         fill("white");
         ellipse(width / 2, height / 2, 20, 20);
-
+}}
 
   } else if (seasonType == "Sun") {
-
-      function draw() {
-        ellipse(mouseX, mouseY, 33, 33);
-      }
+function draw() {
+ellipse(mouseX, mouseY, 44,44);}
 
   } else if (seasonType == "Leaves") {
     for (var i = 0; i < leafAmount; i++) {
