@@ -46,35 +46,7 @@ bug4 = new Jitter();
   seasonType = seasons.value();
   });
 
-  function draw() {
-    bug1.move();
-    bug1.display();
-    bug2.move();
-    bug2.display();
-    bug3.move();
-    bug3.display();
-    bug4.move();
-    bug4.display();
-  }
 
-  // Jitter class
-class Jitter {
-  constructor() {
-    this.x = random(width);
-    this.y = random(height);
-    this.diameter = random(10, 30);
-    this.speed = 1;
-  }
-
-  move() {
-    this.x += random(-this.speed, this.speed);
-    this.y += random(-this.speed, this.speed);
-  }
-
-  display() {
-    ellipse(this.x, this.y, this.diameter, this.diameter);
-  }
-}
 
   for (var i = 0; i < leafAmount; i++) {
     leafLocationX[i] = random(0, width);
@@ -91,6 +63,14 @@ class Jitter {
 function draw() {
   // put drawing code here
   //console.log(frameRate());
+  bug1.move();
+  bug1.display();
+  bug2.move();
+  bug2.display();
+  bug3.move();
+  bug3.display();
+  bug4.move();
+  bug4.display();
 background(255);
 image(backImage,0,0, );
   fill("black");
@@ -100,6 +80,28 @@ image(backImage,0,0, );
 
   if (seasonType == "Cherry Blossom Season") {
     // flower
+
+    // Jitter class
+  class Jitter {
+    constructor() {
+      this.x = random(width);
+      this.y = random(height);
+      this.diameter = random(10, 30);
+      this.speed = 1;
+    }
+
+    move() {
+      this.x += random(-this.speed, this.speed);
+      this.y += random(-this.speed, this.speed);
+    }
+
+    display() {
+      ellipse(this.x, this.y, this.diameter, this.diameter);
+    }
+  }
+
+
+
 
 
         fill("pink");
