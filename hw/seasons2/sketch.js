@@ -20,8 +20,9 @@ var backImage;
 var snowimage;
 
 function preload() {
-  leafImage = loadImage("https://openclipart.org/image/300px/svg_to_png/257622/1470680735.png");
+leafImage = loadImage("https://openclipart.org/image/300px/svg_to_png/257622/1470680735.png");
 backImage = loadImage("assets/mnt.jpg");
+snowimage = loadimage("assets/snow.jpg");
 }
 
 function setup() {
