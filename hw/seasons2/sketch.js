@@ -38,6 +38,17 @@ function setup() {
   });
 
 
+  for (var i = 0; i < leafAmount; i++) {
+    leafLocationX[i] = random(0, width);
+    leafLocationY[i] = random(0, -500);
+  }
+
+  for (var i = 0; i < snowAmount; i++) {
+    snowLocationX[i] = random(0, width);
+    snowLocationY[i] = random(0, -500);
+  }
+
+}
 
 function draw() {
   // put drawing code here
@@ -66,17 +77,6 @@ image(backImage,0,0, );
         fill("white");
         ellipse(width / 2, height / 2, 20, 20);
 
-        for (var i = 0; i < leafAmount; i++) {
-          leafLocationX[i] = random(0, width);
-          leafLocationY[i] = random(0, -500);
-        }
-
-        for (var i = 0; i < snowAmount; i++) {
-          snowLocationX[i] = random(0, width);
-          snowLocationY[i] = random(0, -500);
-        }
-
-      }
 
 
 
