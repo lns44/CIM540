@@ -72,7 +72,7 @@ image(backImage,0,0, );
              translate(width / 2, height / 2);
              rotate(i + 30);
              scale(1.5);
-             ellipse(0, 40, 40, 60);
+             ellipse(0, 35, 35, 50);
              pop();
            }
            fill("white");
