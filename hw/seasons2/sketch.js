@@ -52,7 +52,7 @@ function setup() {
 
 function draw() {
 background(255);
-image(backImage,0,0, backImage.width/10,backImage.height/10);
+image(backImage,0,0, backImage.width/6,backImage.height/6);
 
   fill("black");
   stroke(0);
