@@ -19,7 +19,7 @@ var snowAmount = 150;
 var backImage;
 
 function preload() {
-leafImage = loadImage("https://openclipart.org/image/300px/svg_to_png/257622/1470680735.png");
+leafImage = loadImage("assets/leaf.png");
 backImage = loadImage("assets/mnt.jpg");
 BlosImage = loadImage("assets/blos.png");}
 
