@@ -16,6 +16,8 @@ var snowLocationX = [];
 var snowLocationY = [];
 var snowAmount = 150;
 
+var instruction = "Move your mouse to change between night & day!";
+
 var backImage;
 
 function preload() {
@@ -85,7 +87,7 @@ ellipse(mouseX, mouseY, 70,70);
         leafLocationX[i] = leafLocationX[i] + sin(radians(frameCount));}}
 }else if (seasonType == "Night & Day") {
 
-line(200, height/2, width, height/2);
+ text(instruction, 20, 50);
 
 
   var distance = dist(mouseX, mouseY, width/2, height/2);
