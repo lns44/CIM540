@@ -90,14 +90,14 @@ ellipse(mouseX, mouseY, 70,70);
         leafLocationY[i]++;
         leafLocationX[i] = leafLocationX[i] + sin(radians(frameCount));}}
 }else if (seasonType == "Night & Day") {
-
  text(instruction, 20, 95);
- if(mouseY > height/2){
+
+ if(mouseY > width/2){
   console.log("Below Line");
   instruction = "I am sad!";
 image(moonImage);
 
-if(mouseY < height/2){
+if(mouseY < width/2){
   console.log("Above Line");
   instruction = "Move your mouse, Don't make the face sad.";
 image(sunImage)
