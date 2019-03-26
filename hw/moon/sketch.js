@@ -107,7 +107,6 @@ ellipse(mouseX, mouseY, 70,70);
    if(mouseY > height/2){
      console.log("Below Line");
      instruction = "I am sad!";
-     fill(255,0,0);
      angleMode(DEGREES);
      arc(width/2, 200, 100,100, 180,0);
    }
@@ -115,12 +114,9 @@ ellipse(mouseX, mouseY, 70,70);
    if(mouseY < height/2){
      console.log("Above Line");
      instruction = "Move your mouse, Don't make the face sad.";
-     fill(0,0,0);
      angleMode(DEGREES);
      arc(width/2, 200, 100,100, 0,180);
    };
-
-
 
 
  }else if (seasonType == "Snow") {
