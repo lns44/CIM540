@@ -100,9 +100,7 @@ image(moonImage);
 if(mouseY < width/2){
   console.log("Above Line");
   instruction = "Sun";
-image(sunImage)
-;
-}
+image(sunImage);};
 
 
 
