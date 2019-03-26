@@ -23,7 +23,11 @@ var backImage;
 function preload() {
 leafImage = loadImage("assets/leaf2.png");
 backImage = loadImage("assets/mnt.jpg");
-BlosImage = loadImage("assets/blos.png");}
+BlosImage = loadImage("assets/blos.png")
+moonImage = loadImage("assets/moon.png");
+sunImage = loadImage("assets/sun.png")
+
+;}
 
 function setup() {
   // put setup code here
@@ -88,16 +92,21 @@ ellipse(mouseX, mouseY, 70,70);
 }else if (seasonType == "Night & Day") {
 
  text(instruction, 20, 95);
+ if(mouseY > height/2){
+  console.log("Below Line");
+  instruction = "I am sad!";
+
+}
+
+if(mouseY < height/2){
+  console.log("Above Line");
+  instruction = "Move your mouse, Don't make the face sad.";
+  fill(0,0,0);
+  angleMode(DEGREES);
+  arc(width/2, 200, 100,100, 0,180);
+}
 
 
-  var distance = dist(mouseX, mouseY, width/2, height/2);
-  ellipse(width/2, height/2, 20, 20);
-  line(width/2, height/2, mouseX, mouseY);
-  if(distance < 20){
-    fill("red");
-  }else{
-    fill("white");
-  }
 
  }else if (seasonType == "Snow") {
   noStroke();
