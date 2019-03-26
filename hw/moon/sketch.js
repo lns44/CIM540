@@ -16,7 +16,7 @@ var snowLocationX = [];
 var snowLocationY = [];
 var snowAmount = 150;
 
-var instruction = "Move your mouse to change between night & day!";
+var instruction = "Move your mouse from left to right to change between night & day!";
 
 var backImage;
 
