@@ -16,6 +16,10 @@ var snowLocationX = [];
 var snowLocationY = [];
 var snowAmount = 150;
 
+var eyePosX = 0;
+var eyePosY = 0;
+var eyeOffset = 20;
+var eyeSize = 20;
 var instruction = "Move your mouse from left to right to change between night & day!";
 
 var backImage;
@@ -44,6 +48,8 @@ function setup() {
   canvas = createCanvas(900,700);
   seasons.changed(function() {
   seasonType = seasons.value();
+  eyePosX = width/2;
+  eyePosY = 100;
   });
 
 
