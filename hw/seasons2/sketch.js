@@ -87,6 +87,7 @@ ellipse(mouseX, mouseY, 70,70);
         leafLocationX[i] = leafLocationX[i] + sin(radians(frameCount));}}
 }else if (seasonType == "Night & Day") {
   if(mouseY> width/2){
+    console.log("Below Line");
     image(moonImage, mouseX, 20, 150, 150)});  // Top circle
   //image(sunImage, mouseX-10, 15, 40, 40);
 
