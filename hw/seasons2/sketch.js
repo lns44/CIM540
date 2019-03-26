@@ -1,7 +1,7 @@
 // leaf from open clip art https://openclipart.org/detail/257622/leaf
 
 var seasons;
-var seasonType = "";
+
 
 var sunX = 360;
 var sunY = 40;
