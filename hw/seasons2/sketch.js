@@ -37,7 +37,7 @@ function setup() {
   seasons.option("Cherry Blossoms");
   seasons.option("Sun");
   seasons.option("Leaves");
-  seasons.option("Snow");
+  seasons.option("Let it Snow");
   seasons.option("Night & Day");
   canvas = createCanvas(900,700);
   seasons.changed(function() {
@@ -99,7 +99,7 @@ ellipse(mouseX, mouseY, 70,70);
     image(sunImage, mouseX, 20, 150, 150)};
     image(topImage,276,94,260,100);
 
- }else if (seasonType == "Snow") {
+ }else if (seasonType == "Let it Snow") {
   noStroke();
   fill(230);
   for (var i = 0; i < snowAmount; i++) {
