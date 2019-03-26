@@ -96,7 +96,7 @@ ellipse(mouseX, mouseY, 70,70);
     console.log("Above Line");
     image(sunImage, mouseX, 20, 150, 150)};
 
-    image(topImage,50,50);
+    image(topImage,50,50,50,50);
 
  }else if (seasonType == "Snow") {
   noStroke();
