@@ -1,20 +1,4 @@
-Skip to content
 
-Search or jump to…
-
-Pull requests
-Issues
-Marketplace
-Explore
-
-@lns44 Sign out
-8
-7 14 zevenrodriguez/CIM540-640
- Code  Issues 0  Pull requests 0  Projects 0  Wiki  Insights
-CIM540-640/CIM540-640-2R/notes/basicInteraction/sketch.js
-@zevenrodriguez zevenrodriguez week 3
-f8ff4a1 on Jan 29
-72 lines (60 sloc)  1.42 KB
 
 var eyePosX = 0;
 var eyePosY = 0;
