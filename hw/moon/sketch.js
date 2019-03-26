@@ -36,7 +36,7 @@ function setup() {
   seasons.option("Sun");
   seasons.option("Leaves");
   seasons.option("Snow");
-  seasons.option("");
+  seasons.option("Night & Day");
   canvas = createCanvas(900,700);
   seasons.changed(function() {
   seasonType = seasons.value();
@@ -87,7 +87,7 @@ ellipse(mouseX, mouseY, 70,70);
         leafLocationX[i] = leafLocationX[i] + sin(radians(frameCount));}}
 }else if (seasonType == "Night & Day") {
 
- text(instruction, 20, 50);
+ text(instruction, 20, 150);
 
 
   var distance = dist(mouseX, mouseY, width/2, height/2);
