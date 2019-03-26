@@ -88,14 +88,17 @@ ellipse(mouseX, mouseY, 70,70);
         leafLocationY[i]++;
         leafLocationX[i] = leafLocationX[i] + sin(radians(frameCount));}}
 }else if (seasonType == "Night & Day") {
+  textSize(32);
+  text('word', 10, 30);
+
   if(mouseX> height/2){
     console.log("Below Line");
     image(moonImage, mouseX, 20, 150, 150);
   }
   if(mouseX< height/2){
     console.log("Above Line");
-    image(sunImage, mouseX, 20, 150, 150)};
 
+    image(sunImage, mouseX, 20, 150, 150)};
     image(topImage,276,94,260,100);
 
  }else if (seasonType == "Snow") {
