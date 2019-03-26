@@ -23,7 +23,9 @@ leafImage = loadImage("assets/leaf.png");
 backImage = loadImage("assets/mnt.jpg");
 BlosImage = loadImage("assets/blos.png");
 moonImage = loadImage("assets/moon.png");
-sunImage = loadImage("assets/sun.png");}
+sunImage = loadImage("assets/sun.png");
+topImage = loadImage("assets/mnttop.png");
+}
 
 function setup() {
   // put setup code here
@@ -94,6 +96,7 @@ ellipse(mouseX, mouseY, 70,70);
     console.log("Above Line");
     image(sunImage, mouseX, 20, 150, 150);
   }
+image(topImage);
 
  }else if (seasonType == "Snow") {
   noStroke();
