@@ -89,8 +89,12 @@ ellipse(mouseX, mouseY, 70,70);
   if(mouseX> height/2){
     console.log("Below Line");
     image(moonImage, mouseX, 20, 150, 150);
-  }  // Top circle
-  //image(sunImage, mouseX-10, 15, 40, 40);
+  }
+  if(mouseX < height/2){
+    console.log("Above Line");
+    instruction = "Move your mouse, Don't make the face sad.";
+    image(sunImage, mouseX, 20, 150, 150);}
+  }
 
  }else if (seasonType == "Snow") {
   noStroke();
