@@ -44,7 +44,6 @@ function setup() {
   seasonType = seasons.value();
   });
 
-
   for (var i = 0; i < leafAmount; i++) {
     leafLocationX[i] = random(0, width);
     leafLocationY[i] = random(0, -500);
@@ -61,7 +60,6 @@ image(backImage,0,0, backImage.width/6,backImage.height/6);
   fill("black");
   stroke(0);
   textSize(20);
-  text(seasonType, 130, 55);
 
 if (seasonType == "Cherry Blossoms")  {
 image(BlosImage, mouseX, 20, 40, 40);  // Top circle
