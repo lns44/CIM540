@@ -61,7 +61,10 @@ image(backImage,0,0, backImage.width/6,backImage.height/6);
   stroke(0);
   textSize(20);
 
-if (seasonType == "Cherry Blossoms")  {
+if (seasonType == "Cherry Blossoms") {
+  textSize(14);
+  text('Move your mouse and see if you can align the cherry blossoms with the mountain top!');
+
 image(BlosImage, mouseX, 20, 40, 40);  // Top circle
 image(BlosImage, mouseX+10, 15, 40, 40);
 image(BlosImage, mouseX-10, 15, 40, 40);
