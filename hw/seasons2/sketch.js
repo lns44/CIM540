@@ -86,8 +86,8 @@ ellipse(mouseX, mouseY, 70,70);
         leafLocationY[i]++;
         leafLocationX[i] = leafLocationX[i] + sin(radians(frameCount));}}
 }else if (seasonType == "Day to Night") {
-  textSize(13);
-  text('Move your mouse from left to right to change from day to night!', 250, 35);
+  textSize(14);
+  text('Move your mouse from left to right to change from day to night!', 250, 30);
 
   if(mouseX> height/2){
     console.log("Below Line");
