@@ -94,12 +94,12 @@ ellipse(mouseX, mouseY, 70,70);
 
  if(mouseY > width/2){
   console.log("Below Line");
-  instruction = "I am sad!";
+  instruction = "Moon";
 image(moonImage);
 
 if(mouseY < width/2){
   console.log("Above Line");
-  instruction = "Move your mouse, Don't make the face sad.";
+  instruction = "Sun";
 image(sunImage)
 ;
 }
