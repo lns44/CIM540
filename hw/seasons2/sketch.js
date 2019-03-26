@@ -74,8 +74,10 @@ image(BlosImage, mouseX-120, 90, 40, 40);
 image(BlosImage, mouseX+150, 110, 40, 40);
 image(BlosImage, mouseX-150, 110, 40, 40);// Bottom circle
   }else if (seasonType == "Sun") {
-fill("yellow");
-ellipse(mouseX, mouseY, 70,70);
+    textSize(14);
+    text('Move your mouse around and the sun will follow!');
+    fill("yellow");
+    ellipse(mouseX, mouseY, 100,100);
 
   } else if (seasonType == "Leaves") {
     for (var i = 0; i < leafAmount; i++) {
