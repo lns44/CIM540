@@ -95,7 +95,7 @@ ellipse(mouseX, mouseY, 70,70);
  if(mouseY > height/2){
   console.log("Below Line");
   instruction = "I am sad!";
-image(moonImage)};
+image(moonImage);
 
 if(mouseY < height/2){
   console.log("Above Line");
