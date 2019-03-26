@@ -118,8 +118,8 @@ ellipse(mouseX, mouseY, 70,70);
      fill(0,0,0);
      angleMode(DEGREES);
      arc(width/2, 200, 100,100, 0,180);
-   }
-   
+   };
+
 
 
 
