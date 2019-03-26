@@ -74,11 +74,13 @@ image(BlosImage, mouseX+120, 90, 40, 40);
 image(BlosImage, mouseX-120, 90, 40, 40);
 image(BlosImage, mouseX+150, 110, 40, 40);
 image(BlosImage, mouseX-150, 110, 40, 40);// Bottom circle
-  }else if (seasonType == "Sun") {
+  }
+
+else if (seasonType == "Sun"){
 fill("yellow");
 ellipse(mouseX, mouseY, 70,70);
 
-  } else if (seasonType == "Leaves") {
+  } else if (seasonType == "Leaves"){
     for (var i = 0; i < leafAmount; i++) {
       console.log("leaf" + 0 + " x: " + leafLocationX[1] + " , y: " + leafLocationY[1]);
       image(leafImage, leafLocationX[i], leafLocationY[i], 20,20);
@@ -88,7 +90,9 @@ ellipse(mouseX, mouseY, 70,70);
         leafLocationX[i] = leafLocationX[i] + sin(radians(frameCount));}}
 }else if (seasonType == "Night & Day") {
   text(instruction, 20, 95);
-  image(moonImage, mouseX+10);
+  image(BlosImage, mouseX, 20, 40, 40);  // Top circle
+  image(BlosImage, mouseX+10, 15, 40, 40);
+  image(BlosImage, mouseX-10, 15, 40, 40);
 
 
  }else if (seasonType == "Snow") {
