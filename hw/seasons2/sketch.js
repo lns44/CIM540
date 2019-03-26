@@ -32,7 +32,7 @@ function setup() {
   createCanvas(900,700);
   noStroke(0);
   seasons = createSelect();
-  seasons.position(100, 10);
+  seasons.position(250, 10);
   seasons.option("Click here to change up the scene!");
   seasons.option("Cherry Blossoms");
   seasons.option("Sun");
