@@ -38,7 +38,7 @@ function setup() {
   seasons.option("Sun");
   seasons.option("Leaves");
   seasons.option("Let it Snow!");
-  seasons.option("Night & Day");
+  seasons.option("Day to Night");
   canvas = createCanvas(900,700);
   seasons.changed(function() {
   seasonType = seasons.value();
@@ -85,7 +85,7 @@ ellipse(mouseX, mouseY, 70,70);
       if(leafLocationY[i] < height - 20){
         leafLocationY[i]++;
         leafLocationX[i] = leafLocationX[i] + sin(radians(frameCount));}}
-}else if (seasonType == "Night & Day") {
+}else if (seasonType == "Day to Night") {
   textSize(16);
   text('Move your mouse from left to right to change from day to night!', 250, 20);
 
