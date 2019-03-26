@@ -98,15 +98,28 @@ ellipse(mouseX, mouseY, 70,70);
 }else if (seasonType == "Night & Day") {
  text(instruction, 20, 95);
 
- if(mouseY > width/2){
-  console.log("Below Line");
-  instruction = "Moon";
-image(moonImage);
+ ellipse(mouseX,mouseY,10,10);
+   ellipse(eyePosX - eyeOffset, eyePosY, eyeSize,eyeSize);
+   ellipse(eyePosX + eyeOffset, eyePosY, eyeSize,eyeSize);
 
-if(mouseY < width/2){
-  console.log("Above Line");
-  instruction = "Sun";
-image(sunImage);};
+   line(0, height/2, width, height/2);
+
+   if(mouseY > height/2){
+     console.log("Below Line");
+     instruction = "I am sad!";
+     fill(255,0,0);
+     angleMode(DEGREES);
+     arc(width/2, 200, 100,100, 180,0);
+   }
+
+   if(mouseY < height/2){
+     console.log("Above Line");
+     instruction = "Move your mouse, Don't make the face sad.";
+     fill(0,0,0);
+     angleMode(DEGREES);
+     arc(width/2, 200, 100,100, 0,180);
+   }
+   
 
 
 
