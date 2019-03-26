@@ -92,7 +92,7 @@ ellipse(mouseX, mouseY, 70,70);
   }
   if(mouseX< height/2){
     console.log("Above Line");
-    image(sunImage, mouseX, 20, 150, 150);}
+    image(sunImage, mouseX, 20, 150, 150);
   }
 
  }else if (seasonType == "Snow") {
