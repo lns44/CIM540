@@ -27,11 +27,9 @@ var backImage;
 function preload() {
 leafImage = loadImage("assets/leaf2.png");
 backImage = loadImage("assets/mnt.jpg");
-BlosImage = loadImage("assets/blos.png")
+BlosImage = loadImage("assets/blos.png");
 moonImage = loadImage("assets/moon.png");
-sunImage = loadImage("assets/sun.png")
-
-;}
+sunImage = loadImage("assets/sun.png");}
 
 function setup() {
   // put setup code here
