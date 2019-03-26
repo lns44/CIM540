@@ -41,7 +41,7 @@ function setup() {
   seasons.option("Night & Day");
   canvas = createCanvas(900,700);
   seasons.changed(function() {
-
+  seasonType = seasons.value();
   });
 
 
