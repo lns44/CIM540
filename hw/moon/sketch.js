@@ -84,6 +84,10 @@ ellipse(mouseX, mouseY, 70,70);
         leafLocationY[i]++;
         leafLocationX[i] = leafLocationX[i] + sin(radians(frameCount));}}
 }else if (seasonType == "Night & Day") {
+
+line(0, height/2, width, height/2);
+
+
   var distance = dist(mouseX, mouseY, width/2, height/2);
   ellipse(width/2, height/2, 20, 20);
   line(width/2, height/2, mouseX, mouseY);
