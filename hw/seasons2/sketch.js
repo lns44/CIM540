@@ -84,9 +84,9 @@ ellipse(mouseX, mouseY, 70,70);
         leafLocationY[i]++;
         leafLocationX[i] = leafLocationX[i] + sin(radians(frameCount));}}
 }else if (seasonType == "Night & Day") {
-  image(BlosImage, mouseX, 20, 40, 40);  // Top circle
-  image(BlosImage, mouseX+10, 15, 40, 40);
-  image(BlosImage, mouseX-10, 15, 40, 40);
+  image(moonImage, mouseX, 20, 40, 40);  // Top circle
+  image(moonImage, mouseX+10, 15, 40, 40);
+  image(sunImage, mouseX-10, 15, 40, 40);
 
  }else if (seasonType == "Snow") {
   noStroke();
