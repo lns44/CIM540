@@ -88,14 +88,14 @@ image(BlosImage, mouseX+150, 110, 40, 40);
 image(BlosImage, mouseX-150, 110, 40, 40);// Bottom circle
 
   }else if (seasonType == "Sun") {
-    textSize(14);
-    text('Move your mouse around and the sun will follow!', 250, 30);
+    textSize(12);
+    text('Move your mouse around and the sun will follow!', 250, 80);
     fill("yellow");
     ellipse(mouseX, mouseY, 100,100);
 
   } else if (seasonType == "Leaves") {
-    textSize(14);
-      text('It is fall in beautiful Japan!', 250, 30);
+    textSize(12);
+      text('It is fall in beautiful Japan!', 250, 80);
     for (var i = 0; i < leafAmount; i++) {
       console.log("leaf" + 0 + " x: " + leafLocationX[1] + " , y: " + leafLocationY[1]);
       image(leafImage, leafLocationX[i], leafLocationY[i], 20,20);
@@ -104,8 +104,8 @@ image(BlosImage, mouseX-150, 110, 40, 40);// Bottom circle
         leafLocationY[i]++;
         leafLocationX[i] = leafLocationX[i] + sin(radians(frameCount));}}
 }else if (seasonType == "Day to Night") {
-  textSize(14);
-  text('Move your mouse from left to right to change the time from day to night!', 250, 30);
+  textSize(12);
+  text('Move your mouse from left to right to change the time from day to night!', 250, 80);
 
   if(mouseX> height/2){
     console.log("Below Line");
@@ -118,8 +118,8 @@ image(BlosImage, mouseX-150, 110, 40, 40);// Bottom circle
     image(topImage,276,94,260,100);
 
  }else if (seasonType == "Let it Snow!") {
-   textSize(14);
-   text('Let it snow, let it snow, let it snow!', 250, 30);
+   textSize(12);
+   text('Let it snow, let it snow, let it snow!', 250, 80);
   noStroke();
   fill(230);
   for (var i = 0; i < snowAmount; i++) {
