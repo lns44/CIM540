@@ -73,7 +73,7 @@ if (seasonType == "Click here to change up the scene!") {
 
 }if (seasonType == "Cherry Blossoms") {
   textSize(14);
-  text('Move your mouse and see if you can align the cherry blossoms above the mountain top!',250,30);
+  text('Move your mouse and see if you can align the cherry blossoms above the mountain top!',250,100);
 
 image(BlosImage, mouseX, 20, 40, 40);  // Top circle
 image(BlosImage, mouseX+10, 15, 40, 40);
