@@ -1,4 +1,4 @@
-My Midterm Project: Japan Seasons Interactive p5 Page
+#My Midterm Project: Japan Seasons Interactive Page
 March-25-2019, Lauren Stolz
 My Midterm
 
