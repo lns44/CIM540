@@ -119,7 +119,7 @@ image(BlosImage, mouseX-150, 110, 40, 40);// Bottom circle
 
  }else if (seasonType == "Let it Snow!") {
    textSize(12);
-   text('Let it snow, let it snow, let it snow!', 270, 80);
+   text('Let it snow, let it snow, let it snow!', 300, 80);
   noStroke();
   fill(230);
   for (var i = 0; i < snowAmount; i++) {
