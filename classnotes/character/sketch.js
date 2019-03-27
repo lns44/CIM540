@@ -17,8 +17,7 @@ function draw() {
   ellipse(300,160,10,10);
 
 
-strokeWeight(1);
-
+strokeWeight(0);
   //eyes
   ellipse(250,135,25,30);
 
@@ -48,7 +47,7 @@ noFill();
 strokeWeight(4);
 angleMode(DEGREES);
 arc(200,500,50,90,135,270);
-arc(400,500,-50,70,135,270);
+arc(400,500,-50,90,135,270);
 }
 
   fill(204, 101, 192, 127);
