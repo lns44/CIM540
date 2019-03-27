@@ -8,13 +8,13 @@ function draw() {
 
   // head
   ellipse(300,150,200,200);
-  fill('pink');
   ellipse(300,400,300,300);
   //mouth
-  noFill();
+  fill('pink');
+
   rect(260,190,75,20);
   rect(270,210,55,10);
-
+  noFill();
   //nose
   ellipse(300,160,10,10);
 
