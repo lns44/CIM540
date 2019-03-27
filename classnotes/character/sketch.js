@@ -11,7 +11,7 @@ function draw() {
   fill(purple);
   ellipse(300,400,300,300);
   //mouth
-  fill(nofill);
+  fill(white);
   rect(260,190,75,20);
   rect(270,210,55,10);
 
