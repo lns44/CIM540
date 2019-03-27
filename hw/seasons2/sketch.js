@@ -63,7 +63,7 @@ image(backImage,0,0, backImage.width/6,backImage.height/6);
 
 if (seasonType == "Click here to change up the scene!") {
   textSize(14);
-  text('Welcome to Japan!',250, 30);
+  text('Welcome to Japan!',350, 30);
   text('Click the dropdown bar on the left to change of the scene!', 250, 50);
 
 
