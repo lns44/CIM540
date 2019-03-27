@@ -14,10 +14,11 @@ function draw() {
 
   rect(260,190,75,20);
   rect(270,210,55,10);
-  noFill();
-  //nose
-  ellipse(300,160,10,10);
 
+  //nose
+  fill('blue');
+  ellipse(300,160,10,10);
+  noFill();
 
 strokeWeight(0);
   //eyes
