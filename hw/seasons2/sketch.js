@@ -60,10 +60,14 @@ image(backImage,0,0, backImage.width/6,backImage.height/6);
   fill("black");
   stroke(0);
   textSize(14);
+
+if (seasonType == "Click here to change up the scene!") {
+  textSize(14);
   text('Welcome to Japan!',250, 30);
   text('Click the dropdown bar on the left to change of the scene!', 250, 50);
 
-if (seasonType == "Cherry Blossoms") {
+
+}if (seasonType == "Cherry Blossoms") {
   textSize(14);
   text('Move your mouse and see if you can align the cherry blossoms above the mountain top!',250,30);
 
