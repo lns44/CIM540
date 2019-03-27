@@ -53,7 +53,7 @@ ellipse(350,135,25,30);
   ellipse(250,135,10,10);
   fill('black');
   textSize(12);
-  text('click and hold to change the background red!', 200, 570);
+  text('Click and hold to change the background red!', 185, 580);
 
   //mouse
 
