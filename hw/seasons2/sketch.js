@@ -54,6 +54,10 @@ function setup() {
     snowLocationY[i] = random(0, -500);}}
 
 function draw() {
+  textSize(14);
+  text('Welcome to Japan!'250, 30);
+  text('Click the dropdown bar on the left to change of the scene!', 250, 50);
+
 background(255);
 image(backImage,0,0, backImage.width/6,backImage.height/6);
 
