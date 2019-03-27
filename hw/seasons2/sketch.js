@@ -55,7 +55,7 @@ function setup() {
 
 function draw() {
   textSize(14);
-  text('Welcome to Japan!'250, 30);
+  text('Welcome to Japan!',250, 30);
   text('Click the dropdown bar on the left to change of the scene!', 250, 50);
 
 background(255);
