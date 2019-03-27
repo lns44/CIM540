@@ -57,7 +57,7 @@ ellipse(350,135,25,30);
 }
 
 function mousePressed(){
-  backgroundColor = "black";
+  backgroundColor = "red";
 }
 
 function mouseReleased(){
