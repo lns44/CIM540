@@ -8,7 +8,7 @@ function draw() {
 
   // head
   ellipse(300,150,200,200);
-  fill('purple');
+  fill('pink');
   ellipse(300,400,300,300);
   //mouth
   noFill();
