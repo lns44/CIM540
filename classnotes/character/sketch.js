@@ -8,8 +8,10 @@ function draw() {
 
   // head
   ellipse(300,150,200,200);
+  fill(purple);
   ellipse(300,400,300,300);
   //mouth
+  fill(nofill);
   rect(260,190,75,20);
   rect(270,210,55,10);
 
