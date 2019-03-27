@@ -95,7 +95,7 @@ image(BlosImage, mouseX-150, 110, 40, 40);// Bottom circle
 
   } else if (seasonType == "Leaves") {
     textSize(12);
-      text('It is fall in beautiful Japan!', 390, 70);
+      text('It is fall in beautiful Japan!', 260, 70);
     for (var i = 0; i < leafAmount; i++) {
       console.log("leaf" + 0 + " x: " + leafLocationX[1] + " , y: " + leafLocationY[1]);
       image(leafImage, leafLocationX[i], leafLocationY[i], 20,20);
