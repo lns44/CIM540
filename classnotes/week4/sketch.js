@@ -14,7 +14,7 @@ var currentImage = 0;
 
 function preload(){
 Ticket = loadImage("Ticket.jpeg");
-Plane = loadImage("Plane.jpeg");
+Plane = loadImage("Plane.jpg");
 Temple = loadImage("Temple.jpg");
 Food = loadImage("Food.jpg");
 }
