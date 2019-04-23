@@ -21,7 +21,7 @@ var snowimage;
 let snowimage;
 function preload() {
 leafImage = loadImage("https://openclipart.org/image/300px/svg_to_png/257622/1470680735.png");
-backImage = loadImage("assets/background.jpg");
+backImage = loadImage("background.jpg");
 snowimage= loadImage("assets/snow.jpg");
 }
 
