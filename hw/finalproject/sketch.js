@@ -59,7 +59,7 @@ coneArray[0] = loadImage("assets/cone1.png");
 coneArray[1] = loadImage("assets/cone2.png");
 cherryArray[0] = loadImage("assets/cherry1.png");
 strawberryArray[0] = loadImage("assets/strawberry1.png");
-midtermicons2 = loadImage("assets/cimanimals.jpg");
+midtermicons2 = loadImage("assets/background.jpg");
 empty = loadImage("assets/empty.png");
 
 }
