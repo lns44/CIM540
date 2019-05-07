@@ -79,7 +79,7 @@ image(BlosImage, mouseX, 20, 40, 40);  // Top circle
       text('Bubbles!', 340, 100);
     for (var i = 0; i < leafAmount; i++) {
       console.log("leaf" + 0 + " x: " + leafLocationX[1] + " , y: " + leafLocationY[1]);
-      image(leafImage, leafLocationX[i], leafLocationY[i], 20,10);
+      image(leafImage, leafLocationX[i], leafLocationY[i], 30,30);
 
       if(leafLocationY[i] < height - 20){
         leafLocationY[i]++;
