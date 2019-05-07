@@ -1,24 +1,24 @@
-let bg;
-let y = 0;
 var snake;
-var manatee;
-var deer;
-var fish;
-var cougar;
-var croc;
-var fruit;
+var background;
 
 var snakebutton;
-var manateebutton;
-var deerbutton;
-var fishbutton;
-var cougarbutton;
-var crocbutton;
 
-function setup() {
-  bg = loadImage("assets/background.jpg");
-  createCanvas(800, 600);
-  image("assets/background.jpg")
+var currentImage = 0;
 
-
+function preload(){
+snake = loadImage("assets/snake.png");
+background = loadImage("assets/background.jpg");
 }
+function setup() {
+createCanvas(800,600);
+snakebutton = createButton("snake");
+snakebutton.position(10,40);
+snakebutton.mousePressed(function(){
+currentImage = 0;
+});
+
+function draw() {
+
+if(currentImage == 0){
+  image(snake, 0,20, snake.width/2, snake.height/2);
+}}
