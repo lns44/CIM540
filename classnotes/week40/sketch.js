@@ -1,3 +1,5 @@
+let song;
+
 var seasons;
 var seasonType = "";
 
@@ -21,11 +23,11 @@ function preload() {
 bubbleImage = loadImage("assets/bubble.png");
 leafImage = loadImage("assets/leaf.png");
 backImage = loadImage("assets/mnt.jpg");
-moonImage = loadImage("assets/moon.png");
 }
 
 function setup() {
   // put setup code here
+  song = loadSound('assets/snakehiss.mp3');
   createCanvas(1440,754);
   noStroke(0);
   seasons = createSelect();
@@ -34,17 +36,25 @@ function setup() {
   seasons.option("Leaves");
   seasons.option("Bubbles");
   seasons.option("Let it Snow!");
-  seasons.option("Day to Night");
   canvas = createCanvas(1440,754);
   seasons.changed(function() {
   seasonType = seasons.value();
   });
 
+  function mousePressed() {
+    if (song.isPlaying()) {
+      song.stop();
+      background(0, 100);
+    } else {
+      song.play();
+      background(64, 275, 518, 155);
+    }
+  }
+
   for (var i = 0; i < leafAmount; i++) {
     leafLocationX[i] = random(0, width);
     leafLocationY[i] = random(0, -500);
   }
-
 
   for (var i = 0; i < bubbleAmount; i++) {
     bubbleLocationX[i] = random(0, width);
@@ -59,8 +69,6 @@ function draw() {
 background(255);
 
 image(backImage,0,0, backImage.width/4.5,backImage.height/4.5);
-
-
 
 
 if (seasonType == "Click here to change up the scene!") {
@@ -88,17 +96,7 @@ if (seasonType == "Click here to change up the scene!") {
       if(bubbleLocationY[i] < height - 20){
         bubbleLocationY[i]++;
         bubbleLocationX[i] = bubbleLocationX[i] + sin(radians(frameCount));}}
-}else if (seasonType == "Day to Night") {
 
-  if(mouseX> height/2){
-    console.log("Below Line");
-    image(moonImage, mouseX, 20, 150, 150);
-  }
-  if(mouseX< height/2){
-    console.log("Above Line");
-
-    image(sunImage, mouseX, 20, 150, 150)};
-    image(topImage,276,94,260,100);
 
  }else if (seasonType == "Let it Snow!") {
   for (var i = 0; i < snowAmount; i++) {
