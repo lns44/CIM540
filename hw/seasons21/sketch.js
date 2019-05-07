@@ -15,10 +15,6 @@ var cougarbutton;
 var crocbutton;
 
 
-function preload(){
-snake = loadImage("assets/snake.png");
-}
-
 function setup() {
 bg = loadImage("assets/background.jpg");
 createCanvas(800, 600);
