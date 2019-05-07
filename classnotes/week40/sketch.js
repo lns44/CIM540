@@ -1,10 +1,6 @@
 var seasons;
 var seasonType = "";
 
-var sunX = 360;
-var sunY = 40;
-var sunSize = 60;
-
 var leafLocationX = [];
 var leafLocationY = [];
 var leafImage;
@@ -27,7 +23,6 @@ bubbleImage = loadImage("assets/bubble.png");
 leafImage = loadImage("assets/leaf.png");
 backImage = loadImage("assets/mnt.jpg");
 moonImage = loadImage("assets/moon.png");
-sunImage = loadImage("assets/sun.png");
 topImage = loadImage("assets/mnttop.png");
 }
 
@@ -38,7 +33,6 @@ function setup() {
   seasons = createSelect();
   seasons.position(17, 17,50);
   seasons.option("Click here to change up the scene!");
-  seasons.option("Sun");
   seasons.option("Leaves");
   seasons.option("Bubbles");
   seasons.option("Let it Snow!");
@@ -74,12 +68,7 @@ image(backImage,0,0, backImage.width/4.5,backImage.height/4.5);
 if (seasonType == "Click here to change up the scene!") {
 
 
-}if (seasonType == "Sun") {
-    textSize(12);
-    fill("yellow");
-    ellipse(mouseX, mouseY, 100,100);
-
-  } else if (seasonType == "Leaves") {
+}if (seasonType == "Leaves") {
     textSize(12);
       text('It is fall in beautiful Japan!', 340, 70);
     for (var i = 0; i < leafAmount; i++) {
