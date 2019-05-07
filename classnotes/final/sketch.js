@@ -18,7 +18,7 @@ Food = loadImage("assets/Food.jpg");
 }
 function setup() {
   // put setup code here
-createCanvas(500,800);
+createCanvas(800,600);
 
 TicketButton = createButton("Ticket");
 TicketButton.position(10,40);
