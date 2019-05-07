@@ -4,6 +4,10 @@ var seasons;
 var seasonType = "";
 
 var answer;
+var Python;
+
+var PythonButton;
+
 
 var python;
 
@@ -11,7 +15,7 @@ var answerButton;
 var pythonButton;
 
 
-var shortsleeveArray = [];
+var currentImage = 0;
 
 var leafLocationX = [];
 var leafLocationY = [];
@@ -34,6 +38,7 @@ bubbleImage = loadImage("assets/bubble.png");
 leafImage = loadImage("assets/leaf.png");
 backImage = loadImage("assets/mnt.jpg");
 pythonArray[0] = loadImage("assets/python.png");
+Python = loadImage("assets/python.png");
 }
 
 function setup() {
@@ -54,6 +59,13 @@ function setup() {
 answer = empty;
 
   });
+
+  PythonButton = createButton("Python");
+  PythonButton.position(10,40);
+  PythonButton.mousePressed(function(){
+  currentImage = 0;
+  });
+
 
   function mousePressed() {
     if (song.isPlaying()) {
