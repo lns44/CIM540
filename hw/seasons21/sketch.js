@@ -37,22 +37,12 @@ empty = loadImage("assets/empty.png");
 function setup() {
 bg = loadImage("assets/background.jpg");
 createCanvas(800, 600);
-fruit = empty;
 
-snake = createButton("Snake");
-snake.position(20,60);
-snake.mousePressed(function(){
-  fruit=snakeArray
-});
+input = createInput();
+input.position(20, 65);
 
-}); }
+button = createButton('snake');
+button.position(input.x + input.width, 65);
+button.mousePressed(snakeArray);
 
-
-function draw() {
-background(bg);
-
-  if(mouseX > 18 && mouseX < (71) && mouseY > 59 && mouseY < 101){
-    if(mouseIsPressed == true){
-      fruit = snakeArray[0];
-    }
-  } }
+}
