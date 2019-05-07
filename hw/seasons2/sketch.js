@@ -17,7 +17,6 @@ var snowAmount = 150;
 var backImage;
 
 function preload() {
-Python = loadImage("assets/python.png");
 leafImage = loadImage("assets/leaf.png");
 backImage = loadImage("assets/mnt.jpg");
 BlosImage = loadImage("assets/blos.png");
@@ -28,7 +27,7 @@ topImage = loadImage("assets/mnttop.png");
 
 function setup() {
   // put setup code here
-  createCanvas(800,600);
+  createCanvas(900,700);
   noStroke(0);
   seasons = createSelect();
   seasons.position(17, 17,50);
@@ -38,7 +37,7 @@ function setup() {
   seasons.option("Leaves");
   seasons.option("Let it Snow!");
   seasons.option("Day to Night");
-  canvas = createCanvas(800,600);
+  canvas = createCanvas(900,700);
   seasons.changed(function() {
   seasonType = seasons.value();
   });
@@ -53,14 +52,22 @@ function setup() {
     snowLocationY[i] = random(0, -500);}}
 
 function draw() {
-background(1000);
-image(backImage,0,0, backImage.width,backImage.height);
+background(255);
+image(backImage,0,0, backImage.width/6,backImage.height/6);
 
+  fill("black");
   stroke(0);
+  textSize(14);
+  textSize(14);
+  text('Welcome to Japan!',350, 30);
+  text('Click the dropdown bar on the left to change of the scene!', 250, 50);
 
 
 if (seasonType == "Click here to change up the scene!") {
   textSize(14);
+  text('Welcome to Japan!',350, 30);
+  text('Click the dropdown bar on the left to change of the scene!', 250, 50);
+
 
 }if (seasonType == "Cherry Blossoms") {
   textSize(12);
@@ -68,7 +75,15 @@ if (seasonType == "Click here to change up the scene!") {
 
 image(BlosImage, mouseX, 20, 40, 40);  // Top circle
 image(BlosImage, mouseX+10, 15, 40, 40);
-
+image(BlosImage, mouseX-10, 15, 40, 40);
+image(BlosImage, mouseX+30, 40, 40, 40);
+image(BlosImage, mouseX-30, 40, 40, 40);
+image(BlosImage, mouseX+70, 60, 40, 40);
+image(BlosImage, mouseX-70, 60, 40, 40);
+image(BlosImage, mouseX+120, 90, 40, 40);
+image(BlosImage, mouseX-120, 90, 40, 40);
+image(BlosImage, mouseX+150, 110, 40, 40);
+image(BlosImage, mouseX-150, 110, 40, 40);// Bottom circle
 
   }else if (seasonType == "Sun") {
     textSize(12);
