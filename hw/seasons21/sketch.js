@@ -15,11 +15,8 @@ var cougarbutton;
 var crocbutton;
 
 
-var snakeArray = [];
-
-
 function preload(){
-snakeArray[0] = loadImage("assets/snake.png");
+snake = loadImage("assets/snake.png");
 }
 
 function setup() {
@@ -31,8 +28,7 @@ createCanvas(800, 600);
 function draw() {
 background(bg);
 
-
 if(mouseX > 18 && mouseX < (71) && mouseY > 59 && mouseY < 101){
   if(mouseIsPressed == true){
-    fruit = snakeArray[0];
+    fruit = snake ;
   }
