@@ -15,9 +15,7 @@ var fishbutton;
 var cougarbutton;
 var crocbutton;
 
-function preload(){
-snakeArray[0] = loadImage("assets/snake.png");
-}
+
 
 function setup() {
 bg = loadImage("assets/background.jpg");
