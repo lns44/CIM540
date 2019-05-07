@@ -70,15 +70,7 @@ if (seasonType == "Click here to change up the scene!") {
 
 image(BlosImage, mouseX, 20, 40, 40);  // Top circle
 image(BlosImage, mouseX+10, 15, 40, 40);
-image(BlosImage, mouseX-10, 15, 40, 40);
-image(BlosImage, mouseX+30, 40, 40, 40);
-image(BlosImage, mouseX-30, 40, 40, 40);
-image(BlosImage, mouseX+70, 60, 40, 40);
-image(BlosImage, mouseX-70, 60, 40, 40);
-image(BlosImage, mouseX+120, 90, 40, 40);
-image(BlosImage, mouseX-120, 90, 40, 40);
-image(BlosImage, mouseX+150, 110, 40, 40);
-image(BlosImage, mouseX-150, 110, 40, 40);// Bottom circle
+
 
   }else if (seasonType == "Sun") {
     textSize(12);
