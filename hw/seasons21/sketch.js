@@ -43,5 +43,5 @@ inp.input(myInputEvent);
 }
 
 function myInputEvent() {
-  console.log('Burmese Python', this.value());
+  console.log('Burmese Python', this.value(25));
 }
