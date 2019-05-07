@@ -35,7 +35,7 @@ snakeArray[0] = loadImage("assets/snake.png");
 function setup() {
 bg = loadImage("assets/background.jpg");
 createCanvas(800, 600);
-image("assets/background.jpg")
+image("assets/background.jpg");
 
 button = createButton('snake');
 button.position(input.x + input.width, 65);
