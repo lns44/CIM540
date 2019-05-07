@@ -3,7 +3,7 @@
 
   function setup() {
     bg = loadImage("assets/background.jpg");
-    createCanvas(720, 400);
+    createCanvas(1675, 563);
   }
 
   function draw() {
