@@ -26,7 +26,6 @@ function preload() {
 bubbleImage = loadImage("assets/bubble.png");
 leafImage = loadImage("assets/leaf.png");
 backImage = loadImage("assets/mnt.jpg");
-BlosImage = loadImage("assets/blos.png");
 moonImage = loadImage("assets/moon.png");
 sunImage = loadImage("assets/sun.png");
 topImage = loadImage("assets/mnttop.png");
@@ -39,7 +38,6 @@ function setup() {
   seasons = createSelect();
   seasons.position(17, 17,50);
   seasons.option("Click here to change up the scene!");
-  seasons.option("Cherry Blossoms");
   seasons.option("Sun");
   seasons.option("Leaves");
   seasons.option("Bubbles");
@@ -76,14 +74,7 @@ image(backImage,0,0, backImage.width/4.5,backImage.height/4.5);
 if (seasonType == "Click here to change up the scene!") {
 
 
-}if (seasonType == "Cherry Blossoms") {
-  textSize(12);
-  text('Move your mouse and see if you can align the cherry blossoms above the mountain top!',190,80);
-
-image(BlosImage, mouseX, 20, 40, 40);  // Top circle
-
-
-  }else if (seasonType == "Sun") {
+}if (seasonType == "Sun") {
     textSize(12);
     fill("yellow");
     ellipse(mouseX, mouseY, 100,100);
@@ -111,8 +102,6 @@ image(BlosImage, mouseX, 20, 40, 40);  // Top circle
         bubbleLocationY[i]++;
         bubbleLocationX[i] = bubbleLocationX[i] + sin(radians(frameCount));}}
 }else if (seasonType == "Day to Night") {
-  textSize(12);
-  text('Move your mouse from left to right to change the time from day to night!', 250, 80);
 
   if(mouseX> height/2){
     console.log("Below Line");
@@ -125,10 +114,6 @@ image(BlosImage, mouseX, 20, 40, 40);  // Top circle
     image(topImage,276,94,260,100);
 
  }else if (seasonType == "Let it Snow!") {
-   textSize(12);
-   text('Let it snow, let it snow, let it snow!', 320, 70);
-  noStroke();
-  fill(230);
   for (var i = 0; i < snowAmount; i++) {
     snowLocationY[i]++;
     ellipse(snowLocationX[i], snowLocationY[i], 4,4);
