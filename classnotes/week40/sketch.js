@@ -17,11 +17,12 @@ Plane = loadImage("Plane.jpg");
 Temple = loadImage("Temple.jpg");
 Food = loadImage("Food.jpg");
 }
-function setup() {
-  // put setup code here
-createCanvas(800,600);
-background = loadImage("background.jpg");
 
+function setup() {
+  createCanvas(800, 600);
+  background("background.jpg");
+  button = createButton('click me');
+  button.position(280, 570);
 
 TicketButton = createButton("Ticket");
 TicketButton.position(10,40);
