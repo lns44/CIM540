@@ -90,7 +90,7 @@ if (seasonType == "Click here to change up the scene!") {
     image(sunImage, mouseX, 20, 150, 150)};
     image(topImage,276,94,260,100);
 
- }
-    
+ }}
+
   }
 }
