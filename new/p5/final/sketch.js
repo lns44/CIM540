@@ -1,7 +1,9 @@
 function setup() {
 createCanvas(800,600);
+background ("assets/background");
 }
 
 function draw() {
-  // put drawing code here
+loadImage("assets/background.jpg");
+createCanvas(800, 600);
 }
