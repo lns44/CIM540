@@ -39,10 +39,12 @@ bg = loadImage("assets/background.jpg");
 createCanvas(800, 600);
 fruit = empty;
 
-reset = createButton("Start Over");
-reset.position(70,620);
-reset.mousePressed(function(){
-  fruit = empty;
+snake = createButton("Snake");
+snake.position(20,60);
+snake.mousePressed(function(){
+  fruit=snakeArray
+});
+
 }); }
 
 
