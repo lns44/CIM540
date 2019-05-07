@@ -44,7 +44,7 @@ function setup() {
 
   for (var i = 0; i < leafAmount; i++) {
     leafLocationX[i] = random(0, width);
-    leafLocationY[i] = random(0, -500);
+    leafLocationY[i] = random(0, -5000);
   }
 
   for (var i = 0; i < snowAmount; i++) {
