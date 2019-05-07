@@ -26,9 +26,6 @@ var bubbleLocationY = [];
 var bubbleImage;
 var bubbleAmount = 100;
 
-var snowLocationX = [];
-var snowLocationY = [];
-var snowAmount = 0;
 
 var backImage;
 
