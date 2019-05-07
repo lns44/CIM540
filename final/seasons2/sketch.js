@@ -17,8 +17,7 @@ var snowAmount = 150;
 var backImage;
 
 function preload() {
-leafImage = loadImage("assets/leaf.png");
-backImage = loadImage("assets/mnt.jpg");
+backImage = loadImage("assets/background.jpg");
 BlosImage = loadImage("assets/blos.png");
 moonImage = loadImage("assets/moon.png");
 sunImage = loadImage("assets/sun.png");
@@ -52,8 +51,8 @@ function setup() {
     snowLocationY[i] = random(0, -500);}}
 
 function draw() {
-background(255);
-image(backImage,0,0, backImage.width/6,backImage.height/6);
+  createCanvas(800, 600);
+loadImage("assets/background.jpg");
 
   fill("black");
   stroke(0);
