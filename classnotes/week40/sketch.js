@@ -1,6 +1,7 @@
 let song;
 
 var seasons;
+var seasonType = "";
 
 var answer;
 
@@ -124,6 +125,5 @@ if (seasonType == "Click here to change up the scene!") {
       snowLocationY[i] = random(-50,0);
       snowLocationX[i] = random(0,width);}
 
-    }
   }
 }
