@@ -17,6 +17,7 @@ var snowAmount = 150;
 var backImage;
 
 function preload() {
+Python = loadImage("assets/python.png");
 leafImage = loadImage("assets/leaf.png");
 backImage = loadImage("assets/mnt.jpg");
 BlosImage = loadImage("assets/blos.png");
@@ -60,9 +61,6 @@ image(backImage,0,0, backImage.width,backImage.height);
 
 if (seasonType == "Click here to change up the scene!") {
   textSize(14);
-  text('Welcome to Japan!',350, 30);
-  text('Click the dropdown bar on the left to change of the scene!', 250, 50);
-
 
 }if (seasonType == "Cherry Blossoms") {
   textSize(12);
