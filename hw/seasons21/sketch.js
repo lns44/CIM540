@@ -38,7 +38,6 @@ createCanvas(800, 600);
 image("assets/background.jpg");
 
 button = createButton('snake');
-button.position(input.x + input.width, 65);
+button.position(100, 65);
 button.mousePressed(snakeArray);
-
 }
