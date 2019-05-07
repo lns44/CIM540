@@ -8,7 +8,6 @@ var cougar;
 var croc;
 var fruit;
 
-
 var snakebutton;
 var manateebutton;
 var deerbutton;
@@ -18,7 +17,7 @@ var crocbutton;
 
 
 function preload(){
-snakeArray[0] = loadImage("assets/snake.png");
+loadImage("assets/snake.png");
 }
 
 
