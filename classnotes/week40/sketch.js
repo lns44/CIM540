@@ -85,10 +85,7 @@ answer = empty;
     bubbleLocationX[i] = random(0, width);
     bubbleLocationY[i] = random(0, -400);
   }
-
-  for (var i = 0; i < snowAmount; i++) {
-    snowLocationX[i] = random(0, width);
-    snowLocationY[i] = random(0, -500);}}
+}
 
 function draw() {
 background(255);
