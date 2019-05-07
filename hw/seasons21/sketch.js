@@ -19,7 +19,6 @@ var crocbutton;
 
 function preload(){
 snakeArray[0] = loadImage("assets/snake.png");
-empty = loadImage("assets/empty.png");
 }
 
 
