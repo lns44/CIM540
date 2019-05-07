@@ -5,6 +5,12 @@ var sunX = 360;
 var sunY = 40;
 var sunSize = 60;
 
+var leafLocationX = [];
+var leafLocationY = [];
+var leafImage;
+var leafAmount = 100;
+
+
 var bubbleLocationX = [];
 var bubbleLocationY = [];
 var bubbleImage;
@@ -18,6 +24,7 @@ var backImage;
 
 function preload() {
 bubbleImage = loadImage("assets/bubble.png");
+leafImage = loadImage("assets/leaf.png");
 backImage = loadImage("assets/mnt.jpg");
 BlosImage = loadImage("assets/blos.png");
 moonImage = loadImage("assets/moon.png");
@@ -34,6 +41,7 @@ function setup() {
   seasons.option("Click here to change up the scene!");
   seasons.option("Cherry Blossoms");
   seasons.option("Sun");
+  seasons.option("Leaves");
   seasons.option("Bubbles");
   seasons.option("Let it Snow!");
   seasons.option("Day to Night");
@@ -41,6 +49,12 @@ function setup() {
   seasons.changed(function() {
   seasonType = seasons.value();
   });
+
+  for (var i = 0; i < leafAmount; i++) {
+    leafLocationX[i] = random(0, width);
+    leafLocationY[i] = random(0, -500);
+  }
+
 
   for (var i = 0; i < bubbleAmount; i++) {
     bubbleLocationX[i] = random(0, width);
@@ -73,6 +87,18 @@ image(BlosImage, mouseX, 20, 40, 40);  // Top circle
     textSize(12);
     fill("yellow");
     ellipse(mouseX, mouseY, 100,100);
+
+  } else if (seasonType == "Leaves") {
+    textSize(12);
+      text('It is fall in beautiful Japan!', 340, 70);
+    for (var i = 0; i < leafAmount; i++) {
+      console.log("leaf" + 0 + " x: " + leafLocationX[1] + " , y: " + leafLocationY[1]);
+      image(leafImage, leafLocationX[i], leafLocationY[i], 20,20);
+
+      if(leafLocationY[i] < height - 20){
+        leafLocationY[i]++;
+        leafLocationX[i] = leafLocationX[i] + sin(radians(frameCount));}}
+
 
   } else if (seasonType == "Bubbles") {
     textSize(12);
