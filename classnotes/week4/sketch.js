@@ -1,9 +1,9 @@
-var Ticket;
+var ticket;
 var Plane;
 var Temple;
 var Food;
 
-var TicketButton;
+var ticketButton;
 var PlaneButton;
 var TempleButton;
 var FoodButton;
@@ -11,7 +11,7 @@ var FoodButton;
 var currentImage = 0;
 
 function preload(){
-Ticket = loadImage("ticket.jpg");
+ticket = loadImage("ticket.jpg");
 Plane = loadImage("plane.jpg");
 Temple = loadImage("Temple.jpg");
 Food = loadImage("Food.jpg");
@@ -20,9 +20,9 @@ function setup() {
   // put setup code here
 createCanvas(500,800);
 
-TicketButton = createButton("Ticket");
-TicketButton.position(10,40);
-TicketButton.mousePressed(function(){
+ticketButton = createButton("Ticket");
+ticketButton.position(10,40);
+ticketButton.mousePressed(function(){
 currentImage = 0;
 });
 
@@ -55,7 +55,7 @@ currentImage = 3;
 function draw() {
   // put drawing code here
 if(currentImage == 0){
-  image(Ticket, 0,20, Ticket.width/2, Ticket.height/2);
+  image(ticket, 0,20, ticket.width/2, ticket.height/2);
 }else if(currentImage == 1){
   image(Plane, 0, 20, Plane.width/2, Plane.height/2);
 }else if(currentImage == 2){
