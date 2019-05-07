@@ -11,6 +11,7 @@ var FoodButton;
 var currentImage = 0;
 
 function preload(){
+background = loadImage("assets/background.jpg");
 Ticket = loadImage("assets/Ticket.jpg");
 Plane = loadImage("assets/Plane.jpg");
 Temple = loadImage("assets/Temple.jpg");
@@ -55,7 +56,7 @@ currentImage = 3;
 function draw() {
   // put drawing code here
 background(255);
-
+ image(background, 0,0, background.width, background.height);
 
 if(currentImage == 0){
   image(Ticket, 0,20, Ticket.width/2, Ticket.height/2);
