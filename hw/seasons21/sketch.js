@@ -1,13 +1,10 @@
-var backImage;
+  let bg;
+  let y = 0;
 
-function preload() {
+  function setup() {
+    bg = loadImage("assets/background.jpg");
+    createCanvas(720, 400);
+  }
 
-backImage = loadImage("assets/background.jpg");
-
-}
-
-function setup() {
-  // put setup code here
-  createCanvas(900,700);
-
-  });
+  function draw() {
+    background(bg);}
