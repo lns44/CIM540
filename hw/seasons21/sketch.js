@@ -30,9 +30,10 @@ var fruitOffY = 0;
 
 function preload(){
 };
+
 function setup() {
 bg = loadImage("assets/background.jpg");
 createCanvas(800, 600);
-image("assets/background.jpg");
+
 
 }
