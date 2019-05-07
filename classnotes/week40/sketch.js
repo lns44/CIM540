@@ -52,7 +52,7 @@ function setup() {
     snowLocationY[i] = random(0, -500);}}
 
 function draw() {
-background(255);
+background(400);
 image(backImage,0,0, backImage.width/4,backImage.height/4);
 
   fill("black");
