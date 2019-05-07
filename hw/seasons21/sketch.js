@@ -43,7 +43,7 @@ reset = createButton("Start Over");
 reset.position(70,620);
 reset.mousePressed(function(){
   fruit = empty;
-});
+}); }
 
 
 function draw() {
@@ -51,5 +51,8 @@ background(bg);
 
 if(mouseX > 18 && mouseX < 71 && mouseY > 59 && mouseY < 101){
   if(mouseIsPressed == true){
-    loadImage = "snake.png" ;
+    fruit = snakeArray[0];
+    fruitOffX = 70;
+    fruitOffY = 25;
+  }
   }
