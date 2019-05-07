@@ -27,7 +27,7 @@ topImage = loadImage("assets/mnttop.png");
 
 function setup() {
   // put setup code here
-  createCanvas(800,600);
+  createCanvas(1440,754);
   noStroke(0);
   seasons = createSelect();
   seasons.position(17, 17,50);
@@ -37,7 +37,7 @@ function setup() {
   seasons.option("Leaves");
   seasons.option("Let it Snow!");
   seasons.option("Day to Night");
-  canvas = createCanvas(800,600);
+  canvas = createCanvas(1440,754);
   seasons.changed(function() {
   seasonType = seasons.value();
   });
