@@ -42,7 +42,7 @@ fruit = empty;
 reset = createButton("Start Over");
 reset.position(70,620);
 reset.mousePressed(function(){
-fruit = empty;
+fruit = empty;)
  }
 
 
