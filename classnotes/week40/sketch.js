@@ -27,7 +27,7 @@ topImage = loadImage("assets/mnttop.png");
 
 function setup() {
   // put setup code here
-  createCanvas(800,600);
+  createCanvas(1100,1000);
   noStroke(0);
   seasons = createSelect();
   seasons.position(17, 17,50);
@@ -37,7 +37,7 @@ function setup() {
   seasons.option("Leaves");
   seasons.option("Let it Snow!");
   seasons.option("Day to Night");
-  canvas = createCanvas(800,600);
+  canvas = createCanvas(1100,1000);
   seasons.changed(function() {
   seasonType = seasons.value();
   });
@@ -54,7 +54,7 @@ function setup() {
 function draw() {
 background(400);
 
-image(backImage,0,0, backImage.width/3,backImage.height/3);
+image(backImage,0,0, backImage.width/5,backImage.height/5);
 
 if (seasonType == "Click here to change up the scene!") {
   textSize(14);
