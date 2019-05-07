@@ -93,7 +93,7 @@ function setup() {
     if(mouseX > 410 && mouseX < (410 + 177) && mouseY > 552 && mouseY < (552 + 155)){
     page = 6;
     currentText = "Alligator: Endangered";
-    song6.play();
+    song6.play()
     }
 
   }
