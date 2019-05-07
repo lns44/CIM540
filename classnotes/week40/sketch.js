@@ -12,7 +12,7 @@ var FoodButton;
 var currentImage = 0;
 
 function preload(){
-background = loadImage("background.jpg");
+background = loadImage("assets/background.jpg");
 Plane = loadImage("Plane.jpg");
 Temple = loadImage("Temple.jpg");
 Food = loadImage("Food.jpg");
@@ -20,7 +20,7 @@ Food = loadImage("Food.jpg");
 
 function setup() {
   createCanvas(800, 600);
-  background("background.jpg");
+  background("assets/background.jpg");
 
 
 TicketButton = createButton("Ticket");
