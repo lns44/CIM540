@@ -44,7 +44,7 @@ function setup() {
 
   for (var i = 0; i < leafAmount; i++) {
     leafLocationX[i] = random(0, width);
-    leafLocationY[i] = random(0, -500);
+    leafLocationY[i] = random(0, -5000);
   }
 
   for (var i = 0; i < snowAmount; i++) {
@@ -55,6 +55,12 @@ function draw() {
 background(255);
 
 image(backImage,0,0, backImage.width/4.5,backImage.height/4.5);
+
+if(mouseX >  && mouseX < (802) && mouseY > 190 && mouseY < 217){
+    if(mouseIsPressed == true){
+      shirt = shortsleeveArray[0];
+    }
+
 
 if (seasonType == "Click here to change up the scene!") {
 
