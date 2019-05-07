@@ -53,7 +53,7 @@ function setup() {
 
 function draw() {
 background(800);
-image(backImage,0,0, backImage.width,backImage.);
+image(backImage,0,0,);
 
   fill("black");
   stroke(0);
