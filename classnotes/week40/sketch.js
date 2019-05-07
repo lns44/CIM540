@@ -68,7 +68,6 @@ image(BlosImage, mouseX, 20, 40, 40);  // Top circle
 
   }else if (seasonType == "Sun") {
     textSize(12);
-    text('Move your mouse around and the sun will follow!', 300, 70);
     fill("yellow");
     ellipse(mouseX, mouseY, 100,100);
 
