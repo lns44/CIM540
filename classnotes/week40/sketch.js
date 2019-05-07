@@ -1,4 +1,9 @@
 var song;
+var song2;
+var song3;
+var song4;
+var song5;
+var song6;
 
 var seasons;
 var seasonType = "";
@@ -26,6 +31,13 @@ alligator = loadImage("assets/alligator.jpg");
 
 soundFormats('mp3');
 song = loadSound('assets/rattlesnakerattle.mp3');
+song3 = loadSound('assets/cougar.mp3');
+song4 = loadSound('assets/manatee.mp3');
+song5 = loadSound('assets/fish.mp3');
+song6 = loadSound('assets/gator.mp3');
+
+soundFormats('wav');
+song2 = loadSound( 'assets/doegrunt.wav');
 
 }
 
@@ -57,26 +69,31 @@ function setup() {
     if(mouseX > 144 && mouseX < 320 && mouseY > 371 && mouseY < 527){
     page = 2;
     currentText = "Key Deer: Endangered";
+    song2.play();
     }
 
     if(mouseX > 144 && mouseX < 320 && mouseY > 545 && mouseY < (545 + 155)){
     page = 3;
     currentText = "Cougar: Endangered";
+    song3.play();
     }
 
     if(mouseX > 410 && mouseX < (410 + 177) && mouseY > 206 && mouseY < (206 + 155)){
     page = 4;
     currentText = "Manatee: Endangered";
+    song4.play();
     }
 
     if(mouseX > 410 && mouseX < (410 + 177) && mouseY > 378 && mouseY < (378 + 155)){
     page = 5;
     currentText = "Lionfish: Invasive";
+    song5.play();
     }
 
     if(mouseX > 410 && mouseX < (410 + 177) && mouseY > 552 && mouseY < (552 + 155)){
     page = 6;
     currentText = "Alligator: Endangered";
+    song6.play();
     }
 
   }
