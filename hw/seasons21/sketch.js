@@ -42,5 +42,3 @@ image(backImage,0,0, backImage.width/6,backImage.height/6);
 
 
 )};
-
-}
