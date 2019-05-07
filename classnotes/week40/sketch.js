@@ -61,7 +61,7 @@ answer = empty;
   });
 
   PythonButton = createButton("Python");
-  PythonButton.position(10,40);
+  PythonButton.position(64,275, 518,155);
   PythonButton.mousePressed(function(){
   currentImage = 0;
   });
