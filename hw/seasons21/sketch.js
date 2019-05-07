@@ -23,7 +23,7 @@ createCanvas(800, 600);
     background(bg);
 
 
-    if(mouseX > 64 && mouseX < 85 && mouseY > 185 && mouseY < 215){
+    if(mouseX > 18 && mouseX < 71 && mouseY > 59 && mouseY < 101){
       if(mouseIsPressed == true){
         text = 'Burmese Python';
         fruitOffX = 70;
