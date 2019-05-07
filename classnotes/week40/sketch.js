@@ -18,8 +18,11 @@ function preload() {
 
 backImage = loadImage("assets/mnt.jpg");
 python = loadImage("assets/python.jpeg");
-deer = loadImage("assets/deer.jpg")
-cougar = loadImage("assets/cougar.jpg")
+deer = loadImage("assets/deer.jpg");
+cougar = loadImage("assets/cougar.jpg");
+manatee = loadImage("assets/manatee.jpg");
+lionfish= loadImage("assets/lionfish.jpg");
+alligator = loadImage("assets/alligator.jpg");
 
 soundFormats('mp3');
 song = loadSound('assets/rattlesnakerattle.mp3');
@@ -95,5 +98,27 @@ if(page == 2){
 // show deer image
 image(deer, 650,220, 620, 420 );
 }
+
+if(page == 3){
+// show deer image
+image(cougar, 650,220, 620, 420 );
+}
+
+if(page == 4){
+// show deer image
+image(manatee, 650,220, 620, 420 );
+}
+
+if(page == 5){
+// show deer image
+image(lionfish, 650,220, 620, 420 );
+}
+
+
+if(page == 6){
+// show deer image
+image(alligator, 650,220, 620, 420 );
+}
+
 
 }
