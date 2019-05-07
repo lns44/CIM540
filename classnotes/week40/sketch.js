@@ -99,7 +99,7 @@ if (seasonType == "Click here to change up the scene!") {
       console.log("leaf" + 0 + " x: " + leafLocationX[1] + " , y: " + leafLocationY[1]);
       image(leafImage, leafLocationX[i], leafLocationY[i], 20,20);
 
-      if(leafLocationY[i] < height - 20){
+    }if(leafLocationY[i] < height - 20){
         leafLocationY[i]++;
         leafLocationX[i] = leafLocationX[i] + sin(radians(frameCount));}}
 
@@ -111,19 +111,15 @@ if (seasonType == "Click here to change up the scene!") {
       console.log("bubble" + 0 + " x: " + bubbleLocationX[1] + " , y: " + bubbleLocationY[1]);
       image(bubbleImage, bubbleLocationX[i], bubbleLocationY[i], 30,30);
 
-      if(bubbleLocationY[i] < height - 20){
+    }if(bubbleLocationY[i] < height - 20){
         bubbleLocationY[i]++;
         bubbleLocationX[i] = bubbleLocationX[i] + sin(radians(frameCount));}}
 
 
- }else if (seasonType == "Let it Snow!") {
+ else if (seasonType == "Let it Snow!") {
   for (var i = 0; i < snowAmount; i++) {
     snowLocationY[i]++;
     ellipse(snowLocationX[i], snowLocationY[i], 4,4);
 
-    if(snowLocationY[i] > height){
-      snowLocationY[i] = random(-50,0);
-      snowLocationX[i] = random(0,width);}
 
-  }
-}
+}}
