@@ -60,7 +60,7 @@ answer = empty;
   });
 
   PythonButton = createButton("Python");
-  PythonButton.position(120,275, 518,155);
+  PythonButton.position(150,305, 518,155);
   PythonButton.mousePressed(function(){
   currentImage = 0;
   });
