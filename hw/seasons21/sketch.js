@@ -49,7 +49,7 @@ reset.mousePressed(function(){
 
 function draw() {
 background(bg);
-if mousePressed
+
 if(mouseX > 64 && mouseX < 85 && mouseY > 185 && mouseY < 215){
   if(mouseIsPressed == true){
     fruit = snakeArray[0];
