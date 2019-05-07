@@ -37,24 +37,11 @@ empty = loadImage("assets/empty.png");
 function setup() {
 bg = loadImage("assets/background.jpg");
 createCanvas(800, 600);
-fruit = empty;
 
-reset = createButton("Start Over");
-reset.position(70,620);
-reset.mousePressed(function(){
-  fruit = empty;
+var inp = createInput('');
+inp.input(myInputEvent);
+}
 
-});
-
-
-function draw() {
-background(bg);
-
-if(mouseX > 64 && mouseX < 85 && mouseY > 185 && mouseY < 215){
-  if(mouseIsPressed == true){
-    fruit = snakeArray[0];
-    fruitOffX = 70;
-    fruitOffY = 25;
-  }
-
+function myInputEvent() {
+  console.log('Burmese Python', this.value());
 }
