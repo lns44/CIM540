@@ -83,13 +83,14 @@ if (seasonType == "Click here to change up the scene!") {
     console.log("Below Line");
     image(moonImage, mouseX, 20, 150, 150);
   }
-  if(mouseX< height/2){
+
+}if(mouseX< height/2){
     console.log("Above Line");
 
     image(sunImage, mouseX, 20, 150, 150)};
     image(topImage,276,94,260,100);
 
- }}
+ }
 
   }
 }
