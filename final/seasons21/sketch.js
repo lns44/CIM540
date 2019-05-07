@@ -18,7 +18,7 @@ var backImage;
 
 function preload() {
 leafImage = loadImage("assets/leaf.png");
-backImage = loadImage("assets/background.jpg");
+backImage = loadImage("assets/mnt.jpg");
 BlosImage = loadImage("assets/blos.png");
 moonImage = loadImage("assets/moon.png");
 sunImage = loadImage("assets/sun.png");
