@@ -32,7 +32,7 @@ function setup() {
   noStroke(0);
   seasons = createSelect();
   seasons.position(17, 17,50);
-  text(50);
+    textSize(30);
   seasons.option("Click Here To Change The Environment!");
   seasons.option("Leaves");
   seasons.option("Bubbles");
@@ -75,8 +75,6 @@ if (seasonType == "Click here to change up the scene!") {
 
 
 }if (seasonType == "Leaves") {
-    textSize(12);
-      text('It is fall in beautiful Japan!', 340, 70);
     for (var i = 0; i < leafAmount; i++) {
       console.log("leaf" + 0 + " x: " + leafLocationX[1] + " , y: " + leafLocationY[1]);
       image(leafImage, leafLocationX[i], leafLocationY[i], 20,20);
