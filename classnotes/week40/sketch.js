@@ -54,7 +54,7 @@ function setup() {
 function draw() {
 background(300);
 
-image(backImage,0,0, backImage.width/3.75,backImage.height/3.75);
+image(backImage,0,0, backImage.width/3,backImage.height/3);
 
 if (seasonType == "Click here to change up the scene!") {
   textSize(14);
