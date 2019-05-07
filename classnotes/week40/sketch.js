@@ -37,7 +37,7 @@ function setup() {
   seasons.option("Leaves");
   seasons.option("Let it Snow!");
   seasons.option("Day to Night");
-  canvas = createCanvas(800,600);
+
   seasons.changed(function() {
   seasonType = seasons.value();
   });
