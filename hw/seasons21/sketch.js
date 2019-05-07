@@ -18,8 +18,6 @@ var crocbutton;
 var snakeArray = [];
 var reset;
 
-var fruitOffX = 0;
-var fruitOffY = 0;
 
 function preload(){
 snakeArray[0] = loadImage("assets/snake.png");
@@ -30,15 +28,27 @@ bg = loadImage("assets/background.jpg");
 createCanvas(800, 600);
   }
 
+  fruit = empty;
+  syrup = empty;
+  toppings = empty;
+  icecream = empty;
+  cone = empty;
+
+
+  reset = createButton("Start Over");
+  reset.position(70,620);
+  reset.mousePressed(function(){
+    fruit = empty;
+
+
   function draw() {
     background(bg);
 
 
     if(mouseX > 18 && mouseX < 71 && mouseY > 59 && mouseY < 101){
       if(mouseIsPressed == true){
-        text = 'Burmese Python';
-        fruitOffX = 70;
-        fruitOffY = 25;
-      }
+        fruit = snakeArray [0];}
+
+
 
   }
