@@ -1,10 +1,10 @@
 var ticket;
-var Plane;
+var plane;
 var Temple;
 var Food;
 
 var ticketButton;
-var PlaneButton;
+var planeButton;
 var TempleButton;
 var FoodButton;
 
@@ -12,7 +12,7 @@ var currentImage = 0;
 
 function preload(){
 ticket = loadImage("ticket.jpg");
-Plane = loadImage("plane.jpg");
+plane = loadImage("plane.jpg");
 Temple = loadImage("Temple.jpg");
 Food = loadImage("Food.jpg");
 }
@@ -26,9 +26,9 @@ ticketButton.mousePressed(function(){
 currentImage = 0;
 });
 
-PlaneButton = createButton("Plane")
-PlaneButton.position(100,40);
-PlaneButton.mousePressed(Change);
+planeButton = createButton("Plane")
+planeButton.position(100,40);
+planeButton.mousePressed(Change);
 
 
 TempleButton = createButton("Temple");
@@ -57,7 +57,7 @@ function draw() {
 if(currentImage == 0){
   image(ticket, 0,20, ticket.width/2, ticket.height/2);
 }else if(currentImage == 1){
-  image(Plane, 0, 20, Plane.width/2, Plane.height/2);
+  image(Plane, 0, 20, plane.width/2, plane.height/2);
 }else if(currentImage == 2){
   image(Temple, 0, 20, Temple.width/2, Temple.height/2);
 }
