@@ -85,12 +85,10 @@ image(backImage,0,0, backImage.width/4.5,backImage.height/4.5);
 
 if(page == 1){
   image(mainpage, 0,0, mainpage.width, mainpage.height);
-  if(mouseX > 695 && mouseX < (802) && mouseY > 190 && mouseY < 217){
+  if(mouseX > 64 && mouseX < (275) && mouseY > 518 && mouseY < 155){
     if(mouseIsPressed == true){
       answer = pythonArray[0];}
     }
-
-
 
 
 if (seasonType == "Click here to change up the scene!") {
