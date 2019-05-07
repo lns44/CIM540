@@ -11,7 +11,7 @@ var FoodButton;
 var currentImage = 0;
 
 function preload(){
-Ticket = loadImage("Ticket.jpg");
+background = loadImage("background.jpg");
 Plane = loadImage("Plane.jpg");
 Temple = loadImage("Temple.jpg");
 Food = loadImage("Food.jpg");
