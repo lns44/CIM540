@@ -1,19 +1,3 @@
-var seasons;
-var seasonType = "";
-
-var sunX = 360;
-var sunY = 40;
-var sunSize = 60;
-
-var leafLocationX = [];
-var leafLocationY = [];
-var leafImage;
-var leafAmount = 100;
-
-var snowLocationX = [];
-var snowLocationY = [];
-var snowAmount = 150;
-
 var backImage;
 
 function preload() {
