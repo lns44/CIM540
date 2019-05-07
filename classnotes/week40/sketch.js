@@ -27,7 +27,7 @@ topImage = loadImage("assets/mnttop.png");
 
 function setup() {
   // put setup code here
-  createCanvas(1440,754);
+  createCanvas(800,600);
   noStroke(0);
   seasons = createSelect();
   seasons.position(17, 17,50);
