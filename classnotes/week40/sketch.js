@@ -17,8 +17,6 @@ function preload() {
 bubbleImage = loadImage("assets/bubble.png");
 leafImage = loadImage("assets/leaf.png");
 backImage = loadImage("assets/mnt.jpg");
-moonImage = loadImage("assets/moon.png");
-topImage = loadImage("assets/mnttop.png");
 }
 
 function setup() {
@@ -30,7 +28,6 @@ function setup() {
   seasons.option("Click here to change up the scene!");
   seasons.option("Leaves");
   seasons.option("Bubbles");
-  seasons.option("Day to Night");
   canvas = createCanvas(1440,754);
   seasons.changed(function() {
   seasonType = seasons.value();
@@ -77,20 +74,8 @@ if (seasonType == "Click here to change up the scene!") {
       if(bubbleLocationY[i] < height - 20){
         bubbleLocationY[i]++;
         bubbleLocationX[i] = bubbleLocationX[i] + sin(radians(frameCount));}}
-}else if (seasonType == "Day to Night") {
 
-  if(mouseX> height/2){
-    console.log("Below Line");
-    image(moonImage, mouseX, 20, 150, 150);
-  }
 
-}if(mouseX< height/2){
-    console.log("Above Line");
-
-    image(sunImage, mouseX, 20, 150, 150)};
-    image(topImage,276,94,260,100);
-
- }
 
   }
 }
