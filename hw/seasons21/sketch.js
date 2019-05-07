@@ -37,15 +37,10 @@ createCanvas(800, 600);
   reset.mousePressed(function(){
     fruit = empty;
 
-
-  function draw() {
-    background(bg);
-
-
-    if(mouseX > 18 && mouseX < 71 && mouseY > 59 && mouseY < 101){
-      if(mouseIsPressed == true){
-        fruit = snakeArray [0];}
+function draw() {
+background(bg);
 
 
-
-  }
+  if(mouseX > 18 && mouseX < 71 && mouseY > 59 && mouseY < 101){
+  if(mouseIsPressed == true){
+  fruit = snakeArray [0];}
