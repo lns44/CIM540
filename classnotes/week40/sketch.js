@@ -22,7 +22,6 @@ bubbleImage = loadImage("assets/bubble.png");
 leafImage = loadImage("assets/leaf.png");
 backImage = loadImage("assets/mnt.jpg");
 moonImage = loadImage("assets/moon.png");
-topImage = loadImage("assets/mnttop.png");
 }
 
 function setup() {
