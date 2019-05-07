@@ -28,7 +28,7 @@ var bubbleAmount = 100;
 
 var snowLocationX = [];
 var snowLocationY = [];
-var snowAmount = 150;
+var snowAmount = 0;
 
 var backImage;
 
@@ -47,7 +47,7 @@ function setup() {
   noStroke(0);
   seasons = createSelect();
   seasons.position(17, 17,50);
-  textSize(30);
+  textSize(20);
   seasons.option("Click Here To Change The Environment!");
   seasons.option("Leaves");
   seasons.option("Bubbles");
@@ -59,7 +59,7 @@ answer = empty;
 
   });
 
-  PythonButton = createButton("Python");
+  PythonButton = createButton("Click Me!");
   PythonButton.position(150,305, 518,155);
   PythonButton.mousePressed(function(){
   currentImage = 0;
@@ -101,7 +101,7 @@ if(page == 1){
       answer = pythonArray[0];}
     }
 
-
+//leaves
 if (seasonType == "Click here to change up the scene!") {
 
 
@@ -113,8 +113,10 @@ if (seasonType == "Click here to change up the scene!") {
     }if(leafLocationY[i] < height - 20){
         leafLocationY[i]++;
         leafLocationX[i] = leafLocationX[i] + sin(radians(frameCount));}}
+//end of leaves
 
 
+//bubbles
   } else if (seasonType == "Bubbles") {
     textSize(12);
     fill("black");
@@ -125,14 +127,7 @@ if (seasonType == "Click here to change up the scene!") {
     }if(bubbleLocationY[i] < height - 20){
         bubbleLocationY[i]++;
         bubbleLocationX[i] = bubbleLocationX[i] + sin(radians(frameCount));}}
+//end of bubbles
 
 
- else if (seasonType == "Let it Snow!") {
-  for (var i = 0; i < snowAmount; i++) {
-    snowLocationY[i]++;
-    ellipse(snowLocationX[i], snowLocationY[i], 4,4);
-
-  }if(snowLocationY[i] > height){
-      snowLocationY[i] = random(-50,0);
-      snowLocationX[i] = random(0,width);}
 }}
