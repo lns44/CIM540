@@ -5,10 +5,10 @@ var sunX = 360;
 var sunY = 40;
 var sunSize = 60;
 
-var leafLocationX = [];
-var leafLocationY = [];
-var leafImage;
-var leafAmount = 100;
+var bubbleLocationX = [];
+var bubbleLocationY = [];
+var bubbleImage;
+var bubbleAmount = 150;
 
 var snowLocationX = [];
 var snowLocationY = [];
@@ -17,7 +17,7 @@ var snowAmount = 150;
 var backImage;
 
 function preload() {
-leafImage = loadImage("assets/leaf.png");
+bubbleImage = loadImage("assets/bubble.png");
 backImage = loadImage("assets/mnt.jpg");
 BlosImage = loadImage("assets/blos.png");
 moonImage = loadImage("assets/moon.png");
@@ -34,7 +34,7 @@ function setup() {
   seasons.option("Click here to change up the scene!");
   seasons.option("Cherry Blossoms");
   seasons.option("Sun");
-  seasons.option("Leaves");
+  seasons.option("Bubbles");
   seasons.option("Let it Snow!");
   seasons.option("Day to Night");
   canvas = createCanvas(1440,754);
@@ -42,9 +42,9 @@ function setup() {
   seasonType = seasons.value();
   });
 
-  for (var i = 0; i < leafAmount; i++) {
-    leafLocationX[i] = random(0, width);
-    leafLocationY[i] = random(0, -400);
+  for (var i = 0; i < bubbleAmount; i++) {
+    bubbleLocationX[i] = random(0, width);
+    bubbleLocationY[i] = random(0, -400);
   }
 
   for (var i = 0; i < snowAmount; i++) {
@@ -74,16 +74,16 @@ image(BlosImage, mouseX, 20, 40, 40);  // Top circle
     fill("yellow");
     ellipse(mouseX, mouseY, 100,100);
 
-  } else if (seasonType == "Leaves") {
+  } else if (seasonType == "Bubbles") {
     textSize(12);
-      text('Bubbles!', 340, 100);
-    for (var i = 0; i < leafAmount; i++) {
-      console.log("leaf" + 0 + " x: " + leafLocationX[1] + " , y: " + leafLocationY[1]);
-      image(leafImage, leafLocationX[i], leafLocationY[i], 30,30);
+    fill("black");
+    for (var i = 0; i < bubbleAmount; i++) {
+      console.log("bubble" + 0 + " x: " + bubbleLocationX[1] + " , y: " + bubbleLocationY[1]);
+      image(bubbleImage, bubbleLocationX[i], bubbleLocationY[i], 30,30);
 
-      if(leafLocationY[i] < height - 20){
-        leafLocationY[i]++;
-        leafLocationX[i] = leafLocationX[i] + sin(radians(frameCount));}}
+      if(bubbleLocationY[i] < height - 20){
+        bubbleLocationY[i]++;
+        bubbleLocationX[i] = bubbleLocationX[i] + sin(radians(frameCount));}}
 }else if (seasonType == "Day to Night") {
   textSize(12);
   text('Move your mouse from left to right to change the time from day to night!', 250, 80);
