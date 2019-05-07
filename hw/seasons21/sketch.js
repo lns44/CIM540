@@ -55,4 +55,6 @@ if(mouseX > 64 && mouseX < 85 && mouseY > 185 && mouseY < 215){
     fruit = snakeArray[0];
     fruitOffX = 70;
     fruitOffY = 25;
- }
+  }
+
+}
