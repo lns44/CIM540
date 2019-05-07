@@ -45,7 +45,7 @@ if (seasonType == "Click here to change up the scene!") {
 
   }else if (seasonType == "Sun") {
     textSize(12);
-    fill("leaf.png");
+    fill("leaf");
     ellipse(mouseX, mouseY, 100,100);
 
   } else if (seasonType == "Leaves") {
