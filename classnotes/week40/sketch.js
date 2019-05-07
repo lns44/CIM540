@@ -30,7 +30,6 @@ function setup() {
   seasons.option("Click here to change up the scene!");
   seasons.option("Leaves");
   seasons.option("Bubbles");
-  seasons.option("Let it Snow!");
   seasons.option("Day to Night");
   canvas = createCanvas(1440,754);
   seasons.changed(function() {
