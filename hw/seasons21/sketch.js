@@ -37,7 +37,13 @@ empty = loadImage("assets/empty.png");
 function setup() {
 bg = loadImage("assets/background.jpg");
 createCanvas(800, 600);
-  }
+fruit = empty;
+
+reset = createButton("Start Over");
+reset.position(70,620);
+reset.mousePressed(function(){
+  fruit = empty;
+});
 
 
 function draw() {
