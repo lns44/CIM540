@@ -24,5 +24,4 @@ loadImage("assets/snake.png");
 function setup() {
 createCanvas(800, 600);
 bg = loadImage("assets/background.jpg");
-
 }
