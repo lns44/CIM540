@@ -15,18 +15,7 @@ var deerbutton;
 var fishbutton;
 var cougarbutton;
 var crocbutton;
-var fruitbutton;
 
-var currentImage = 0;
-
-var fruitY = 193;
-
-var snakeArray = [];
-
-var reset;
-
-var fruitOffX = 0;
-var fruitOffY = 0;
 
 function preload(){
 snakeArray[0] = loadImage("assets/snake.png");
