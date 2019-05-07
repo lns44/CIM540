@@ -11,6 +11,7 @@ background = loadImage("assets/background.jpg");
 }
 function setup() {
 createCanvas(800,600);
+background = loadImage("assets/background.jpg");
 snakebutton = createButton("snake");
 snakebutton.position(10,40);
 snakebutton.mousePressed(function(){
