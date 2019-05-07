@@ -16,7 +16,6 @@ var crocbutton;
 
 
 var snakeArray = [];
-var reset;
 
 
 function preload(){
@@ -28,18 +27,9 @@ bg = loadImage("assets/background.jpg");
 createCanvas(800, 600);
   }
 
-  fruit = empty;
-
-
-
-  reset = createButton("Start Over");
-  reset.position(70,620);
-  reset.mousePressed(function(){
-    fruit = empty;
 
 function draw() {
 background(bg);
-
 
 
 if(mouseX > 18 && mouseX < (71) && mouseY > 59 && mouseY < 101){
