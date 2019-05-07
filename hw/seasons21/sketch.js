@@ -26,12 +26,9 @@ function setup() {
   // put setup code here
   createCanvas(900,700);
   noStroke(0);
-  seasons = createSelect();
-  seasons.position(17, 17,50);
 
   canvas = createCanvas(900,700);
-  seasons.changed(function() {
-  seasonType = seasons.value();
+
   });
 
 
