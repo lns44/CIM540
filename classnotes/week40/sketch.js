@@ -42,6 +42,14 @@ function setup() {
   seasonType = seasons.value();
   });
 
+  for (var i = 0; i < leafAmount; i++) {
+    leafLocationX[i] = random(0, width);
+    leafLocationY[i] = random(0, -50);
+  }
+
+  for (var i = 0; i < snowAmount; i++) {
+    snowLocationX[i] = random(0, width);
+    snowLocationY[i] = random(0, -500);}}
 
 function draw() {
 background(255);
