@@ -16,9 +16,9 @@ var cougarbutton;
 var crocbutton;
 
 function setup() {
+  bg = loadImage("assets/background.jpg");
   createCanvas(800, 600);
-bg = loadImage("assets/background.jpg");
-
+  image("assets/background.jpg")
 
 
 }
