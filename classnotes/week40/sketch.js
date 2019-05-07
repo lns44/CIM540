@@ -17,8 +17,12 @@ var snowAmount = 150;
 var backImage;
 
 function preload() {
+leafImage = loadImage("assets/leaf.png");
 backImage = loadImage("assets/mnt.jpg");
-sunImage = loadImage("assets/leaf.png");
+BlosImage = loadImage("assets/blos.png");
+moonImage = loadImage("assets/moon.png");
+sunImage = loadImage("assets/sun.png");
+topImage = loadImage("assets/mnttop.png");
 }
 
 function setup() {
@@ -28,7 +32,11 @@ function setup() {
   seasons = createSelect();
   seasons.position(17, 17,50);
   seasons.option("Click here to change up the scene!");
-  seasons.option("Click here to turn your mouse into bubbles!");
+  seasons.option("Cherry Blossoms");
+  seasons.option("Sun");
+  seasons.option("Leaves");
+  seasons.option("Let it Snow!");
+  seasons.option("Day to Night");
   canvas = createCanvas(1440,754);
   seasons.changed(function() {
   seasonType = seasons.value();
@@ -41,11 +49,21 @@ background(255);
 image(backImage,0,0, backImage.width/4.5,backImage.height/4.5);
 
 
+
+
 if (seasonType == "Click here to change up the scene!") {
+
+
+}if (seasonType == "Cherry Blossoms") {
+  textSize(12);
+  text('Move your mouse and see if you can align the cherry blossoms above the mountain top!',190,80);
+
+image(BlosImage, mouseX, 20, 40, 40);  // Top circle
+
 
   }else if (seasonType == "Sun") {
     textSize(12);
-    fill("leaf");
+    fill("yellow");
     ellipse(mouseX, mouseY, 100,100);
 
   } else if (seasonType == "Leaves") {
