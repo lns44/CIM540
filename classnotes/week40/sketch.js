@@ -73,9 +73,7 @@ if (seasonType == "Click here to change up the scene!") {
 
       if(bubbleLocationY[i] < height - 20){
         bubbleLocationY[i]++;
-        bubbleLocationX[i] = bubbleLocationX[i] + sin(radians(frameCount));}}
-
-
-
+        bubbleLocationX[i] = bubbleLocationX[i] + sin(radians(frameCount));
+}}}}
   }
 }
