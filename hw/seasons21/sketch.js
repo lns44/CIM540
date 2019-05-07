@@ -35,8 +35,8 @@ empty = loadImage("assets/empty.png");
 
 
 function setup() {
-bg = loadImage("assets/background.jpg");
 createCanvas(800, 600);
+bg = loadImage("assets/background.jpg");
 
 var inp = createInput('');
 inp.input(myInputEvent);
