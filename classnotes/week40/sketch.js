@@ -1,7 +1,6 @@
 let song;
 
 var seasons;
-var seasonType = "";
 
 var answer;
 
