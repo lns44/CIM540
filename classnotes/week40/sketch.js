@@ -2,6 +2,7 @@ var Ticket;
 var Plane;
 var Temple;
 var Food;
+var background;
 
 var TicketButton;
 var PlaneButton;
