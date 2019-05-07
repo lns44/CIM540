@@ -20,4 +20,14 @@ createCanvas(800, 600);
   }
 
   function draw() {
-    background(bg);}
+    background(bg);
+
+
+    if(mouseX > 64 && mouseX < 85 && mouseY > 185 && mouseY < 215){
+      if(mouseIsPressed == true){
+        text = 'Burmese Python';
+        fruitOffX = 70;
+        fruitOffY = 25;
+      }
+
+  }
