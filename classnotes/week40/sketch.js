@@ -76,7 +76,7 @@ image(BlosImage, mouseX, 20, 40, 40);  // Top circle
 
   } else if (seasonType == "Leaves") {
     textSize(12);
-      text('It is fall in beautiful Japan!', 340, 70);
+      text('Bubbles!', 340, 100);
     for (var i = 0; i < leafAmount; i++) {
       console.log("leaf" + 0 + " x: " + leafLocationX[1] + " , y: " + leafLocationY[1]);
       image(leafImage, leafLocationX[i], leafLocationY[i], 20,20);
