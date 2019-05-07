@@ -14,6 +14,17 @@ var fishbutton;
 var cougarbutton;
 var crocbutton;
 
+
+var snakeArray = [];
+var reset;
+
+var fruitOffX = 0;
+var fruitOffY = 0;
+
+function preload(){
+snakeArray[0] = loadImage("assets/snake.png");
+}
+
 function setup() {
 bg = loadImage("assets/background.jpg");
 createCanvas(800, 600);
