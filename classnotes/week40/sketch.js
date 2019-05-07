@@ -6,15 +6,10 @@ var leafLocationY = [];
 var leafImage;
 var leafAmount = 100;
 
-
 var bubbleLocationX = [];
 var bubbleLocationY = [];
 var bubbleImage;
-var bubbleAmount = 150;
-
-var snowLocationX = [];
-var snowLocationY = [];
-var snowAmount = 150;
+var bubbleAmount = 100;
 
 var backImage;
 
@@ -53,20 +48,13 @@ function setup() {
     bubbleLocationY[i] = random(0, -400);
   }
 
-  for (var i = 0; i < snowAmount; i++) {
-    snowLocationX[i] = random(0, width);
-    snowLocationY[i] = random(0, -500);}}
-
 function draw() {
 background(255);
 
 image(backImage,0,0, backImage.width/4.5,backImage.height/4.5);
 
 
-
-
 if (seasonType == "Click here to change up the scene!") {
-
 
 }if (seasonType == "Leaves") {
     textSize(12);
@@ -102,15 +90,7 @@ if (seasonType == "Click here to change up the scene!") {
     image(sunImage, mouseX, 20, 150, 150)};
     image(topImage,276,94,260,100);
 
- }else if (seasonType == "Let it Snow!") {
-  for (var i = 0; i < snowAmount; i++) {
-    snowLocationY[i]++;
-    ellipse(snowLocationX[i], snowLocationY[i], 4,4);
-
-    if(snowLocationY[i] > height){
-      snowLocationY[i] = random(-50,0);
-      snowLocationX[i] = random(0,width);}
-
-    }
+ }
+    
   }
 }
