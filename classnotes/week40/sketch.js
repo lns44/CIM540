@@ -32,10 +32,10 @@ function setup() {
   noStroke(0);
   seasons = createSelect();
   seasons.position(17, 17,50);
-  seasons.option("Click here to change up the scene!");
+  text(50);
+  seasons.option("Click Here To Change The Environment!");
   seasons.option("Leaves");
   seasons.option("Bubbles");
-  seasons.option("Let it Snow!");
   canvas = createCanvas(1440,754);
   seasons.changed(function() {
   seasonType = seasons.value();
@@ -44,7 +44,7 @@ function setup() {
   function mousePressed() {
     if (song.isPlaying()) {
       song.stop();
-      background(0, 100);
+      background(0,100);
     } else {
       song.play();
       background(64, 275, 518, 155);
