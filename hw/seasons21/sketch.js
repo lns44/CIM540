@@ -35,12 +35,13 @@ empty = loadImage("assets/empty.png");
 
 
 function setup() {
-bg = loadImage("assets/background.jpg");
 createCanvas(800, 600);
-var inp = createInput('');
-inp.input(myInputEvent);
-}
+bg = loadImage("assets/background.jpg");
+button = createButton ('Snake');
+button.position(100,100);
+button.mousePressed(changeBG);}
 
-function myInputEvent() {
-  console.log('Burmese Python', this.value(25));
+function changeBG(){
+  var val = loadImage("assets/snake.png");
+  background(val);
 }
