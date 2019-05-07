@@ -15,13 +15,14 @@ var fishbutton;
 var cougarbutton;
 var crocbutton;
 
-
 function preload(){
-loadImage("assets/snake.png");
+snakeArray[0] = loadImage("assets/snake.png");
 }
 
-
 function setup() {
-createCanvas(800, 600);
 bg = loadImage("assets/background.jpg");
+createCanvas(800, 600);
+image("assets/background.jpg")
+
+
 }
