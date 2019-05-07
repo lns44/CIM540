@@ -3,6 +3,16 @@ let song;
 var seasons;
 var seasonType = "";
 
+var answer;
+
+var python;
+
+var answerButton;
+var pythonButton;
+
+
+var shortsleeveArray = [];
+
 var leafLocationX = [];
 var leafLocationY = [];
 var leafImage;
@@ -23,6 +33,7 @@ function preload() {
 bubbleImage = loadImage("assets/bubble.png");
 leafImage = loadImage("assets/leaf.png");
 backImage = loadImage("assets/mnt.jpg");
+pythonArray[0] = loadImage("assets/python.png");
 }
 
 function setup() {
@@ -32,13 +43,16 @@ function setup() {
   noStroke(0);
   seasons = createSelect();
   seasons.position(17, 17,50);
-    textSize(30);
+  textSize(30);
   seasons.option("Click Here To Change The Environment!");
   seasons.option("Leaves");
   seasons.option("Bubbles");
   canvas = createCanvas(1440,754);
   seasons.changed(function() {
   seasonType = seasons.value();
+
+answer = empty;
+
   });
 
   function mousePressed() {
@@ -67,8 +81,16 @@ function setup() {
 
 function draw() {
 background(255);
-
 image(backImage,0,0, backImage.width/4.5,backImage.height/4.5);
+
+if(page == 1){
+  image(mainpage, 0,0, mainpage.width, mainpage.height);
+  if(mouseX > 695 && mouseX < (802) && mouseY > 190 && mouseY < 217){
+    if(mouseIsPressed == true){
+      answer = pythonArray[0];}
+    }
+
+
 
 
 if (seasonType == "Click here to change up the scene!") {
