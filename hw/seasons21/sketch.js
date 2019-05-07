@@ -39,5 +39,5 @@ image("assets/background.jpg");
 
 button = createButton('snake');
 button.position(100, 65);
-button.mousePressed(snakeArray);
+button.mousePressed(loadImage("assests/snake.png"));
 }
