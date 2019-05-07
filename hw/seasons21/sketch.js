@@ -29,11 +29,15 @@ var fruitOffX = 0;
 var fruitOffY = 0;
 
 function preload(){
-createCanvas(800,600);};
+createCanvas(800,600);
+};
 
 function setup() {
 bg = loadImage("assets/background.jpg");
 createCanvas(800, 600);
-
-
 }
+
+
+function draw() {
+background(800,600);
+image("assets/background.jpg")};
