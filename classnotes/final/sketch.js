@@ -55,8 +55,8 @@ currentImage = 3;
 
 function draw() {
   // put drawing code here
-background(255);
- image(background, 0,0, background.width, background.height);
+Background(255);
+ image(Background, 0,0, Background.width, Background.height);
 
 if(currentImage == 0){
   image(Ticket, 0,20, Ticket.width/2, Ticket.height/2);
