@@ -14,7 +14,6 @@ var python;
 var answerButton;
 var pythonButton;
 
-
 var currentImage = 0;
 
 var leafLocationX = [];
@@ -61,7 +60,7 @@ answer = empty;
   });
 
   PythonButton = createButton("Python");
-  PythonButton.position(64,275, 518,155);
+  PythonButton.position(120,275, 518,155);
   PythonButton.mousePressed(function(){
   currentImage = 0;
   });
