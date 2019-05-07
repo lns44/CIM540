@@ -11,10 +11,10 @@ var FoodButton;
 var currentImage = 0;
 
 function preload(){
-Ticket = loadImage("Ticket.jpg");
-Plane = loadImage("Plane.jpg");
-Temple = loadImage("Temple.jpg");
-Food = loadImage("Food.jpg");
+Ticket = loadImage("assets/Ticket.jpg");
+Plane = loadImage("assets/Plane.jpg");
+Temple = loadImage("assets/Temple.jpg");
+Food = loadImage("assets/Food.jpg");
 }
 function setup() {
   // put setup code here
