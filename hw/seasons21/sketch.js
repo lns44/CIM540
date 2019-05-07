@@ -7,9 +7,16 @@ var fish;
 var cougar;
 var croc;
 
-  function setup() {
-    bg = loadImage("assets/background.jpg");
-    createCanvas(800, 600);
+var snakebutton;
+var manateebutton;
+var deerbutton;
+var fishbutton;
+var cougarbutton;
+var crocbutton;
+
+function setup() {
+bg = loadImage("assets/background.jpg");
+createCanvas(800, 600);
   }
 
   function draw() {
