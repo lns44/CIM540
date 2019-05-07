@@ -29,10 +29,7 @@ createCanvas(800, 600);
   }
 
   fruit = empty;
-  syrup = empty;
-  toppings = empty;
-  icecream = empty;
-  cone = empty;
+
 
 
   reset = createButton("Start Over");
